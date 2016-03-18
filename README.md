@@ -11,3 +11,4 @@ Process EZProxy log files:
 	Extract URLs
 	Break URLS into components: service, server, resource
 	Store as CSV
+	Other stuff, TBD
