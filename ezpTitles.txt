@@ -1,0 +1,801 @@
+Title EBL
+Title CCL WorldCat Local
+Title CCL WorldCat Discovery
+Title -Hide WorldCat IDM and static content
+T AltaVista
+T WhatIsMyIP
+Title -hide DOI System
+T PRISM with HAPI
+T Data Planet
+T Early English Books Online
+T Chicano Database
+T AAPG/Datapages Archive
+T AATA Online
+T AccessScience
+T Acta mathematica
+Title Acta scientiarum mathematicarum (Szeged)
+Title Aeon
+T African American Newspapers: The 19th Century
+T AGRICOLA
+T Aids and Cancer Research Abstracts
+T Philologus
+T American Board Pamphlet Collection
+T American Humanities Index
+T American Library Association 
+Title American Meteorological Society
+T American Mosaic
+T American Musicological Society
+T American National Biography
+T American Society for Microbiology
+Title Ancestry Library
+T Anthropological Literature
+T AnthroSource
+Title AP Images
+T Applied Science and Technology Index (ASTA)
+T Aquatic Sciences
+T Arab World Geographer
+T ArchiveGrid
+T The ARTFL Project
+T Art Full Text
+T Art Index Retrospective
+T ARTbibliographies Modern
+T Arts and Humanities Search
+Title Journal of Clinical Oncology
+Title Association for Information Systems
+T ATLA Religion
+T Avery Index to Architectural Periodicals
+T BankScope
+T BasicBIOSIS
+T Bibliography of Asian Studies
+Title Bibliography of British and Irish History
+Title Bibliography of British and Irish History
+T Biography Index
+T Biological Sciences
+T Biology Digest
+T Biotechnology & Bioengineering Abstracts
+T Birds of North America Online
+T Book Review Digest
+T Books in Print
+T Business & Company Resource Center
+T Business and Management Practices
+T Cambridge Scientific Abstracts
+T Caribbean Literature
+Title CensusCD
+T Catalog of U.S. Government Publications
+T Center for Research Libraries, e-collections at the
+T Center for Research Libraries Online Document Delivery Service
+T CCH Tax Research Network
+Title C.H. Beck
+Title Charleston Advisor
+Title Chemical & Engineering News
+T Chicago Manual of Style
+T Child Abuse and Neglect Database
+T China Academic Journals Full-text Database
+Title Chinamaxx and Duxiu
+T China Data Center
+T Chosun Ilbo
+T Clements Encyclopedia of World Governments
+T Colloquia Germanica
+T Columbia Gazetteer of the World
+T Columbia International Affairs Online
+T Communications of the Association for Information Systems
+T Computer Database
+T Computer Literature Index
+T Computer Technology
+T Conference Papers Index
+T Contemporary Women's Issues
+Title CountryData, PRS Group
+T Correlates of war 2
+T Credo Reference
+T Current Index to Statistics
+T Current Research @ (UMI Dissertations Library)
+T Current World Information Knowledgebase
+T Dance in Video
+Title DRAMOnline
+T Defining Gender, 1450 - 1910
+Title Digital National Security Archive
+T Digital Sanborn Maps for California (1867-1970)
+Title Digitalia
+T Dissertation Abstracts
+T Donga Ilbo
+T Dow Jones
+T Dyabola
+T ebrary
+Title ebscohost
+Title EBSCO EJS
+T Econlit
+T E*Subscribe
+Title Economic and Political Weekly
+T Editions & Adaptaions of Shakespeare
+T Education Full Text
+Title Education week
+Title eHRAF 
+T Eighteenth Century Journals
+T Electronic Enlightenment 
+T Encyclopedia Americana Online
+Title Grolier Online
+T Encyclopedia of astronomy and astrophysics
+T Encyclopedia of Life Sciences
+T Engineering Village 
+T Engineering Specialties
+T English Short Title Catalog
+T Environmental RouteNet
+T Environmental Sciences
+T Environmental Sciences & Pollution Management
+T Eric
+T Europa World Plus
+T European Views of the Americas: 1493-1750
+T Everyday Life & Women in America, c.1800-1920 
+T Factiva
+T FactSearch
+T Faculty of 1000 Biology
+Title Families in society
+T Faulkner's Advisory for IT Studies (FAITS)
+T FirstSearch
+T FIS Online
+Title Frost and Sullivan trial
+T Funkcialaj ekvacioj
+T Gallup Brain
+T Garland Encyclopedia of World Music Online
+T General Business File
+T General Science Abstracts
+T Genome Research
+Title Geolytics
+T GeoRefs
+T Gerritsen Collection
+T Global Financial Data
+T Google Scholar
+T Handbook of Chemistry and Physics
+T Handbook of Latin American Studies
+T HAPI: Hispanic American Periodicals Index
+T HarpWeek: 1857-1872, Civil War Years and Early Reconstruction
+T Historical Abstracts
+T Historical Statistics of the United States
+T History of Science and Technology
+T Mergent Hoovers 
+T Humanities Abstracts
+T ICPSR
+T Idea Group Inc.
+Title IFAR 
+Title IndiaStat
+T Index to Legal Periodicals
+Title Indiastat
+T International Country Risk Guide
+T International Encyclopedia of Revolution and Protest 
+T International Financial Statistics
+T BREPOLiS
+T IPA Source
+T Issues in ecology
+T Iter: Gateway to the Middle Ages and Renaissance
+T Johns Hopkins Guide to Literary Theory and Criticism
+T Journal of Anthropological Research
+T Journal Citation Reports, or JCR (Social Sciences edition)
+T Journal of Drug Issues
+T Journal of the American Medical Association
+Title Jacoby Online
+T JAMA Network
+T Journal of biochemistry (Tokyo)
+T Journal of Biological Chemistry
+T Journal of Film Music
+T Journal of chemical education
+T Key Business Ratios
+T Kirk-Othmer Encyclopedia of Chemical Technology
+T Knovel Online Books & Databases for Engineering and Sciences 
+T Koreanstudies Information Service System (Korean Knowledge Information Services)
+T L'Annee online
+T LAPOP - Latin American Public Opinion Project
+T The Los Angeles Theatre Works Collection
+T Latino Literature
+T Latinobarometro (Latino barometer)
+T Left Index
+Title LexisNexis
+T Library of Congress
+T LibraryLit
+T Linguistics & Language Behavior Abstracts
+T Literature Criticism Online
+T Literature Online
+T Literature Resource Center
+T Manchester Medieval Sources
+T MarciveWeb DOCS ( Monthly Catalog of U.S. Government Publications)
+T MarketResearch.com Academic
+T Marquis Who's Who
+T Materials Science
+T MathSciNet
+T Medline
+T Mergent Online
+T Mergent Web Reports (Mergent Corporate Manuals fka Moody's Manuals)
+T Merriam-Webstar's Collegiate Dictionary
+T Microbiology Abstracts
+T Million Dollar Database
+T Mint Global
+T Mintel Market Research Reports (Mintel Oxygen)
+T MLA Bibliography
+T Monthly Catalog
+T MorningStar
+T Multilingual Matters
+T Music Index
+T Musical America
+T National Science Teachers Association
+T National Technical Information Service (NTIS)
+T National Trade Data Bank (NTDB)
+T Naver News Library
+Title Naxos
+Title Naxos Video Library 
+T NBER
+Title NetLibrary
+T New York Review of Books, Archives
+T NIST/TRC Web Thermo Tables
+T NRC National Science Library
+T OCLC Bibliographic PURL Service
+T Opera in Video
+T Oxford African American Studies Center
+T Oxford English Dictionary
+Title Oxford Handbooks Online Political Science
+T Oxford Music Online
+T Oxford Reference Online
+T New Palgrave Dictionary of Economics Online
+Title Newsbank/Readex Databases
+T Newspaper Abstracts
+T Nikkei telecom 21
+T North American Women's Letters and Diaries
+T Orbis
+T Osiris
+T Ovid Online
+Title Ovid
+T Oxford Art Online
+T Oxford Companion to World Exploration
+T Oxford Dictionary of Byzantium
+T Oxford Dictionary of National Biography
+T Oxford Dictionary of the Renaissance
+T (Oxford) Black Women In America
+T (Oxford) Dictionary of American family names
+T Oxford classical dictionary
+T Oxford dictionary of the Christian church
+T (Oxford) Encyclopedia of Aesthetics
+T (Oxford) Encyclopedia of Semiotics
+T (Oxford) Encyclopedia of Social Work
+T (Oxford) Encyclopedia of the Dead Sea Scrolls
+T (Oxford) Grove encyclopedia of classical art and architecture
+T (Oxford) Grove encyclopedia of Islamic art & architecture
+T Oxford encyclopedia of British Literature
+T Oxford encyclopedia of rhetoric
+T Oxford Encyclopedia of American Literature
+T Oxford Encyclopedia of Ancient Egypt
+T Oxford Encyclopedia of Economic History
+T Oxford Encyclopedia of Food and Drink in America
+T (Oxford) Encyclopedia of Global Change
+T Oxford Encyclopedia of Latinos and Latinas in the United States
+T Oxford Encyclopedia of Mesoamerican Cultures
+T (Oxford) Encyclopedia of Rhetoric
+T (Oxford) Encyclopedia of the Enlightenment
+T (Oxford) Encyclopedia of the Middle Ages
+T Oxford Encyclopedia of the Modern World
+T Oxford Encyclopedia of the Reformation
+T Oxford Encyclopedia of Theatre and Performance
+T Oxford Encyclopedia of Women in World History
+T (Oxford) Grove Encyclopedia of Decorative Arts
+T (Oxford) International Encyclopedia of Dance
+T (Oxford) International Encyclopedia of Linguistics
+T Oxford English Dictionary
+Title (Oxford journal)Digital Scholarship in the Humanities
+T PAIS
+T Palmer's Index to the London Times
+T PaperFirst
+T Past Masters
+T Patrologia Latina
+T People's daily (Renmin Ribao)
+T Periodical Archive Online
+T Periodicals Contents Index
+T Periodicals Index Online
+T Philosophers Index
+T Plant Science
+T Political Risk Yearbook Online
+T Polling the Nations
+T Proceedings (ProceedingsFirst)
+T Proquest Congressional
+Title Proquest NAACP 2 & 3 Digital Archive
+T ProQuest Statistical DataSets
+T PsycCritiques
+Title PubMed
+T Radical Scatters: Emily Dickinson's Fragments and Related Texts, 1870-1886
+T RAND California
+T RCLweb - Resources for College Libraries
+T Readers Guide Abstracts
+T Reference Universe (Paratext)
+T Reference USA
+Title RefWorks
+T RILM - Repertoire International de Litterature Musicale
+T RIPM - Retrospective Index to Music Periodicals
+T RLIN
+T Roper Center
+Title iPOLL Databank [Roper Center]
+T Routledge Encyclopedia of Philosophy
+Title Routledge Handbooks Online
+Title Sage Video
+T Scifinder Scholar Web
+Title Social Explorer 
+Title CAS SciFinder
+T Science Magazine
+Title SciVerse ScienceDirect
+Title SciVerse Hub
+Title SciVerse ScienceDirect
+T Science News
+T International Encyclopedia of the Social & Behavioral Sciences
+T SimplyMap
+T Smithsonian Global Sound
+T Social Science Abstracts
+T Social Science Electronic Data Library (SSEDL)
+T Sociological Abstracts
+Title OECD iLibrary (formerly SourceOECD)
+T Soviet Cinema Online
+T SPIN Database
+T Standard & Poors Net Advantage (Industry Surveys & Stock Reports)
+T STAT-USA
+T Summon
+T Survey of Current Business
+T Synthesis Digital Library of Engineering and Computer Science
+T Theater in Video
+T Thesaurus Linguae Graecae (TLG)
+Title Thomson ONE
+T Times Higher Education
+T Times Literary Supplement
+T Toxicology Abstracts
+T Toxline
+T UIA Online Databases
+T Uncover (ingenta)
+T United Nations Treaty Collection
+T UNSTATS (United Nations Common Statistics)
+T Valueline Investment Survey Online
+T VentureXpert Web
+T Water Resources RouteNet
+T WestlawNext Campus Research
+Title Web of Knowledge 
+Title Researcher ID 
+Title Researcher ID
+T WilsonSelectPlus
+T Women and Social Movements in the United States
+T Women in The National Archives
+Title Women Writers Online
+T Women's Resources International
+T WorldCat
+T World Almanac
+T World Development Indicators
+T World Higher Education Database Online
+T World News Connection
+T World Shakespeare Bibliography Online
+T Worldwide Political Science Abstracts
+T Yearbook of International Organizations
+T CUC Phone forms site (test)
+T Libraries New Website
+T Libraries Staging Website
+T Blais
+T Libraries' gateway site
+T proxyonly
+T Luna (Pomona College)
+T Recommender (Ex Libris)
+T Serial Solutions Portal Page
+T 24/7
+T netLibrary
+T Oxford Scholarship Online
+T Serials Solutions A-Z list and Resolver windows
+T AAIDD Online Journals - American Journal on Intellectual and Developmental Disabilities
+T College and Research Libraries
+T College and Research Libraries news
+T RBM
+T Abstracts in Anthropology
+T Acta Scientiarum Mathematicarum
+T AICPA Journal of Accountancy
+T Akademiai Kiado
+T ALA TechSource
+T American Association of Cancer Research
+Title American Association of Physics Teachers
+T American Association of School Administrators
+Title Environmental Science & Technology
+T American Economic Association
+T American Geophysical Union
+T American Journal of Physiology
+T American Journal of Psychology (AJP)
+T American Journal of Public Health
+T American Journal of Science
+T American Journal on Mental Retardation
+T American Library Association
+T American Philological Association (APA Newsletter)
+T American Physiological Society
+T American Institute of Physics
+T American Meteorological Society
+T American Mathematical Society
+T The American Prospect
+T American Scientist Online
+T American Society of Civil Engineers
+T American Society of Plant Biologists
+T American Statistical Society
+T Ammons Scientific, Ltd. (Journals)
+T Annales Academiae Scientiarum Fennicae Mathematica
+T Annales de l'institut Fourier
+T Annali della Scuola Normale Superiore
+T Annals of Mathematics (Princeton)
+T Antiquity
+T ANZIAM Journal
+T Applied Spectroscopy
+T APSnews
+T American Physiological Society
+T American Society for Microbiology
+T American Society of Plant Biologists
+T Annual Reviews
+T ARCHIV - Archiv fur das Studium der neueren Sprachen und Literaturen
+T Archival outlook
+T Arms Control Today
+T ArzneimForsch/DrugRes
+T ASLO
+T ASME International
+T ASTM Journals
+T Astronomical Society of the Pacific
+T Berkeley Electronic Press Journals
+T Biochemical Society Transactions
+T Biological Psychiatry
+T BioOne
+T Black Collegian
+T Blackwell-Synergy
+T Brief Communications (The Journal of Neuroscience)
+T British journal of psychiatry
+T Bulletin of Hispanic Studies
+T Bulletins of American Paleontology
+T Canadian Journal of African Studies
+T Canadian Journal of Mathematics
+T The Canadian Mineralogist
+T CARL (California Academic Research Libraries) Newsletter
+T Center for diffusion of academic mathematical journals (CEDRAM)
+T Chosun Ilbo Archive
+T Clark University (journals)
+T Cold Spring Harbor Symposia on Quantitative Biology
+Title Cold Spring Harbor Protocols
+T College Art Association
+T Colloquia Germanica
+T CALICO
+T Cambridge Journals Online
+T Canadian Journal of Chemistry
+T Canadian Journal of Program Evaluation
+T Canadian Mathematical Society Journals
+T Catchword
+T Cell Biology International (journal)
+T Cell Press
+T CEP Magazine (Chemical Engineering Progress)
+T The Chemical Educator
+T Choice Reviews Online
+T Chronicle of Higher Education, The
+T Commentationes Mathematicae Universitatis Carolinae
+T Computing reviews
+T Corrosion
+T CORTEX
+T Critical Reviews in Biochemistry and Molecular Biology
+T CSIRO Publishing Journals
+T Cultural Survival Quarterly
+T Current History
+T Debreceni Egyetem, Matematikai Intezet
+T Dekker Online
+T Directory of Open Access Journals
+T Discovery Magazine
+T Dow Jones Interactive
+T Duke University Press Journals
+T EastView
+T Ebsco Online
+T Ecology (Durham)
+T Economic & Political Weekly (EPW)
+T EcoSal : Escherichia coli and Salmonella : cellular and molecular biology
+T Edinburgh University Press Journals
+T EDP Sciences
+T The Electrochemical Society
+T EMBO journal
+T EMBO reports
+T Emerald Full Text
+Title Encyclopedia Britannica
+T Endocrine Society Journals
+Title Endocrine Journal
+T L'Enseignement Mathematique
+T Ethnology
+T European Comic Art
+T European Mathematical Society Publishing House
+T European Physical Society
+Title Faculté de Théologie Protestante de Strasbourg
+T Far Eastern Economic Review
+T Fibonacci quarterly
+T Financial Analysts Journal
+Title FLM Publishing Assoc
+T For the Learning of Mathematics
+T Genes & Development
+T Genome Research
+T Geochemical Journal
+T Geoscience World 
+T Government Executive.com
+T Handbook of Birds of the World
+T Harvard Educational Review
+T Haworth Press Journals
+T HeinOnline
+T Herpetologists League
+T Highwire Press
+T Archives of General Psychiatry
+T Archives of Internal Medicine
+T Archives of Neurology
+T Hindawi Publishing
+T History Cooperative
+T History of Philosophy Quarterly (HPQ)
+T HortScience
+T Houston Journal of Mathematics
+T Human Kinetics
+T IEEE Explore
+T IEEE Proceedings Order Plan (POP)
+T IGI Full-Text Online Journal Collection
+T IMF (International Monetary Fund) Survey
+T IMF
+T Indiana University Mathematics Journal
+T Indonesia
+T Informa Pharmaceutical Science
+T informaworld
+T Informs Journals
+Title InfoSci-Books
+T Ingenta
+T ingenta select
+T Institute of Mathematics (Polish Academy of Sciences)
+T Institute of Physics Archives
+T Institute of Physics Journals
+T International Journal of the Sociology of Language
+T International Press Journals
+T JABA (Journal of Applied Behavior Analysis)
+T Jane's International Defense Review
+T Journal of Accountancy
+T Journal of Cell Biology
+T Journal of Chemical Education (JCE Online) Online
+T Journal of Computational Biology
+T Journal of Excercise and Sport Psychology
+T Journal of General Physiology (JGP)
+T Journal of Geoscience Education
+T Journal of geotechnical engineering
+T Journal of knot theory and its ramifications
+T Journal of Latino-Latin American studies
+T Journal of Music Theory
+T Journal of Learning Disabilities
+T Journal of Operator Theory
+T Journal of Philosophy Online
+T Journal of the National Cancer Institute
+T Journal of the West
+T Latino American Experience
+T Journal on Excellence in College Teaching
+Title JSTOR
+T Karger Online
+T Keesing's World News Archives
+T Kluwer Online Journals
+T Latin American weekly report - Latin American Newsletters
+T Lawrence Erlbaum Associates - LEA Online
+T LMS journal of computation and mathematics
+T MAKE Magazine
+T Management Science
+T Marine Ecology Progress Series
+Title Mary Ann Liebert
+T Mathematica Scandinavica
+T Mathematical Sciences Publishers
+T Mathematics of Operations Research
+T M.E. Sharpe Journals
+T Memoirs on differential equations and mathematical physics
+T Micropaleontology Press
+T Mineralogical Society of America
+T MIT Press Journals
+T MLA Journals: PMLA
+T Molecular Endocrinology
+T Monthly Review
+T National Academy of Sciences (U.S.)
+Title National Academies Press
+T National Association of Elementary School Principals (NAESP)
+T National Council of Teachers of English Journals
+T National Journal Online
+T National Science Teachers Assocation
+T National Tax Journal
+T NATO review
+T Nature Journals Online
+Title Naxos Video Library
+T Neuroendocrinology Letters
+T Neurology
+T Neuropsychoanalysis
+T New England Journal of Medicine
+Title New Day Digital
+T New Left Review
+T New Scientist
+T New Statesman
+Title Nikkei Telecom
+T Nineteenth-Century Art Worldwide
+T Nordic Sounds
+Title NUMDAM (Numérisation de Documents Anciens Mathématiques) 
+T Nuovo cimento della Societa italiana di fisica
+Title Online archive of California 
+T OPAC Newsbank
+T Open Access
+T Operators and matrices
+T Optical Society of America
+T Optics Infobase
+T Optics Letters
+T Pacific Journal of Mathematics
+T Palgrave Macmillan
+Title Palgrave Connect
+T Peeters Online Bibliographies
+T Peeters Online Journals
+T Philosophy Documentation Center
+T Phycologia - Journal of the International Phycological Society
+T Phytopathology
+T Plant biology (Stuttgart, Germany)
+T Plant science bulletin
+T Plunkett Research Online 
+T Portland Press Electronic Journals
+T Proceedings of the Yorkshire Geological Society
+T Project Euclid Journals
+T Project Muse
+T PROLA - Physical Review Online Archive
+T Psychosomatic Medicine
+T Psychonomic Society
+Title PsychiatryOnline
+Title Journals of American Psychiatric Publishing
+Title Publications of Department of Mathematics, Kobe University
+T PubMed Central
+T INFORMS PubOnLine
+T Renaissance Quarterly Online (Renaissance Society of America)
+T ResearchNow
+T Revista Iberoamericana
+T Rivista degli studi orientali
+T Revue d'Histoire et de Philosophie Religieuses
+T Rivista del Nuovo Cimento
+T Rocky Mountain Journal of Mathematics
+Title The Royal College of Psychiatrists
+T Royal Society of Chemistry
+Title Royal Society of New Zealand
+T Royal Society Publishing
+Title The Royal Society
+Title Sage Business Researcher
+T SAGE Publications
+Title Sage Publications
+T SIAM Journals Online
+T Single Journals
+Title Sixteenth Century Journal
+Title Societe Mathematique de France
+T Society for American Music (SAM) Bulletin
+T Society for General Microbiology
+Title SpringerLink
+T Synergy
+Title TAIR Arabidopsis Information Resource
+T Taylor and Francis Online
+T tce (The Chemical Engineer) magazine archive
+Title Teacher Reference Center
+T Teachers College Record
+T TELOS
+T Topology Proceedings
+T The Company of Biologists
+T The Geological Society
+T The Royal Society Publications
+T Times Educational Supplement ePaper
+T Times Higher Education Supplement
+T Turpion Journals
+T Ulrichsweb.com (Ulrich's Periodical Directory)
+Title UptoDate
+Title Universidad Autonoma del Estado de Mexico
+T University of Arizona Digital Commons
+T University of California Press
+Title American Indian Culture and Research Journal
+T University of Chicago Press
+Title University of Illinois at Urbana-Champaign
+T University of Illinois Press (*.press.illinois.edu)
+Title University of Pittsburgh Press
+T University of Virginia Press (Rotunda)
+T University of Wisconsin Press Journals Division (*.uwpress.org)
+Title University of Szeged, Hungary
+Title University Press Scholarship Online Philosophy
+Title usp-nf
+T Walter de Gruyter Journals
+T Wiley Interscience Journals
+T Wiley Online
+T Wisconsin Magazine of History (Wisconsin Historical Society)
+Title Women in The National Archives
+T World literature today
+T WorldSciNet (World Scientific Publishing)
+T WorldsciNetArchives
+T Zeitschrift fülysis und ihre Anwendungen
+T Zeitschrift fur Antikes Christentum
+T Zeitschrift fur deutsche Philologie
+T Zentralblatt füaktik der Mathematik
+T Chronicle of Higher Education, The
+T Discover Magazine
+T Financial Analysts Journal
+T science Books and Films
+T Studia Scientiarum Mathematicarum Hungarica 
+Title Acta Astronomica
+T Choice Reviews
+Title CQ Researcher
+T Nature Publishing Group
+Title Digital Collections at The Center for Research Libraries
+Title Topology Proceedings
+Title Mathematical Sciences Publishers
+T ABC-CLIO Databases and Ebooks
+Title Computing Reviews
+Title Earth Interactions
+Title APA PsycNET
+Title LLMC Digital
+Title Duncker & Humblot journals
+T Past Masters
+Title Oxford University Press
+Title The Eisenhower Papers
+Title DUXIU
+T WRDS
+Title Nikkei American Telecom 21
+T Encyclopedia of Mathematics and Society
+Title Statistical Datasets 
+Title International Journal of Number Theory
+T Paley iCollection
+Title Aestimatio
+Title Bibliography of English Women Writers
+T Testing Amigos
+Title Travel Writing, Spectacle and World History
+Title Literary Manuscripts Berg
+Title Routledge Performance Archive
+Title World of Learning
+T Journal of the Electrochemical Society 
+Title Hadyn
+T BMC BIOLOGY
+T Journal of Biology
+T Get It Now
+T Forum Italicum
+T Historia Mexicana
+T Revue des Etudes Latines
+Title        Illinois Journal of Mathematics
+Title Natural Standard
+Title Physiological Society
+Title -hide Micromedex URL http://www.micromedexsolutions.com/
+T Medicines Complete
+T TRACFed
+T EMBO Reports
+T JoVE Science Education
+T World News Connection
+T Pharmacy Library
+Title Met Opera On Demand
+Title LWW Health Library
+Title British History Online
+T ReadCube
+T Testing Naxos
+T Maney Online
+T LWW Health Library
+T Data Banks International
+Title Gale Trials
+T Alexander Street Press (CCL)
+Title Policy Map Trial
+Title Armed Conflict Database
+T Spanish in context
+T Studies in language
+Title English Historical Documents
+Title IMF eLibrary
+Title Sage Local Stats
+Title eDuke Books
+Title Profiles of California 
+Title ALA Techsource
+Title Black Short Fiction and Folkore
+Title Blake
+Title Burlington Magazine
+Title Proceedings of the Yorkshire Geological Society
+Title N+1 Journal
+Title IMF eLibrary 
+Title Brill Encyclopedia of Islam
+Title CQ Electronic Library through Sage Knowledge
+Title Eastview World News Connection
+Title Rheinisches Museum fu?r Philologie
+Title Revue d’histoire des Sciences
+Title Drug Facts and Comparisons
+Title Lexicomp 
+Title Asia Pacific Consensus Forecasts
+Title Synthesis Journal
+T Kanopy Videostreaming 
+Title ACLS Humanities E-Book 
+Title PhilPapers
+Title Earth
+Title SCOAP3
+Title Taylor and Francis e-books
+Title OLMS Online
+Title -hide Translated Texts for Historians
+Title Translated Texts for Historians
+Title -hide Metropolitan Opera on Demand
+Title Met Opera on Demand: Student Access 
+Title Medici.tv
+Title Digital Loeb Classical Library

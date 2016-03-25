@@ -16,6 +16,7 @@
 
 #Option ProxyByPort
 
+dbvar0 EBL
 Title EBL
 AllowVars u
 EncryptVar u astringyoupick
@@ -66,6 +67,7 @@ LogFilter *.swf*
 LogFilter *.ttf*
 LogFilter *.woff*
 
+dbvar0 CCL WorldCat Local
 Title CCL WorldCat Local
 URL http://ccl.worldcat.org
 DJ ccl.worldcat.org
@@ -76,6 +78,7 @@ Replace returnLocation = "https://^Accl.worldcat.org"
 Find sendLocation = scheme + location.HJname + (location.port != "" ? ":" + location.port : "")
 Replace sendLocation = "https://^sccl.worldcat.org^"
 
+dbvar0 CCL WorldCat Discovery
 Title CCL WorldCat Discovery
 URL http://ccl.on.worldcat.org
 HJ 5640.on.worldcat.org
@@ -87,30 +90,36 @@ Replace returnLocation = "https://^Accl.on.worldcat.org"
 Find sendLocation = scheme + location.HJname + (location.port != "" ? ":" + location.port : "")
 Replace sendLocation = "https://^sccl.on.worldcat.org^"
 
+dbvar0 -Hide WorldCat IDM and static content
 Title -Hide WorldCat IDM and static content
 URL http://worldcat.org
 HJ on.worldcat.org
 DJ worldcat.org
 
+dbvar0 AltaVista
 T AltaVista
 U http://us.altavista.com
 DJ altavista.com
 
+dbvar0 WhatIsMyIP
 T WhatIsMyIP
 U http://whatismyip.com
 DJ whatismyip.com
 
+dbvar0 -hide DOI System
 Title -hide DOI System
 URL http://dx.doi.org
 DJ doi.org
 
 # ************************ USER DEFINED DATABASES *************************************************
 
+dbvar0 PRISM with HAPI
 T PRISM with HAPI
 U https://www.proquest.com/trials/trialSummary.action?view=subject&trialBean.token=OC2BI53RUWNR3099SJMS
 
 HTTPHeader X-Requested-With
 HTTPHeader X-GWT-*
+dbvar0 Data Planet
 T Data Planet
 URL http://statisticaldatasets.data-planet.com/dataplanet 
 DJ data-planet.com
@@ -119,17 +128,20 @@ HJ data-planet.conquestsystems.com
 DJ data-planet.com
 DJ conquestsystems.com
 
+dbvar0 Early English Books Online
 T Early English Books Online
 U http://wwwlib.umi.com/eebo/
 DJ wwwlib.umi.com
 DJ eebo.chadwyck.com
 HJ eebo.chadwyck.com
 
+dbvar0 Chicano Database
 T Chicano Database
 U http://eureka.rlg.org/
 V ye.A68:34WEEDED
 D eureka.rlg.org
 
+dbvar0 AAPG/Datapages Archive
 T AAPG/Datapages Archive
 U http://search.datapages.com/
 DJ search.datapages.com
@@ -137,21 +149,25 @@ HJ search.datapages.com
 DJ www.searchanddiscovery.net
 HJ www.searchanddiscovery.net
 
+dbvar0 AATA Online
 T AATA Online
 U http://aata.getty.edu/
 DJ aata.getty.edu
 
+dbvar0 AccessScience
 T AccessScience
 U http://www.AccessScience.com/server-java/Arknoid/science/AS
 DJ AccessScience.com
 
 DJ beta.reviews.com
 
+dbvar0 Acta mathematica
 T Acta mathematica
 U http://www.actamathematica.org/fulltext.htm
 DJ www.actamathematica.org
 HJ www.actamathematica.org
 
+dbvar0 Acta scientiarum mathematicarum (Szeged)
 Title Acta scientiarum mathematicarum (Szeged)
 URL http://www.acta.hu/acta/home.action
 URL http://acta.fyx.hu/acta/showCustomerVolume.action?noDataSet=true
@@ -159,20 +175,24 @@ DJ hu
 HJ acta.fyx
 HJ www.acta
 
+dbvar0 Aeon
 Title Aeon
 URL https://claremont.aeon.atlas-sys.com/aeon/aeon.dll
 DJ atlas-sys.com
 HJ claremont.aeon.atlas-sys.com
 
 
+dbvar0 African American Newspapers: The 19th Century
 T African American Newspapers: The 19th Century
 U http://www.accessible.com/search/prdcls.asp
 D accessible.com
 
+dbvar0 AGRICOLA
 T AGRICOLA
 U http://newfirstsearch.oclc.org/FSIP?dbname=AGRICOLA
 D newfirstsearch.oclc.org
 
+dbvar0 Aids and Cancer Research Abstracts
 T Aids and Cancer Research Abstracts
 U http://www.csa3.com/htbin/dbrng.cgi?username=chr16&access=chr1616&cat=aidscan
 D csa3.com
@@ -186,32 +206,38 @@ D uk2.csa.com
 D uk1.csa.com
 
 # Oldenbourg Wissenschaftsverlag  
+dbvar0 Philologus
 T Philologus
 U http://www.oldenbourg-link.com/toc/phil/current
 DJ oldenbourg-link.com
 DJ oldenbourg.de
 HJ www.oldenbourg.de
 
+dbvar0 American Board Pamphlet Collection
 T American Board Pamphlet Collection
 U http://www.dlir.org/archive/orc-exhibit/items/show/collection/6/id/1124
 HJ www.dlir.org
 HJ dlir.org
 DJ dlir.org
 
+dbvar0 American Humanities Index
 T American Humanities Index
 U http://www.whitston.com/AHI_index/login.cfm
 D whitston.com
 
+dbvar0 American Library Association 
 T American Library Association 
 U http://www.ala.org/
 HJ wikis.ala.org
 DJ www.ala.org
 
+dbvar0 American Meteorological Society
 Title American Meteorological Society
 URL http://www.ametsoc.org/
 DJ ametsoc.or
 HJ www.ametsoc.or
 
+dbvar0 American Mosaic
 T American Mosaic
 U http://www.greenwood.com/mosaic/
 DJ aae.greenwood.com
@@ -219,14 +245,17 @@ DJ gemcas.greenwood.com
 DJ lae.greenwood.com
 DJ www.greenwood.com
 
+dbvar0 American Musicological Society
 T American Musicological Society
 U http://www.ams-net.org/
 DJ www.ams-net.org
 
+dbvar0 American National Biography
 T American National Biography
 U http://www.anb.org
 D anb.org
 
+dbvar0 American Society for Microbiology
 T American Society for Microbiology
 URL http://www.journals.asm.org/
 HJ www.journals.asm.org
@@ -253,18 +282,22 @@ DJ microbemagazine.org
 DJ sfu.ca
 DJ asmscience.org
 
+dbvar0 Ancestry Library
 Title Ancestry Library
 URL http://ancestrylibrary.proquest.com
 NeverProxy www.ancestrylibrary.com
 
+dbvar0 Anthropological Literature
 T Anthropological Literature
 U http://autoweb.rlg.org/cgi-bin/webscr/ccox/ewebyeh17.scr
 DJ autoweb.rlg.org
 
+dbvar0 AnthroSource
 T AnthroSource
 U http://www.anthrosource.net
 DJ www.anthrosource.net
 
+dbvar0 AP Images
 Title AP Images
 URL http://apimages.ap.org/unsecured/logip.aspx
 DJ ap.org
@@ -273,10 +306,12 @@ DJ apimages.com
 HJ apimages.ap.org
 HJ apimages.org
 
+dbvar0 Applied Science and Technology Index (ASTA)
 T Applied Science and Technology Index (ASTA)
 U http://newfirstsearch.oclc.org/FSIP?dbname=ASTA
 D newfirstsearch.oclc.org
 
+dbvar0 Aquatic Sciences
 T Aquatic Sciences
 U http://www.csa3.com/htbin/dbrng.cgi?username=chr16&access=chr1616&cat=aquatic
 D md.csa.com
@@ -287,44 +322,53 @@ D uk2.csa.com
 D uk1.csa.com
 D www.csa3.com
 
+dbvar0 Arab World Geographer
 T Arab World Geographer
 U http://arabworldgeographer.org/
 HJ arabworldgeographer.org
 HJ www.arabworldgeographer.org
 DJ arabworldgeographer.org
 
+dbvar0 ArchiveGrid
 T ArchiveGrid
 U http://www.archivegrid.org/
 DJ www.archivegrid.org
 
+dbvar0 The ARTFL Project
 T The ARTFL Project
 U http://artfl-project.uchicago.edu
 DJ artfl-project.uchicago.edu
 DJ artflx.uchicago.edu
 
+dbvar0 Art Full Text
 T Art Full Text
 U http://hwwilsonweb.com
 D hwwilsonweb.com
 DJ vnweb.hwwilsonweb.com
 HJ vnweb.hwwilsonweb.com
 
+dbvar0 Art Index Retrospective
 T Art Index Retrospective
 U http://wilsonweb2.hwwilson.com/autologin
 D wilsonweb2.hwwilson.com
 
+dbvar0 ARTbibliographies Modern
 T ARTbibliographies Modern
 U http://www.csa3.com/htbin/dbrng.cgi?username=chr16&access=chr1616&cat=artbm
 D csa3.com
 
+dbvar0 Arts and Humanities Search
 T Arts and Humanities Search
 U http://newfirstsearch.oclc.org/FSIP?dbname=AHSearch
 D newFirstsearch.oclc.org
 
+dbvar0 Journal of Clinical Oncology
 Title Journal of Clinical Oncology
 URL http://jco.ascopubs.org/
 DJ ascopubs.org
 HJ jco.ascopubs.org
 
+dbvar0 Association for Information Systems
 Title Association for Information Systems
 URL http://aisel.aisnet.org
 HJ aisel.aisnet.org
@@ -336,6 +380,7 @@ HJ start.aisnet.org
 HJ history.aisnet.org
 
 
+dbvar0 ATLA Religion
 T ATLA Religion
 U http://newFirstsearch.oclc.org/FSIP?dbname=ATLAReligion
 D oclc.org
@@ -348,62 +393,76 @@ H newfirstsearch.oclc.org
 H FIRstsearch.oclc.org
 H 66.77.30.29
 
+dbvar0 Avery Index to Architectural Periodicals
 T Avery Index to Architectural Periodicals
 U http://autoweb.rlg.org/cgi-bin/webscr/ccox/ewebyeh18.scr
 DJ autoweb.rlg.org
 
+dbvar0 BankScope
 T BankScope
 U http://bankscope.bvdep.com/ip
 DJ bankscope.bvdep.com
 
+dbvar0 BasicBIOSIS
 T BasicBIOSIS
 U http://newfirstsearch.oclc.org/FSIP?dbname=BasicBIOSIS
 D newfirstsearch.oclc.org
 
+dbvar0 Bibliography of Asian Studies
 T Bibliography of Asian Studies
 U http://bmc.lib.umich.edu/bas
 D bmc.lib.umich.edu
 
+dbvar0 Bibliography of British and Irish History
 Title Bibliography of British and Irish History
 URL http://www.history.ac.uk/projects/bbih
 DJ history.ac.uk
 HJ www.history.ac.uk
 # trial 10/31/2014
 
+dbvar0 Bibliography of British and Irish History
 Title Bibliography of British and Irish History
 URL http://apps.brepolis.net/LTool/Entrance.aspx?w=19
 DJ brepolis.net
 HJ www.brepolis.net
 HJ apps.brepolis.net
 
+dbvar0 Biography Index
 T Biography Index
 U http://newfirstsearch.oclc.org/FSIP?dbname=BiographyInd
 D newfirstsearch.oclc.org
 
+dbvar0 Biological Sciences
 T Biological Sciences
 U http://www.csa3.com/htbin/dbrng.cgi?username=chr16&access=chr1616&cat=medbisci
 D csa3.com
 
+dbvar0 Biology Digest
 T Biology Digest
 U http://www.csa3.com/htbin/dbrng.cgi?username=chr16&access=chr1616&cat=biodiges
 D csa3.com
 
+dbvar0 Biotechnology & Bioengineering Abstracts
 T Biotechnology & Bioengineering Abstracts
 U http://www.csa3.com/htbin/dbrng.cgi?username=chr16&access=chr1616&cat=biotbioe
 D csa3.com
 
+dbvar0 Birds of North America Online
 T Birds of North America Online
 U http://bna.birds.cornell.edu/BNA/
 DJ bna.birds.cornell.edu
 
+dbvar0 Book Review Digest
 T Book Review Digest
 U http://newfirstsearch.oclc.org/FSIP?dbname=BookReview
 D newfirstsearch.oclc.org
 
+dbvar0 Books in Print
 T Books in Print
 U http://newfirstsearch.oclc.org/FSIP?dbname=BooksInPrint
 D newfirstsearch.oclc.org
 
+dbvar0 Business & Company Resource Center
 T Business & Company Resource Center
 U http://infotrac.galegroup.com/itweb/claremont_main
 DJ infotrac.galegroup.com
@@ -435,15 +494,18 @@ HJ www.infotrac-custom.com
 HJ tinygaleurl.com
 Cookie GALE_AUTH=Version%3A2%0DUser_ID%3Aclaremont_main%0DUser_Title%3AClaremont+College+Library%0DCustomer_ID%3Aclarec%0DCustomer_Title%3AClaremont+College%0DCountry%3AUS%0DRegion%3ACA%0DSession_ID%3A1096775762w123347%0DExpires%3A20041004035602+GMT%0DLaunch_Config%3Asys_default%0DLaunch_DJ%3Agalegroup.com%0DAuth_Server%3Ahttp%3A%2F%2Finfotrac.galegroup.com%2Fitweb%2Fclaremont_main%0DMenu_Server%3Ahttp%3A%2F%2Finfotrac.galegroup.com%2Fmenu%0DUI_Preference%3Aitweb%0DLang_ID%3A1%0DAuth_Type%3Aip%0DClient_Addr%3A134.173.132.187%0DGHbP7QQxU9f%2FSXlYuW5u6A%3D%3D; DJ=.galegroup.com
 
+dbvar0 Business and Management Practices
 T Business and Management Practices
 U http://newfirstsearch.oclc.org/FSIP?dbname=BusManagement
 D newfirstsearch.oclc.org
 
+dbvar0 Cambridge Scientific Abstracts
 T Cambridge Scientific Abstracts
 U http://www.csa3.com/htbin/dbrng.cgi?username=chr16&access=chr1616&cat=
 D csa3.com
 DJ ca2.csa.com
 
+dbvar0 Caribbean Literature
 T Caribbean Literature
 U http://cali.alexanderstreet.com/
 DJ alexanderstreet.com
@@ -453,11 +515,13 @@ HJ bart.alexanderstreet.com
 
 
 ##added to test ability to embed login and password data
+dbvar0 CensusCD
 Title CensusCD
 URL -Form=post CensusCD http://demographics.geolytics.com/NCDB/PreLoginForm.aspx
 FormVariable LoginCtl:UserIdBox=ruthschooley
 FormVariable LoginCtl:PasswordBox=claremont
 
+dbvar0 Catalog of U.S. Government Publications
 T Catalog of U.S. Government Publications
 U http://catalog.gpo.gov/
 DJ gpo.gov
@@ -465,46 +529,55 @@ HJ catalog.gpo.gov
 HJ www.gpo.gov
 
 
+dbvar0 Center for Research Libraries, e-collections at the
 T Center for Research Libraries, e-collections at the
 U http://ecollections.crl.edu/u?/hunters,17165
 DJ ecollections.crl.edu
 
+dbvar0 Center for Research Libraries Online Document Delivery Service
 T Center for Research Libraries Online Document Delivery Service
 U http://dds.crl.edu/
 DJ calalog.crl.edu
 DJ dds.crl.edu
 HJ www.crl.edu
 
+dbvar0 CCH Tax Research Network
 T CCH Tax Research Network
 U http://tax.cchgroup.com/ipnetwork
 DJ tax.cchgroup.com/ipnetwork
 
+dbvar0 C.H. Beck
 Title C.H. Beck
 URL http://elibrary.chbeck.de
 HJ elibrary.chbeck.de
 HJ www.chbeck.de
 DJ chbeck.de
 
+dbvar0 Charleston Advisor
 Title Charleston Advisor
 URL http://charleston.publisher.ingentaconnect.com/content/charleston/chadv/
 DJ ingentaconnect.com
 HJ charleston.publisher.ingentaconnect.com
 
+dbvar0 Chemical & Engineering News
 Title Chemical & Engineering News
 URL http://cen.acs.org/magazine.html
 DJ acs.org
 HJ cen.acs.org
 
+dbvar0 Chicago Manual of Style
 T Chicago Manual of Style
 U http://www.chicagomanualofstyle.org/16/contents.html
 HJ www.chicagomanualofstyle.org
 HJ login.chicagomanualofstyle.org
 DJ chicagomanualofstyle.org
 
+dbvar0 Child Abuse and Neglect Database
 T Child Abuse and Neglect Database
 U http://www.nisc.com/scripts/login.dll?BiblioLine
 DJ nisc.com
 
+dbvar0 China Academic Journals Full-text Database
 T China Academic Journals Full-text Database
 U http://china.eastview.com/
 DJ eastview.com
@@ -516,23 +589,28 @@ HJ chinanew.eastview.com
 DJ cnki.net
 
 
+dbvar0 Chinamaxx and Duxiu
 Title Chinamaxx and Duxiu
 URL http://www.chinamaxx.net
 DJ chinamaxx.net
 
+dbvar0 China Data Center
 T China Data Center
 U http://chinadataonline.org/
 DJ chinadataonline.org
 
+dbvar0 Chosun Ilbo
 T Chosun Ilbo
 U http://archive.chosun.com
 D archive.chosun.com
 
+dbvar0 Clements Encyclopedia of World Governments
 T Clements Encyclopedia of World Governments
 U http://www.politicalresearch.com/protect/index.cfm?fuseaction=services
 DJ www.politicalresearch.com
 HJ www.politicalresearch.com
 
+dbvar0 Colloquia Germanica
 T Colloquia Germanica
 u http://www.narr.de/
 HJ www.narr.de
@@ -540,10 +618,12 @@ HJ periodicals.narr.de
 DJ narr.de
 
 
+dbvar0 Columbia Gazetteer of the World
 T Columbia Gazetteer of the World
 U http://www.columbiagazetteer.org/
 D columbiagazetteer.org
 
+dbvar0 Columbia International Affairs Online
 T Columbia International Affairs Online
 U http://www.ciaonet.org/
 H https://www.ciaonet.org
@@ -553,62 +633,75 @@ DJ usearch.cc.columbia.edu
 DJ 128.59.59.214
 DJ 128.59.59.26
 
+dbvar0 Communications of the Association for Information Systems
 T Communications of the Association for Information Systems
 U http://cais.isworld.org
 HJ aisel.aisnet.org
 HJ cais.aisnet.org
 HJ cais.isworld.org
 
+dbvar0 Computer Database
 T Computer Database
 U http://infotrac.galegroup.com/itweb/claremont_main?db=CDB
 D www.infotrac.galegroup.com
 
+dbvar0 Computer Literature Index
 T Computer Literature Index
 U http://www.clisearch.com
 D clisearch.com
 
+dbvar0 Computer Technology
 T Computer Technology
 U http://www.csa3.com/htbin/dbrng.cgi?username=chr16&access=chr1616&cat=computer
 D csa3.com
 
+dbvar0 Conference Papers Index
 T Conference Papers Index
 U http://www.csa3.com/htbin/dbrng.cgi?username=chr16&access=chr1616&cat=cpindex
 D csa3.com
 
+dbvar0 Contemporary Women's Issues
 T Contemporary Women's Issues
 U http://newfirstsearch.oclc.org/FSIP?dbname=CWI
 D newfirstsearch.oclc.org
 
+dbvar0 CountryData, PRS Group
 Title CountryData, PRS Group
 URL https://epub.prsgroup.com/customer/accessible 
 DJ prsgroup.com
 HJ epub.prsgroup.com
 
+dbvar0 Correlates of war 2
 T Correlates of war 2
 U http://cow2.la.psu.edu/
 D http://cow2.la.psu.edu/
 
+dbvar0 Credo Reference
 T Credo Reference
 U http://www.credoreference.com/
 HJ literati.credoreference.com
 DJ credoreference.com
 HJ search.credoreference.com
 
+dbvar0 Current Index to Statistics
 T Current Index to Statistics
 U http://www.statindex.org/CIS/psqlQuery/
 DJ query.statindex.org
 HJ query.statindex.org
 
+dbvar0 Current Research @ (UMI Dissertations Library)
 T Current Research @ (UMI Dissertations Library)
 U http://wwwlib.umi.com/cr/claremont/main/
 U http://gradworks.umi.com/
 DJ wwwlib.umi.com
 DJ gradworks.umi.com
 
+dbvar0 Current World Information Knowledgebase
 T Current World Information Knowledgebase
 U http://www.cwik.com/cwik/db/default.asp
 HJ www.cwik.com
 
+dbvar0 Dance in Video
 T Dance in Video
 U http://daiv.alexanderstreet.com/search
 DJ daiv.alexanderstreet.com
@@ -616,6 +709,7 @@ DJ daiv.alexanderstreet.com
 NeverProxy www.dramonline.org
 NeverProxy login.dramonline.org
 NeverProxy media.dramonline.org
+dbvar0 DRAMOnline
 Title DRAMOnline
 URL http://proxy.dramonline.org
 #
@@ -623,6 +717,7 @@ URL http://proxy.dramonline.org
 # #################
 
 
+dbvar0 Defining Gender, 1450 - 1910
 T Defining Gender, 1450 - 1910
 U http://www.amponline.co.uk/gender-ip/
 U http://www.gender.amdigital.co.uk/index.aspx
@@ -632,38 +727,46 @@ HJ www.gender.amdigital.co.uk
 # DJ changed 2007-10-02 to www.gender.amdigital.co.uk
 # -jameso
 
+dbvar0 Digital National Security Archive
 Title Digital National Security Archive
 U http://nsarchive.chadwyck.com/
 D nsarchive.chadwyck.com
 
+dbvar0 Digital Sanborn Maps for California (1867-1970)
 T Digital Sanborn Maps for California (1867-1970)
 U http://sanborn.umi.com/
 HJ sanborn.umi.com
 
+dbvar0 Digitalia
 Title Digitalia
 URL http://www.digitaliafilmlibrary.com
 D digitaliafilmlibrary.com
 H www.digitaliafilmlibrary.com
 
+dbvar0 Dissertation Abstracts
 T Dissertation Abstracts
 U http://newfirstsearch.oclc.org/FSIP?dbname=Dissertations
 D newfirstsearch.oclc.org
 
+dbvar0 Donga Ilbo
 T Donga Ilbo
 U http://www.donga.com/pdf/archive/
 D www.donga.com
 
+dbvar0 Dow Jones
 T Dow Jones
 U http://www.djinteractive.com/cgi-bin/NewsRetrieval?cgi=WEB_FLAT_PAGE&page=wrapper/index&amp;NRAUTOLOG=01RaHKmp6sm9BZJljF9640HNNrmKJ5mQAA
 DJ djinteractive.com
 
 # Testing to see if Dyabola will work via ezproxy.
+dbvar0 Dyabola
 T Dyabola
 URL http://www.dyabola.de/en/indexfrm.htm?page=http://www.db.dyabola.de/dyabola3/start_en.htm
 HJ www.dyabola.de
 HJ www.db.dyabola.de
 DJ dyabola.de
 
+dbvar0 ebrary
 T ebrary
 U http://site.ebrary.com/lib/claremont
 DJ site.ebrary.com
@@ -681,6 +784,7 @@ HJ www.ebrary.com
 #DJ search.epnet.com
 #DJ www.psycinfo.com
 
+dbvar0 ebscohost
 Title ebscohost
 URL http://search.ebscohost.com/
 DJ ebscohost.com
@@ -708,15 +812,18 @@ Replace proxy.cfm?url=http://^A
 Find /login?url=http://
 Replace /login?url=http://^A
 
+dbvar0 EBSCO EJS
 Title EBSCO EJS
 URL http://ejournals.ebsco.com
 DJ ebsco.com
 
+dbvar0 Econlit
 T Econlit
 U http://newfirstsearch.oclc.org/FSIP?dbname=EconLit
 D newfirstsearch.oclc.org
 
 OPTION REDIRECTPATCH
+dbvar0 E*Subscribe
 T E*Subscribe
 U http://www.edrs.com/Logon.cfm
 DJ edrs.com
@@ -729,26 +836,31 @@ H www.edrs.com
 H edrs.com
 OPTION NOREDIRECTPATCH
 
+dbvar0 Economic and Political Weekly
 Title Economic and Political Weekly
 URL http://www.epw.org.in
 HJ epw.org.in
 DJ www.epw.org.in
 
 
+dbvar0 Editions & Adaptaions of Shakespeare
 T Editions & Adaptaions of Shakespeare
 U http://collections.chadwyck.com/eas/htxview?template=basic.htx&content=frameset.htx
 D collections.chadwyck.com
 
+dbvar0 Education Full Text
 T Education Full Text
 U http://hwwilsonweb.com
 D hwwilsonweb.com
 
+dbvar0 Education week
 Title Education week
 URL http://www.edweek.org
 DJ edweek.org
 HJ www.edweek.org
 
 
+dbvar0 eHRAF 
 Title eHRAF 
 URL http://ehrafworldcultures.yale.edu/
 DJ yale.edu
@@ -756,14 +868,17 @@ HJ hraf01.its.yale.edu
 HJ 132.130.52.51
 HJ ehrafworldcultures-beta.its.yale.edu
 
+dbvar0 Eighteenth Century Journals
 T Eighteenth Century Journals
 U http://www.18thcjournals.amdigital.co.uk/
 DJ www.18thcjournals.amdigital.co.uk
 
+dbvar0 Electronic Enlightenment 
 T Electronic Enlightenment 
 U http://www.e-enlightenment.com/
 DJ e-enlightenment.com
 
+dbvar0 Encyclopedia Americana Online
 T Encyclopedia Americana Online
 #U http://ea.grolier.com/
 #DJ ea.grolier.com
@@ -776,6 +891,7 @@ T Encyclopedia Americana Online
 #HJ go.grolier.com
 #HJ grolier.com
 #HJ gme2.grolier.com
+dbvar0 Grolier Online
 Title Grolier Online
 URL http://go.grolier.com/
 DJ grolier.com
@@ -788,6 +904,7 @@ Replace "/", "^l", null
 Find DJ=.grolier.com
 Replace DJ=^l
 
+dbvar0 Encyclopedia of astronomy and astrophysics
 T Encyclopedia of astronomy and astrophysics
 U http://www.ency-astro.com
 DJ http://www.ency-astro.com
@@ -797,6 +914,7 @@ HJ eaa.iop.org
 # Encyclopedia of Global Change
 # SEE Oxford Encyclopedia of Global Change
 
+dbvar0 Encyclopedia of Life Sciences
 T Encyclopedia of Life Sciences
 U http://www.els.net/
 D els.net
@@ -804,53 +922,64 @@ D els.net
 # Encyclopedia of Rhetoric
 # SEE (Oxford) Encyclopedia of Rhetoric
 
+dbvar0 Engineering Village 
 T Engineering Village 
 U http://www.ei.org/ev2/home
 D ei.org
 HJ www.engineeringvillage2.org
 
+dbvar0 Engineering Specialties
 T Engineering Specialties
 U http://www.csa3.com/htbin/dbrng.cgi?username=chr16&access=chr1616&cat=engineers
 D csa3.com
 
+dbvar0 English Short Title Catalog
 T English Short Title Catalog
 U http://ovid.claremont.edu/cgi-bin/ourcustval?urke
 U http://estc.bl.uk/
 D ovid.claremont.edu
 DJ estc.bl.uk
 
+dbvar0 Environmental RouteNet
 T Environmental RouteNet
 U http://www.csa.com/htbin/rnauth.cgi?un=chr16&ac=chr1616&amp;fn=ernhome.html
 D csa3.com
 
+dbvar0 Environmental Sciences
 T Environmental Sciences
 U http://www.csa3.com/htbin/dbrng.cgi?username=chr16&access=chr1616&cat=environment
 D csa3.com
 
+dbvar0 Environmental Sciences & Pollution Management
 T Environmental Sciences & Pollution Management
 U http://www.csa3.com/htbin/dbrng.cgi?username=chr16&access=chr1616&cat=espm
 D csa3.com
 
 
+dbvar0 Eric
 T Eric
 U http://www.csa3.com/htbin/dbrng.cgi?username=chr16&access=chr1616&cat=eric
 DJ csa3.com
 DJ www.eric.ed.gov
 HJ www.eric.ed.gov
 
+dbvar0 Europa World Plus
 T Europa World Plus
 U http://www.europaworld.com/
 DJ www.europaworld.com
 
+dbvar0 European Views of the Americas: 1493-1750
 T European Views of the Americas: 1493-1750
 U http://www.europeanamericana.com
 DJ www.europeanamericana.com 
 
+dbvar0 Everyday Life & Women in America, c.1800-1920 
 T Everyday Life & Women in America, c.1800-1920 
 U http://www.everydaylife.amdigital.co.uk/index.aspx
 D www.everydaylife.amdigital.co.uk
 D secure.amdigital.co.uk
 
+dbvar0 Factiva
 T Factiva
 # U http://global.factiva.com/en/sess/login.asp?xsid=S00Ysn73WvyMTZyMTAoNp2nNDIsMt
 # mm5DFHY96oYqZlNFFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFB
@@ -869,33 +998,40 @@ Find name="targetsite" value="http://
 Replace name="targetsite" value="http://^A
 # end Factiva config
 
+dbvar0 FactSearch
 T FactSearch
 U http://newfirstsearch.oclc.org/FSIP?dbname=FactSearch
 D newfirstsearch.oclc.org
 
+dbvar0 Faculty of 1000 Biology
 T Faculty of 1000 Biology
 U http://www.f1000biology.com/browse/
 DJ www.f1000biology.com
 
+dbvar0 Families in society
 Title Families in society
 URL http://familiesinsocietyjournal.org/
 DJ familiesinsocietyjournal.org
 HJ familiesinsocietyjournal.org
 
 
+dbvar0 Faulkner's Advisory for IT Studies (FAITS)
 T Faulkner's Advisory for IT Studies (FAITS)
 U http://www.faulkner.com/products/faulknerlibrary/
 DJ www.faulkner.com
 HJ www.faulkner.com
 
+dbvar0 FirstSearch
 T FirstSearch
 U http://newfirstsearch.oclc.org/FSIP
 D newfirstsearch.oclc.org
 
+dbvar0 FIS Online
 T FIS Online
 U http://www.fisonline.com/top_b1.htm
 D fisonline.
 
+dbvar0 Frost and Sullivan trial
 Title Frost and Sullivan trial
 URL http://www.frost.com/reg/my-account.do 
 DJ frost.com
@@ -903,46 +1039,56 @@ HJ www.frost.com
 
 # result of serial-reconciler.pl jkline 2005-11-17
 # issn 0532-8721
+dbvar0 Funkcialaj ekvacioj
 T Funkcialaj ekvacioj
 U http://www.jstage.jst.go.jp/browse/fesi/_vols
 DJ www.jstage.jst.go.jp
 HJ www.jstage.jst.go.jp
 
+dbvar0 Gallup Brain
 T Gallup Brain
 U http://institution.gallup.com
 DJ institution.gallup.com
 
+dbvar0 Garland Encyclopedia of World Music Online
 T Garland Encyclopedia of World Music Online
 U http://glnd.alexanderstreet.com/
 DJ glnd.alexanderstreet.com
 
+dbvar0 General Business File
 T General Business File
 U http://infotrac.galegroup.com/itweb/claremont_main?db=GBFM
 D www.infotrac.galegroup.com
 
+dbvar0 General Science Abstracts
 T General Science Abstracts
 U http://newfirstsearch.oclc.org/FSIP?dbname=GenSciAbs
 D newfirstsearch.oclc.org
 
+dbvar0 Genome Research
 T Genome Research
 U http://www.genome.org
 DJ www.genome.org
 HJ www.genome.org
 
+dbvar0 Geolytics
 Title Geolytics
 URL http://demographics.geolytics.com
 DJ geolytics.com
 HJ demographics.geolytics.com
 
 
+dbvar0 GeoRefs
 T GeoRefs
 U http://newfirstsearch.oclc.org/FSIP?dbname=GeoRefS
 D newfirstsearch.oclc.org
 
+dbvar0 Gerritsen Collection
 T Gerritsen Collection
 U http://gerritsen.chadwyck.com
 HJ gerritsen.chadwyck.com
 
+dbvar0 Global Financial Data
 T Global Financial Data
 U https://www.globalfinancialdata.com/
 HJ globalfinancialdata.com
@@ -952,6 +1098,7 @@ HJ www.globalfinancialdata.com
 #U http://www.google.com
 #DJ www.google.com
 
+dbvar0 Google Scholar
 T Google Scholar
 U https://scholar.google.com/
 HJ http://scholar.google.com
@@ -980,73 +1127,87 @@ DJ sb.google.com
 # U http://www.groveart.com/shared/views/home.html
 # D groveart.com
 
+dbvar0 Handbook of Chemistry and Physics
 T Handbook of Chemistry and Physics
 U http://www.hbcpnetbase.com
 DJ www.hbcpnetbase.com
 
+dbvar0 Handbook of Latin American Studies
 T Handbook of Latin American Studies
 U http://autoweb.rlg.org/cgi-bin/webscr/ccox/ewebyeh20.scr
 DJ autoweb.rlg.org
 
+dbvar0 HAPI: Hispanic American Periodicals Index
 T HAPI: Hispanic American Periodicals Index
 U http://hapi.ucla.edu
 U http://hapi.gseis.ucla.edu
 DJ hapi.ucla.edu
 D hapi.gseis.ucla.edu
 
+dbvar0 HarpWeek: 1857-1872, Civil War Years and Early Reconstruction
 T HarpWeek: 1857-1872, Civil War Years and Early Reconstruction
 U http://app.harpweek.com
 D app.harpweek.com
 D etext.virginia.edu
 
+dbvar0 Historical Abstracts
 T Historical Abstracts
 U http://serials.abc-clio.com/active/start?_appname=serials&initialdb=HA
 DJ serials.abc-clio.com
 DJ www.abc-clio.com
 DJ sb2.abc-clio.com
 
+dbvar0 Historical Statistics of the United States
 T Historical Statistics of the United States
 U http://hsus.cambridge.org/
 DJ hsus.cambridge.org
 HJ hsus.cambridge.org
 
+dbvar0 History of Science and Technology
 T History of Science and Technology
 U http://autoweb.rlg.org/cgi-bin/webscr/ccox/ewebyeh21.scr
 DJ autoweb.rlg.org
 
+dbvar0 Mergent Hoovers 
 T Mergent Hoovers 
 URL http://www.mergentonline.com/hoovers
 DJ hoovers.com
 HJ premium.hoovers.com
 HJ subscriber.hoovers.com 
 
+dbvar0 Humanities Abstracts
 T Humanities Abstracts
 U http://newfirstsearch.oclc.org/FSIP?dbname=HumanitiesAbs
 D newfirstsearch.oclc.org
 
+dbvar0 ICPSR
 T ICPSR
 U http://www.icpsr.umich.edu/index.html
 DJ www.icpsr.umich.edu
 HJ webapp.icpsr.umich.edu
 
+dbvar0 Idea Group Inc.
 T Idea Group Inc.
 U http://www.igi-online.com/
 HJ www.igi-online.com
 HJ reference.igi-online.com
 HJ journals.igi-online.com
 
+dbvar0 IFAR 
 Title IFAR 
 URL http://www.ifar.org/art_law.php
 DJ ifar.org
 HJ www.ifar.org
 
 
+dbvar0 IndiaStat
 Title IndiaStat
 URL http://www.indiastat.com
 DJ indiastat.com
 Find window.location.href=deltaNode.content
 Replace window.location.href=deltaNode.content.replace(/www.indiastat.com/, '^pwww.indiastat.com^')
  
+dbvar0 Index to Legal Periodicals
 T Index to Legal Periodicals
 U http://newfirstsearch.oclc.org/FSIP?dbname=LegalPeriodical
 D newfirstsearch.oclc.org
@@ -1057,12 +1218,14 @@ D newfirstsearch.oclc.org
 # U http://newfirstsearch.oclc.org/FSIP?dbname=Inspec
 # D newfirstsearch.oclc.org
 
+dbvar0 Indiastat
 Title Indiastat
 URL http://www.indiastat.com
 DJ indiastat.com
 HJ www.indiastat.com
 
 
+dbvar0 International Country Risk Guide
 T International Country Risk Guide
 U http://www.icrgonline.com
 DJ www.icrgonline.com
@@ -1071,10 +1234,12 @@ DJ icrgonline.com
 # International Encyclopedia of Linguistics
 # SEE (Oxford) International Encyclopedia of Linguistics
 
+dbvar0 International Encyclopedia of Revolution and Protest 
 T International Encyclopedia of Revolution and Protest 
 U http://www.revolutionprotestencyclopedia.com/
 DJ www.revolutionprotestencyclopedia.com
 
+dbvar0 International Financial Statistics
 T International Financial Statistics
 U http://www.imfstatistics.org/
 DJ www.imfstatistics.org
@@ -1090,6 +1255,7 @@ DJ www2.imfstatistics.org
 #U http://iipaft.chadwyck.com
 #DJ iipaft.chadwyck.com
 
+dbvar0 BREPOLiS
 T BREPOLiS
 URL http://apps.brepolis.net/LTool/Entrance.aspx?w=1
 HJ brepolis.net
@@ -1101,16 +1267,19 @@ DJ www.brepolis.net
 DJ clt.brepolis.net
 DJ apps.brepolis.net
 
+dbvar0 IPA Source
 T IPA Source
 U http://www.ipasource.com/
 DJ ipasource.com
 
 # result of serial-reconciler.pl jkline 2005-11-17
 # issn 1092-8987
+dbvar0 Issues in ecology
 T Issues in ecology
 U http://www.esa.org/science/Issues/
 DJ www.esa.org
 
+dbvar0 Iter: Gateway to the Middle Ages and Renaissance
 T Iter: Gateway to the Middle Ages and Renaissance
 U http://www.itergateway.org
 HJ  iter.library.utoronto.ca
@@ -1124,22 +1293,27 @@ DJ  www.itergateway.org
 DJ  imdatabases.library.utoronto.ca
 DJ  www.wolfgang-capito.com
 
+dbvar0 Johns Hopkins Guide to Literary Theory and Criticism
 T Johns Hopkins Guide to Literary Theory and Criticism
 U http://litguide.press.jhu.edu/
 HJ litguide.press.jhu.edu
 
+dbvar0 Journal of Anthropological Research
 T Journal of Anthropological Research
 U http://quod.lib.umich.edu/j/jar/
 
 
+dbvar0 Journal Citation Reports, or JCR (Social Sciences edition)
 T Journal Citation Reports, or JCR (Social Sciences edition)
 U http://jcrweb.com
 D jcrweb.com
 
+dbvar0 Journal of Drug Issues
 T Journal of Drug Issues
 U http://www2.criminology.fsu.edu/~jdi/past.htm
 DJ www2.criminology.fsu.edu
 
+dbvar0 Journal of the American Medical Association
 T Journal of the American Medical Association
 U http://jama.ama-assn.org
 HJ ama-assn.org
@@ -1147,11 +1321,13 @@ D jama.ama-assn.org
 DJ www.ama-assn.org
 
 
+dbvar0 Jacoby Online
 Title Jacoby Online
 URL http://referenceworks.brillonline.com/cluster/Jacoby%20Online?s.num=0
 DJ brillonline.com
 DJ brill.com
 
+dbvar0 JAMA Network
 T JAMA Network
 U http://jamanetwork.com
 DJ jamanetwork.com
@@ -1173,55 +1349,67 @@ HJ archsurg.jamanetwork.com
 
 # result of serial-reconciler.pl jkline 2005-11-17
 # issn 0021-924X
+dbvar0 Journal of biochemistry (Tokyo)
 T Journal of biochemistry (Tokyo)
 U http://wwwsoc.nii.ac.jp/jbiochem/jb/
 DJ wwwsoc.nii.ac.jp
 
+dbvar0 Journal of Biological Chemistry
 T Journal of Biological Chemistry
 U http://www.jbc.org/contents-by-date.0.shtml
 D www.jbc.org
 
+dbvar0 Journal of Film Music
 T Journal of Film Music
 U http://www.equinoxpub.com/
 D www.equinoxpub.com
 
 # result of serial-reconciler.pl jkline 2005-11-17
 # issn 0021-9584
+dbvar0 Journal of chemical education
 T Journal of chemical education
 U http://jchemed.chem.wisc.edu/index.html
 DJ jchemed.chem.wisc.edu
 HJ jchemed.chem.wisc.edu
 
+dbvar0 Key Business Ratios
 T Key Business Ratios
 U http://kbr.dnb.com/
 D http://kbr.dnb.com/
 
+dbvar0 Kirk-Othmer Encyclopedia of Chemical Technology
 T Kirk-Othmer Encyclopedia of Chemical Technology
 U http://www.mrw.interscience.wiley.com/kirk/
 DJ www.mrw.interscience.wiley.com
 
+dbvar0 Knovel Online Books & Databases for Engineering and Sciences 
 T Knovel Online Books & Databases for Engineering and Sciences 
 U http://www.knovel.com/knovel2/Toc.jsp?BookID=735 
 HJ app.knovel.com
 DJ knovel.com
 DJ www.knovel.com
 
+dbvar0 Koreanstudies Information Service System (Korean Knowledge Information Services)
 T Koreanstudies Information Service System (Korean Knowledge Information Services)
 U http://kiss.kstudy.com/
 DJ kiss.kstudy.com
 
+dbvar0 L'Annee online
 T L'Annee online
 U http://www.annee-philologique.com/aph/
 DJ www.annee-philologique.com
 
+dbvar0 LAPOP - Latin American Public Opinion Project
 T LAPOP - Latin American Public Opinion Project
 U http://www.vanderbilt.edu/lapop/
 DJ www.vanderbilt.edu
 
+dbvar0 The Los Angeles Theatre Works Collection
 T The Los Angeles Theatre Works Collection
 U http://radr.alexanderstreet.com/
 DJ radr.alexanderstreet.com
 
+dbvar0 Latino Literature
 T Latino Literature
 U http://www.alexanderstreet2.com/lalilive/
 U http://lit.alexanderstreet.com/
@@ -1229,11 +1417,13 @@ DJ www.alexanderstreet2.com
 DJ www.alexanderstreet4.com
 DJ lit.alexanderstreet.com/
 
+dbvar0 Latinobarometro (Latino barometer)
 T Latinobarometro (Latino barometer)
 U http://www.jdsurvey.net/jds/latinobarometrobd.jsp
 DJ www.jdsurvey.net
 DJ www.latinobarometro.org
 
+dbvar0 Left Index
 T Left Index
 U http://leftindex.andornot.com/default.asp
 DJ leftindex.andornot.com
@@ -1246,6 +1436,7 @@ DJ leftindex.andornot.com
 #  State Capital
 #  Statistical
 #
+dbvar0 LexisNexis
 Title LexisNexis
 URL http://web.lexis-nexis.com/
 DJ lexis-nexis.com
@@ -1269,37 +1460,45 @@ Replace NAME="_PRIORREFERER" VALUE="http://^A
 # jameso, 2007-08-30
 #
 
+dbvar0 Library of Congress
 T Library of Congress
 U http://www.loc.gov/
 DJ www.loc.gov
 
+dbvar0 LibraryLit
 T LibraryLit
 U http://newfirstsearch.oclc.org/FSIP?dbname=LibraryLit
 D newfirstsearch.oclc.org
 
+dbvar0 Linguistics & Language Behavior Abstracts
 T Linguistics & Language Behavior Abstracts
 U http://www.csa3.com/htbin/dbrng.cgi?username=chr16&access=chr1616&cat=llba
 D csa3.com
 
+dbvar0 Literature Criticism Online
 T Literature Criticism Online
 U http://infotrac.galegroup.com/itweb/clar46892?db=LCO
 DJ callisto.ggsrv.com
 
+dbvar0 Literature Online
 T Literature Online
 U http://lion.chadwyck.com/
 D lion.chadwyck.com
 HJ lion.chadwyck.co.uk
 
+dbvar0 Literature Resource Center
 T Literature Resource Center
 U http://galenet.gale.com/m/mcp/prodlist
 D galenet.gale.com
 D www.galenet.com
 D infotrac.galenet.com
 
+dbvar0 Manchester Medieval Sources
 T Manchester Medieval Sources
 U http://www.medievalsources.co.uk/
 D www.medievalsources.co.uk
 
+dbvar0 MarciveWeb DOCS ( Monthly Catalog of U.S. Government Publications)
 T MarciveWeb DOCS ( Monthly Catalog of U.S. Government Publications)
 U http://www.marcive.com/scripts/webdocs.dll
 D marcive.com
@@ -1310,61 +1509,74 @@ D marcive.com
 # U http://www.csa3.com/htbin/dbrng.cgi?username=chr16&access=chr1616&cat=marketre
 # D csa3.com
 
+dbvar0 MarketResearch.com Academic
 T MarketResearch.com Academic
 U http://academic.marketresearch.com/
 DJ academic.marketresearch.com
 HJ www.marketresearch.com
 
+dbvar0 Marquis Who's Who
 T Marquis Who's Who
 U http://search.marquiswhoswho.com
 DJ search.marquiswhoswho.com
 U http://mboBeta.marquiswhoswho.com
 DJ mboBeta.marquiswhoswho.com
 
+dbvar0 Materials Science
 T Materials Science
 U http://www.csa3.com/htbin/dbrng.cgi?username=chr16&access=chr1616&cat=material
 s
 D csa3.com
 
+dbvar0 MathSciNet
 T MathSciNet
 U http://www.ams.org/mathscinet/search
 D www.ams.org
 
+dbvar0 Medline
 T Medline
 U http://www.csa3.com/htbin/dbrng.cgi?username=chr16&access=chr1616&cat=medline
 D csa3.com
 
+dbvar0 Mergent Online
 T Mergent Online
 U http://www.mergentonline.com
 DJ www.mergentonline.com
 
+dbvar0 Mergent Web Reports (Mergent Corporate Manuals fka Moody's Manuals)
 T Mergent Web Reports (Mergent Corporate Manuals fka Moody's Manuals)
 U http://webreports.mergent.com/search.php
 DJ webreports.mergent.com
 
+dbvar0 Merriam-Webstar's Collegiate Dictionary
 T Merriam-Webstar's Collegiate Dictionary
 U http://search.eb.com/
 D search.eb.com
 
+dbvar0 Microbiology Abstracts
 T Microbiology Abstracts
 U http://www.csa3.com/htbin/dbrng.cgi?username=chr16&access=chr1616&cat=microbiology
 D csa3.com
 
 
+dbvar0 Million Dollar Database
 T Million Dollar Database
 U http://mddi.dnb.com
 D dnb.com
 H mddi.dnb.com
 
 
+dbvar0 Mint Global
 T Mint Global
 U http://mintglobal.bvdep.com/ip
 DJ mintglobal.bvdep.com
 
+dbvar0 Mintel Market Research Reports (Mintel Oxygen)
 T Mintel Market Research Reports (Mintel Oxygen)
 U http://academic.mintel.com/
 DJ academic.mintel.com
 
+dbvar0 MLA Bibliography
 T MLA Bibliography
 # old URL U http://ovid.claremont.edu/ovidweb/ovidweb.cgi?T=JS&D=mlab&PAGE=main&MODE=ovid&NEWS=n&USER=710000000&PASSWORD=anybody
 U http://web5.silverplatter.com/webspirs/start.ws?customer=c143258
@@ -1372,19 +1584,23 @@ DJ silverplatter.com
 D ovid.claremont.edu
 HJ web5.silverplatter.com
 
+dbvar0 Monthly Catalog
 T Monthly Catalog
 U http://monthlycatalog.chadwyck.com
 DJ chadwyck.com
 HJ monthlycatalog.chadwyck.com
 
+dbvar0 MorningStar
 T MorningStar
 U http://library.morningstar.com/
 D library.morningstar.com
 
+dbvar0 Multilingual Matters
 T Multilingual Matters
 U http://www.multilingual-matters.net
 HJ www.multilingual-matters.net
 
+dbvar0 Music Index
 T Music Index
 U http://164.195.124.131/brsip/checkip.jsp
 D hppmusicindex.com
@@ -1392,24 +1608,29 @@ H hppmusicindex.com
 DJ 164.195.124.131
 HJ 164.195.124.131
 
+dbvar0 Musical America
 T Musical America
 U http://www.musicalamerica.com
 D musicalamerica.com
 
  
 
+dbvar0 National Science Teachers Association
 T National Science Teachers Association
 U http://www.nsta.org/126/#journal
 HJ www.nsta.org 
 
+dbvar0 National Technical Information Service (NTIS)
 T National Technical Information Service (NTIS)
 U http://www.csa3.com/htbin/dbrng.cgi?username=chr16&access=chr1616&cat=ntis
 D csa3.com
 
+dbvar0 National Trade Data Bank (NTDB)
 T National Trade Data Bank (NTDB)
 U http://www.stat-usa.gov/tradtest.nsf
 D www.stat-usa.gov
 
+dbvar0 Naver News Library
 T Naver News Library
 U http://newslibrary.naver.com
 D newslibrary.naver.com
@@ -1421,6 +1642,7 @@ AnonymousURL +*.wm
 AnonymousURL +*.wma
 AnonymousURL +*/stream_play.asp?*
 AnonymousURL +*/stream_play_mac.asp?*
+dbvar0 Naxos
 Title Naxos
 URL http://cuc.naxosmusiclibrary.com
 DJ naxosmusiclibrary.com
@@ -1432,6 +1654,7 @@ AnonymousURL -*
 #
 # End new Naxos stanza
 
+dbvar0 Naxos Video Library 
 Title Naxos Video Library 
 URL http://cuc.naxosvideolibrary.com
 DJ naxosvideolibrary.com
@@ -1439,25 +1662,30 @@ HJ cuc.naxosvideolibrary.com
 
 
 # issn 0898-2937
+dbvar0 NBER
 T NBER
 U http://www.nber.org/
 D www.nber.org
 D papers.nber.org
 H papers.nber.org
 
+dbvar0 NetLibrary
 Title NetLibrary
 URL http://www.netlibrary.com/
 DJ netlibrary.com
 
+dbvar0 New York Review of Books, Archives
 T New York Review of Books, Archives
 U http://www.nybooks.com/archives/
 DJ www.nybooks.com
 
+dbvar0 NIST/TRC Web Thermo Tables
 T NIST/TRC Web Thermo Tables
 U https://rproxy.nist.gov/srd_portal/index.cfm
 DJ rproxy.nist.gov/srd_portal/index.cfm
 DJ wtt-pro.nist.gov
 
+dbvar0 NRC National Science Library
 T NRC National Science Library
 # NRC: National Research Council Canada
 DJ cisti-icist.nrc-cnrc.gc.ca
@@ -1466,27 +1694,33 @@ U http://www.cisti.nrc.ca/
 U http://www.nrcresearchpress.com
 DJ www.nrcresearchpress.com
 
+dbvar0 OCLC Bibliographic PURL Service
 T OCLC Bibliographic PURL Service
 U http://bibpurl.oclc.org/
 DJ bibpurl.oclc.org
 
+dbvar0 Opera in Video
 T Opera in Video
 U http://opiv.alexanderstreet.com/search
 DJ opiv.alexanderstreet.com
 
+dbvar0 Oxford African American Studies Center
 T Oxford African American Studies Center
 U http://www.oxfordaasc.com/
 DJ www.oxfordaasc.com
 
+dbvar0 Oxford English Dictionary
 T Oxford English Dictionary
 U http://www.oed.com
 H www.oed.com
 
+dbvar0 Oxford Handbooks Online Political Science
 Title Oxford Handbooks Online Political Science
 URL http://www.oxfordhandbooks.com
 DJ oxfordhandbooks.com
 HJ www.oxfordhandbooks.com
 
+dbvar0 Oxford Music Online
 T Oxford Music Online
 # T Grove Music Online
 # T New Grove Dictionary of Music and Musicians
@@ -1497,10 +1731,12 @@ D www.grovemusic.com
 H www.grovemusic.com
 DJ www.oxfordmusiconline.com
 
+dbvar0 Oxford Reference Online
 T Oxford Reference Online
 U http://www.oxfordreference.com/
 DJ www.oxfordreference.com/
 
+dbvar0 New Palgrave Dictionary of Economics Online
 T New Palgrave Dictionary of Economics Online
 U http://www.dictionaryofeconomics.com/
 DJ www.dictionaryofeconomics.com
@@ -1509,6 +1745,7 @@ DJ www.dictionaryofeconomics.com
 #U http://infoweb.newsbank.com
 #D newsbank.com
 
+dbvar0 Newsbank/Readex Databases
 Title Newsbank/Readex Databases
 URL http://infoweb.newsbank.com
 DJ newsbank.com
@@ -1517,18 +1754,22 @@ NeverProxy ns01.newsbank.com
 Find document.DJ =
 Replace document.DJ = "^h"; ezproxyignore =
 
+dbvar0 Newspaper Abstracts
 T Newspaper Abstracts
 U http://newfirstsearch.oclc.org/FSIP?dbname=NewsAbs
 D newfirstsearch.oclc.org
 
+dbvar0 Nikkei telecom 21
 T Nikkei telecom 21
 U https://www.nikkeiamerica.com/telecom21/ip.aspx
 D nikkeiamerica.com
 
+dbvar0 North American Women's Letters and Diaries
 T North American Women's Letters and Diaries
 U http://solomon.nwld.alexanderstreet.com/
 D alexanderstreet.com
 
+dbvar0 Orbis
 T Orbis
 U http://orbis.bvdep.com/ip
 DJ orbis.bvdep.com
@@ -1536,11 +1777,13 @@ DJ orbis.bvdep.com
 U http://webhelp.bvdep.com/robo/projects/wnorbint_en/whskin_ep_start.htm
 DJ webhelp.bvdep.com 
 
+dbvar0 Osiris
 T Osiris
 U http://osiris.bvdep.com/ip
 DJ osiris.bvdep.com
 
 # Added 04-28-06 from Ovid web site
+dbvar0 Ovid Online
 T Ovid Online
 U http://gateway.ovid.com/autologin.html
 D ovid.com
@@ -1549,11 +1792,13 @@ HJ *.ovid.com
 H *.ovid.com
 
 # Added 09-07-2011 from OCLC EZproxy site
+dbvar0 Ovid
 Title Ovid
 URL http://ovidsp.ovid.com/autologin.html
 HJ gateway.ovid.com
 DJ ovid.com
 
+dbvar0 Oxford Art Online
 T Oxford Art Online
 U http://www.oxfordartonline.com/
 # Old U line from Grove's Dictionary of Art Online:
@@ -1561,138 +1806,171 @@ U http://www.oxfordartonline.com/
 DJ www.oxfordartonline.com
 D groveart.com
 
+dbvar0 Oxford Companion to World Exploration
 T Oxford Companion to World Exploration
 U http://www.oxford-worldexploration.com/
 DJ www.oxford-worldexploration.com
 
+dbvar0 Oxford Dictionary of Byzantium
 T Oxford Dictionary of Byzantium
 U http://www.oxford-byzantium.com/
 DJ www.oxford-byzantium.com
 
+dbvar0 Oxford Dictionary of National Biography
 T Oxford Dictionary of National Biography
 U http://www.oxforddnb.com/
 DJ www.oxforddnb.com
 
+dbvar0 Oxford Dictionary of the Renaissance
 T Oxford Dictionary of the Renaissance
 U http://www.oxford-renaissance.com/
 DJ www.oxford-renaissance.com
 
+dbvar0 (Oxford) Black Women In America
 T (Oxford) Black Women In America
 U http://www.oxford-blackwomenamerica.com/
 DJ www.oxford-blackwomenamerica.com/
 
+dbvar0 (Oxford) Dictionary of American family names
 T (Oxford) Dictionary of American family names
 U http://www.oxford-americanfamilynames.com/
 DJ www.oxford-americanfamilynames.com/
 
+dbvar0 Oxford classical dictionary
 T Oxford classical dictionary
 U http://www.oxford-classicaldictionary3.com/
 DJ www.oxford-classicaldictionary3.com/
 
+dbvar0 Oxford dictionary of the Christian church
 T Oxford dictionary of the Christian church
 U http://www.oxford-christianchurch.com/
 DJ www.oxford-christianchurch.com/
 
 # Begin Oxford encyclopedias
 
+dbvar0 (Oxford) Encyclopedia of Aesthetics
 T (Oxford) Encyclopedia of Aesthetics
 U http://www.oxford-aesthetics.com/
 DJ www.oxford-aesthetics.com/
 
+dbvar0 (Oxford) Encyclopedia of Semiotics
 T (Oxford) Encyclopedia of Semiotics
 U http://www.oxford-semiotics.com/
 DJ www.oxford-semiotics.com/
 
+dbvar0 (Oxford) Encyclopedia of Social Work
 T (Oxford) Encyclopedia of Social Work
 U http://www.oxford-naswsocialwork.com/
 DJ www.oxford-naswsocialwork.com/
 
+dbvar0 (Oxford) Encyclopedia of the Dead Sea Scrolls
 T (Oxford) Encyclopedia of the Dead Sea Scrolls
 U http://www.oxford-deadseascrolls.com/
 DJ www.oxford-deadseascrolls.com/
 
+dbvar0 (Oxford) Grove encyclopedia of classical art and architecture
 T (Oxford) Grove encyclopedia of classical art and architecture
 U http://www.oxford-classicalart.com/
 DJ www.oxford-classicalart.com/
 
+dbvar0 (Oxford) Grove encyclopedia of Islamic art & architecture
 T (Oxford) Grove encyclopedia of Islamic art & architecture
 U http://www.oxford-islamicart.com  
 DJ www.oxford-islamicart.com
 
+dbvar0 Oxford encyclopedia of British Literature
 T Oxford encyclopedia of British Literature
 U http://www.oxford-britishliterature.com/
 DJ www.oxford-britishliterature.com/
 
+dbvar0 Oxford encyclopedia of rhetoric
 T Oxford encyclopedia of rhetoric
 U http://www.oxford-rhetoric.com/
 DJ www.oxford-rhetoric.com/
 
+dbvar0 Oxford Encyclopedia of American Literature
 T Oxford Encyclopedia of American Literature
 U http://www.oxford-americanliterature.com/
 DJ www.oxford-americanliterature.com
 
+dbvar0 Oxford Encyclopedia of Ancient Egypt
 T Oxford Encyclopedia of Ancient Egypt
 U http://www.oxford-ancientegypt.com/
 DJ www.oxford-ancientegypt.com
 
+dbvar0 Oxford Encyclopedia of Economic History
 T Oxford Encyclopedia of Economic History
 U http://www.oxford-economichistory.com/
 DJ www.oxford-economichistory.com
 
+dbvar0 Oxford Encyclopedia of Food and Drink in America
 T Oxford Encyclopedia of Food and Drink in America
 U http://www.oxford-americanfoodanddrink.com/
 DJ www.oxford-americanfoodanddrink.com
 HJ www.oxford-americanfoodanddrink.com
 
+dbvar0 (Oxford) Encyclopedia of Global Change
 T (Oxford) Encyclopedia of Global Change
 U http://www.oxford-globalchange.com/
 DJ www.oxford-globalchange.com
 HJ www.oxford-globalchange.com
 
+dbvar0 Oxford Encyclopedia of Latinos and Latinas in the United States
 T Oxford Encyclopedia of Latinos and Latinas in the United States
 U http://www.oxford-latinos.com/
 DJ www.oxford-latinos.com
 
+dbvar0 Oxford Encyclopedia of Mesoamerican Cultures
 T Oxford Encyclopedia of Mesoamerican Cultures
 U http://www.oxford-mesoamerican.com/
 DJ www.oxford-mesoamerican.com
 
+dbvar0 (Oxford) Encyclopedia of Rhetoric
 T (Oxford) Encyclopedia of Rhetoric
 U http://www.oxford-rhetoric.com/
 DJ www.oxford-rhetoric.com
 
+dbvar0 (Oxford) Encyclopedia of the Enlightenment
 T (Oxford) Encyclopedia of the Enlightenment
 U http://www.oxford-enlightenment.com/
 DJ www.oxford-enlightenment.com
 
+dbvar0 (Oxford) Encyclopedia of the Middle Ages
 T (Oxford) Encyclopedia of the Middle Ages
 U http://www.oxford-middleages.com/
 DJ www.oxford-middleages.com
 
+dbvar0 Oxford Encyclopedia of the Modern World
 T Oxford Encyclopedia of the Modern World
 U http://www.oxford-modernworld.com/
 DJ www.oxford-modernworld.com
 
+dbvar0 Oxford Encyclopedia of the Reformation
 T Oxford Encyclopedia of the Reformation
 U http://www.oxford-reformation.com/
 DJ www.oxford-reformation.com
 
+dbvar0 Oxford Encyclopedia of Theatre and Performance
 T Oxford Encyclopedia of Theatre and Performance
 U http://www.oxford-theatreandperformance.com/
 DJ www.oxford-theatreandperformance.com
 
+dbvar0 Oxford Encyclopedia of Women in World History
 T Oxford Encyclopedia of Women in World History
 U http://www.oxford-womenworldhistory.com/
 DJ www.oxford-womenworldhistory.com
 
+dbvar0 (Oxford) Grove Encyclopedia of Decorative Arts
 T (Oxford) Grove Encyclopedia of Decorative Arts
 U http://www.oxford-decorativearts.com/
 DJ www.oxford-decorativearts.com
 
+dbvar0 (Oxford) International Encyclopedia of Dance
 T (Oxford) International Encyclopedia of Dance
 U http://www.oxford-dance.com/
 DJ www.oxford-dance.com
 
+dbvar0 (Oxford) International Encyclopedia of Linguistics
 T (Oxford) International Encyclopedia of Linguistics
 U http://www.oxford-linguistics.com/
 DJ www.oxford-linguistics.com
@@ -1701,36 +1979,44 @@ HJ www.oxford-linguistics.com
 # End Oxford encyclopedias
 
 
+dbvar0 Oxford English Dictionary
 T Oxford English Dictionary
 U http://dictionary.oed.com
 D dictionary.oed.com
 
+dbvar0 (Oxford journal)Digital Scholarship in the Humanities
 Title (Oxford journal)Digital Scholarship in the Humanities
 URL http://dsh.oxfordjournals.org/
 DJ oxfordjournals.org
 HJ dsh.oxfordjournals.org
 
 
+dbvar0 PAIS
 T PAIS
 U http://www.csa3.com/htbin/dbrng.cgi?username=chr16&access=chr1616&cat=pais
 D csa3.com
 
+dbvar0 Palmer's Index to the London Times
 T Palmer's Index to the London Times
 U http://historynews.chadwyck.com/noframes19/search
 D historynews.chadwyck.com
 
+dbvar0 PaperFirst
 T PaperFirst
 U http://newfirstsearch.oclc.org/FSIP?dbname=PapersFirst
 D newfirstsearch.oclc.org
 
+dbvar0 Past Masters
 T Past Masters
 U http://library.nlx.com/
 D library.nlx.com
 
+dbvar0 Patrologia Latina
 T Patrologia Latina
 U http://pld.chadwyck.com
 HJ pld.chadwyck.com
 
+dbvar0 People's daily (Renmin Ribao)
 T People's daily (Renmin Ribao)
 U http://www.oriprobe.com
 U http://data.people.com.cn/directLogin.do?target=101
@@ -1740,18 +2026,22 @@ DJ www.oriprobe.com
 DJ 202.108.59.119
 DJ 58.68.145.22
 
+dbvar0 Periodical Archive Online
 T Periodical Archive Online
 U http://pao.chadwyck.com
 D pao.chadwyck.com
 
+dbvar0 Periodicals Contents Index
 T Periodicals Contents Index
 U http://pci.chadwyck.com/
 D pci.chadwyck.com
 
+dbvar0 Periodicals Index Online
 T Periodicals Index Online
 U http://pio.chadwyck.com/
 HJ pio.chadwyck.com
 
+dbvar0 Philosophers Index
 T Philosophers Index
 U http://web5.silverplatter.com/webspirs/start.ws?customer=c143258
 DJ web5.silverplatter.com
@@ -1760,24 +2050,29 @@ H web5.silverplatter.com
 # commented by ct U http://webspirs4.silverplatter.com:8300/c143258?
 # commented by ct DJ webspirs4.silverplatter.com
 
+dbvar0 Plant Science
 T Plant Science
 U http://www.csa3.com/htbin/dbrng.cgi?username=chr16&access=chr1616&cat=plantsci
 D csa3.com
 
+dbvar0 Political Risk Yearbook Online
 T Political Risk Yearbook Online
 U http://www.prsgroup.com/yearbook/
 D prsgroup.com
 
+dbvar0 Polling the Nations
 T Polling the Nations
 U http://poll.orspub.com/
 HJ www.orspub.com
 DJ orspub.com
 D poll.orspub.com
 
+dbvar0 Proceedings (ProceedingsFirst)
 T Proceedings (ProceedingsFirst)
 U http://newfirstsearch.oclc.org/FSIP?dbname=Proceedings
 D newfirstsearch.oclc.org
 
+dbvar0 Proquest Congressional
 T Proquest Congressional
 U http://search.proquest.com/congressional
 HJ bit.ly
@@ -1786,16 +2081,19 @@ HJ https://bitly.com
 HJ bitly.com
 DJ bitly.com
 
+dbvar0 Proquest NAACP 2 & 3 Digital Archive
 Title Proquest NAACP 2 & 3 Digital Archive
 URL http://hv.proquest.com/historyvault/hv.jsp?pageid=advanced_ui&module=14309
 DJ proquest.com
 HJ hv.proquest.com
 
 
+dbvar0 ProQuest Statistical DataSets
 T ProQuest Statistical DataSets
 U http://www.lnstatistical.com/
 D www.lnstatistical.com
 
+dbvar0 PsycCritiques
 T PsycCritiques
 U http://search.epnet.com
 D epnet.com
@@ -1803,6 +2101,7 @@ D epnet.com
 ProxyHJnameEdit www.ncbi.nlm.nih.gov$ www-ncbi-nlm-nih-gov
 AnonymousURL http://www.ncbi.nlm.nih.gov/corehtml/query/static/pubmedsearch.xml*
 Option CookiePassThrough
+dbvar0 PubMed
 Title PubMed
 URL http://www.ncbi.nlm.nih.gov/sites/entrez?db=PubMed
 DJ nih.gov
@@ -1824,34 +2123,41 @@ Replace 'https://^swww.ncbi.nlm.nih.gov^' +
 AnonymousURL -*
 Option Cookie
 
+dbvar0 Radical Scatters: Emily Dickinson's Fragments and Related Texts, 1870-1886
 T Radical Scatters: Emily Dickinson's Fragments and Related Texts, 1870-1886
 U http://jetson.unl.edu:8080/cocoon/radicalscatters/default-loggedin.html
 HJ radicalscatters.unl.edu
 HJ jetson.unl.edu
 DJ unl.edu
 
+dbvar0 RAND California
 T RAND California
 U http://ca.rand.org
 D ca.rand.org
 
+dbvar0 RCLweb - Resources for College Libraries
 T RCLweb - Resources for College Libraries
 U http://rclweb.net/
 DJ rclweb.net
 
+dbvar0 Readers Guide Abstracts
 T Readers Guide Abstracts
 U http://newfirstsearch.oclc.org/FSIP?dbname=ReadersGuideAbs
 D newfirstsearch.oclc.org
 
+dbvar0 Reference Universe (Paratext)
 T Reference Universe (Paratext)
 U http://refuniv.odyssi.com/cgi-bin/phtml?newsearch.htm
 DJ refuniv.odyssi.com
 HJ refuniv.odyssi.com
 
+dbvar0 Reference USA
 T Reference USA
 U http://www.referenceusa.com/
 HJ www.referenceusa.com
 
 Option DomainCookieOnly
+dbvar0 RefWorks
 Title RefWorks
 URL http://www.refworks.com/Refworks/
 HJ https://www.refworks.com
@@ -1862,11 +2168,13 @@ Find &url=https://
 Replace &url=https://^A
 Option Cookie
 
+dbvar0 RILM - Repertoire International de Litterature Musicale
 T RILM - Repertoire International de Litterature Musicale
 U http://newfirstsearch.oclc.org/FSIP?dbname=RILM
 D newfirstsearch.oclc.org
 H rism.stub.uni-frankfurt.de
 
+dbvar0 RIPM - Retrospective Index to Music Periodicals
 T RIPM - Retrospective Index to Music Periodicals
 U http://www.ripmfulltext.org/RIPM/Login.aspx
 H www.ripmfulltext.org
@@ -1878,10 +2186,12 @@ DJ rism.info
 #D rism.stub.uni-frankfurt.de
 HJ https://opac.rism.info
 
+dbvar0 RLIN
 T RLIN
 U http://ovid.claremont.edu/cgi-bin/ourcustval?urke"
 DJ ovid.claremont.edu
 
+dbvar0 Roper Center
 T Roper Center
 U http://www.ropercenter.uconn.edu/
 DJ roperweb.ropercenter.uconn.edu
@@ -1889,6 +2199,7 @@ HJ roperweb.ropercenter.uconn.edu
 DJ www.ropercenter.ucon.edu
 HJ www.ropercenter.uconn.edu
 
+dbvar0 iPOLL Databank [Roper Center]
 Title iPOLL Databank [Roper Center]
 URL http://www.ropercenter.uconn.edu/iPOLL/login/ipoll_login.html
 HJ www.ropercenter.uconn.edu
@@ -1896,10 +2207,12 @@ DJ ropercenter.uconn.edu
 DJ ropercenter.uconn.edu
 HJ webapps.ropercenter.uconn.edu 
 
+dbvar0 Routledge Encyclopedia of Philosophy
 T Routledge Encyclopedia of Philosophy
 U http://www.rep.routledge.com/
 D rep.routledge.com
 
+dbvar0 Routledge Handbooks Online
 Title Routledge Handbooks Online
 URL https://www.routledgehandbooks.com
 HJ https://www.routledgehandbooks.com
@@ -1908,22 +2221,26 @@ HJ routledgehandbooks.com
 DJ routledgehandbooks.com
 # trial 10/31/2014
 
+dbvar0 Sage Video
 Title Sage Video
 URL http://sk.sagepub.com/video
 DJ sagepub.com
 HJ sk.sagepub.com
 
 
+dbvar0 Scifinder Scholar Web
 T Scifinder Scholar Web
 U https://scifinder.cas.org/registration/index.html?corpKey=7E781DF5-86F3-5055-5DFF-631A12DDBD2E
 U https://scifinder.cas.org/scifinder
 D scifinder.cas.org
 
+dbvar0 Social Explorer 
 Title Social Explorer 
 URL http://www.socialexplorer.com/ezproxy
 DJ socialexplorer.com
 HJ www.socialexplorer.com
 
+dbvar0 CAS SciFinder
 Title CAS SciFinder
 URL https://scifinder.cas.org
 DJ cas.org
@@ -1940,6 +2257,7 @@ DJ cas.org
 #U http://webspirs.silverplatter.com/
 #D silverplatter.com
 
+dbvar0 Science Magazine
 T Science Magazine
 U http://science.sciencemag.org
 HJ stm.sciencemag.org
@@ -1960,6 +2278,7 @@ HJ sciencedirect.com
 Cookie BROWSER_SUPPORTS_COOKIES=1; DJ=.sciencedirect.com
 Option DJCookieOnly
 AnonymousURL +http://rss.sciencedirect.com/*
+dbvar0 SciVerse ScienceDirect
 Title SciVerse ScienceDirect
 URL http://www.sciencedirect.com/
 DJ sciencedirect.com
@@ -1980,6 +2299,7 @@ Find %252Fsciverse-shindig.elsevier.com%252F
 Replace %252F^psciverse-shindig.elsevier.com^%252F
 Option Cookie
 
+dbvar0 SciVerse Hub
 Title SciVerse Hub
 URL http://www.hub.sciverse.com
 DJ sciverse.com
@@ -1994,6 +2314,7 @@ Replace targetURL=http://^A
 Cookie BROWSER_SUPPORTS_COOKIES=1; DJ=.sciencedirect.com
 Option DJCookieOnly
 AnonymousURL +http://rss.sciencedirect.com/*
+dbvar0 SciVerse ScienceDirect
 Title SciVerse ScienceDirect
 URL http://www.sciencedirect.com/
 DJ sciencedirect.com
@@ -2003,10 +2324,12 @@ Replace value="http://^A
 Option Cookie 
 AnonymousURL -*
 
+dbvar0 Science News
 T Science News
 U http://pqasb.pqarchiver.com/sciencenews/
 DJ pqasb.pqarchiver.com
 
+dbvar0 International Encyclopedia of the Social & Behavioral Sciences
 T International Encyclopedia of the Social & Behavioral Sciences
 U http://www.sciencedirect.com/science/referenceworks/0080430767
 D www.sciencedirect.com
@@ -2014,6 +2337,7 @@ D www.sciencedirect.com
 #U http://researcher.sirs.com
 #D sirs.com
 
+dbvar0 SimplyMap
 T SimplyMap
 U http://simplymap.com/index.php
 DJ simplymap.com
@@ -2023,23 +2347,28 @@ DJ *.simplymap.com
 HTTPMethod PUT
 HTTPMethod DELETE
 
+dbvar0 Smithsonian Global Sound
 T Smithsonian Global Sound
 U http://glmu.alexanderstreet.com/
 DJ glmu.alexanderstreet.com
 DJ java.classical.com
 
+dbvar0 Social Science Abstracts
 T Social Science Abstracts
 U http://newfirstsearch.oclc.org/FSIP?dbname=SocSciAbs
 D newfirstsearch.oclc.org
 
+dbvar0 Social Science Electronic Data Library (SSEDL)
 T Social Science Electronic Data Library (SSEDL)
 U http://www.socio.com/galemembers/memonly.htm
 DJ www.socio.com
 
+dbvar0 Sociological Abstracts
 T Sociological Abstracts
 U http://newfirstsearch.oclc.org/FSIP?dbname=SocAbs
 D newfirstsearch.oclc.org
 
+dbvar0 OECD iLibrary (formerly SourceOECD)
 Title OECD iLibrary (formerly SourceOECD)
 URL http://www.oecd-ilibrary.org
 DJ oecd.org
@@ -2060,14 +2389,17 @@ HJ www.ecosante.fr
 Find xmlns=\"http://
 Replace xmlns=\"http://^A
 
+dbvar0 Soviet Cinema Online
 T Soviet Cinema Online
 URL http://www.primarysourcesonline.nl/c45/
 DJ primarysourcesonline.nl
 
+dbvar0 SPIN Database
 T SPIN Database
 U http://ojps.aip.org/pibin/search?KEY=ALL
 D ojps.aip.org
 
+dbvar0 Standard & Poors Net Advantage (Industry Surveys & Stock Reports)
 T Standard & Poors Net Advantage (Industry Surveys & Stock Reports)
 U http://www.netadvantage.standardpoor.com/
 DJ standardpoor.com
@@ -2076,6 +2408,7 @@ HJ netadvantage.standardpoor.com
 HJ www.netadvantage.standardandpoors.com
 
 
+dbvar0 STAT-USA
 T STAT-USA
 U http://www.stat-usa.gov/stat-usa.html
 DJ stat-usa.gov
@@ -2089,20 +2422,24 @@ HJ 208.243.58.31
 #D bea.doc.gov
 
 # Claremont's instance of Summon, named Discovery
+dbvar0 Summon
 T Summon
 U http://claremont.summon.serialssolutions.com/
 DJ claremont.summon.serialssolutions.com
 
+dbvar0 Survey of Current Business
 T Survey of Current Business
 U http://www.stat-usa.gov/online.nsf/CBSNav?OpenNavigator
 D stat-usa.gov
 DJ bea.gov
 HJ bea.gov
 
+dbvar0 Synthesis Digital Library of Engineering and Computer Science
 T Synthesis Digital Library of Engineering and Computer Science
 U http://www.morganclaypool.com/page/synthesis.jsp
 DJ www.morganclaypool.com
 
+dbvar0 Theater in Video
 T Theater in Video
 U http://ativ.alexanderstreet.com/search
 DJ ativ.alexanderstreet.com
@@ -2111,6 +2448,7 @@ HJ shmu.alexanderstreet.com
 HJ shmutrial.alexanderstreet.com
 HJ clmu.alexanderstreet.com
 
+dbvar0 Thesaurus Linguae Graecae (TLG)
 T Thesaurus Linguae Graecae (TLG)
 U http://stephanus.tlg.uci.edu/inst/fontsel
 DJ stephanus.tlg.uci.edu
@@ -2138,6 +2476,7 @@ HJ www.tlg.uci.edu
 # Replace initURL = "^pvx.thomsonib.com^"
 
 # Recommended by Thomson ONE
+dbvar0 Thomson ONE
 Title Thomson ONE
 URL thomsonone https://login.thomsonone.com/PooledAccess/2011-01-01/Validate.aspx?Expresslogincode=ClaremontUnivConsortium.edu
 DJ thomsonone.com
@@ -2145,10 +2484,12 @@ HJ login.thomsonone.com
 HJ https://login.thomsonone.com
 
 
+dbvar0 Times Higher Education
 T Times Higher Education
 U http://www.timeshighereducation.co.uk/
 DJ www.timeshighereducation.co.uk
 
+dbvar0 Times Literary Supplement
 T Times Literary Supplement
 U http://www.tls.psmedia.com/
 DJ tls.psmedia.com
@@ -2156,19 +2497,23 @@ DJ timesonline.co.uk
 HJ www.tls.psmedia.com
 HJ entertainment.timesonline.co.uk
 
+dbvar0 Toxicology Abstracts
 T Toxicology Abstracts
 U http://www.csa3.com/htbin/dbrng.cgi?username=chr16&access=chr1616&cat=toxicology
 D csa3.com
 
+dbvar0 Toxline
 T Toxline
 U http://toxnet.nlm.nih.gov/cgi-bin/sis/htmlgen?TOXLINE
 HJ toxnet.nlm.nih.gov
 
+dbvar0 UIA Online Databases
 T UIA Online Databases
 U http://www.diversitas.org/db/x.php?DD+OR
 DJ www.diversitas.org
 DJ www.uia.be
 
+dbvar0 Uncover (ingenta)
 T Uncover (ingenta)
 U http://www.gateway.ingenta.com/claremont
 DJ gateway.ingenta.com
@@ -2179,16 +2524,19 @@ DJ ingenta.com
 HJ openurl.ingenta.com
 
 
+dbvar0 United Nations Treaty Collection
 T United Nations Treaty Collection
 U http://untreaty.un.org/
 DJ untreaty.un.org
 DJ un.org
 HJ comtrade.un.org
 
+dbvar0 UNSTATS (United Nations Common Statistics)
 T UNSTATS (United Nations Common Statistics)
 U http://unstats.un.org/unsd/cdb/cdb_help/cdb_quick_start.asp
 D http://unstats.un.org/unsd/
 
+dbvar0 Valueline Investment Survey Online
 T Valueline Investment Survey Online
 U https://research.valueline.com/secure/dashboard
 HJ https://research.valueline.com/
@@ -2196,10 +2544,12 @@ HJ research.valueline.com
 DJ valueline.com
 HJ www.valueline.com
 
+dbvar0 VentureXpert Web
 T VentureXpert Web
 U http://vx.thomsonib.com/NASApp/vxWebWAR/vxWeb.jsp
 DJ vx.thomsonib.com
 
+dbvar0 Water Resources RouteNet
 T Water Resources RouteNet
 U http://www.csa.com/htbin/rnauth.cgi?un=chr16&ac=chr1616&fn=$WRN/wres.html
 DJ csa.com
@@ -2213,6 +2563,7 @@ HTTPHeader X-Requested-With
 HTTPMethod DELETE
 HTTPMethod PUT
 HTTPMethod PATCH
+dbvar0 WestlawNext Campus Research
 T WestlawNext Campus Research
 U https://1.next.westlaw.com/Search/Home.html?rs=IWLN1.0&vr=3.0&sp=002044139-2100&forcecdn=false&bhskip=1
 DJ westlaw.com
@@ -2237,6 +2588,7 @@ H https://1.next.westlaw.com
 
 # This is the 5 and above config
 OPTION DJCOOKIEONLY 
+dbvar0 Web of Knowledge 
 Title Web of Knowledge 
 URL http://isiknowledge.com 
 DJ isiknowledge.com
@@ -2269,6 +2621,7 @@ Replace value='^pgateway.webofknowledge.com^/gateway/Gateway.cgi'
 OPTION COOKIE 
 
 Option DJCookieOnly
+dbvar0 Researcher ID 
 Title Researcher ID 
 URL http://www.researcherid.com 
 DJ researcherid.com
@@ -2276,6 +2629,7 @@ Option Cookie
 
 # End new ISI Config, 2011-07-19, Sara L
 
+dbvar0 Researcher ID
 Title Researcher ID
 URL http://www.researcherid.com
 DJ researcherid.com
@@ -2283,10 +2637,12 @@ DJ researcherid.com
 # End new ISI config, 2008-03-17, jameso
 
 
+dbvar0 WilsonSelectPlus
 T WilsonSelectPlus
 U http://newfirstsearch.oclc.org/FSIPplus?dbname=WilsonSelectPlus
 D newfirstsearch.oclc.org
 
+dbvar0 Women and Social Movements in the United States
 T Women and Social Movements in the United States
 U http://www.alexanderstreet2.com/wasmlive/
 HJ asp6new.alexanderstreet.com
@@ -2295,15 +2651,18 @@ HJ wass.alexanderstreet.com
 HJ www.alexanderstreet6.com
 HJ www.aspresolver.com
 
+dbvar0 Women in The National Archives
 T Women in The National Archives
 U http://www.wtna.amdigital.co.uk/
 DJ www.wtna.amdigital.co.uk
 
+dbvar0 Women Writers Online
 Title Women Writers Online
 URL http://wwo.wwp.northeastern.edu/WWO/search?browse-all=yes
 DJ northeastern.edu
 HJ wwo.wwp.northeastern.edu
 
+dbvar0 Women's Resources International
 T Women's Resources International
 U http://www.nisc.com/scripts/login.dll?BiblioLine
 DJ nisc.com
@@ -2311,15 +2670,18 @@ DJ biblioline.nisc.com
 HJ biblioline.nisc.com
 DJ www.nisc.com
 
+dbvar0 WorldCat
 T WorldCat
 U http://newfirstsearch.oclc.org/FSIP?dbname=WorldCat
 D newfirstsearch.oclc.org
 H www.worldcat.org
 
+dbvar0 World Almanac
 T World Almanac
 U http://newfirstsearch.oclc.org/FSIP?dbname=WorldAlmanac
 D newfirstsearch.oclc.org
 
+dbvar0 World Development Indicators
 T World Development Indicators
 URL http://databank.worldbank.org/data/home.aspx
 DJ devdata.worldbank.org
@@ -2328,24 +2690,29 @@ HJ ddp-ext.worldbank.org
 HJ elibrary.worldbank.org
 DJ worldbank.org
 
+dbvar0 World Higher Education Database Online
 T World Higher Education Database Online
 U http://www.whed-online.com/
 DJ www.whed-online.com
 
+dbvar0 World News Connection
 T World News Connection
 U http://wnc.dialog.com
 DJ wnc.dialog.com
 DJ dialog.com
 DJ toolkit.dialog.com
 
+dbvar0 World Shakespeare Bibliography Online
 T World Shakespeare Bibliography Online
 U http://www.worldshakesbib.org/
 HJ www.worldshakesbib.org
 
+dbvar0 Worldwide Political Science Abstracts
 T Worldwide Political Science Abstracts
 U http://www.csa3.com/htbin/dbrng.cgi?username=chr16&access=chr1616&cat=polisci
 D csa3.com
 
+dbvar0 Yearbook of International Organizations
 T Yearbook of International Organizations
 U http://ybio.brillonline.nl/
 HJ ybio.brillonline.nl
@@ -2364,21 +2731,25 @@ HJ ybio.brillonline.nl
 #U http://voxlibris.claremont.edu/research/databases/dblist.html
 #DJ voxlibris.claremont.edu
 
+dbvar0 CUC Phone forms site (test)
 T CUC Phone forms site (test)
 U http://phone.cuc.claremont.edu/phone/online_dir/
 DJ phone.cuc.claremont.edu
 
+dbvar0 Libraries New Website
 T Libraries New Website
 U http://libraries.claremont.edu
 DJ claremont.edu
 HJ www.lib.claremont.edu
 HJ gateway.libraries.claremont.edu
 
+dbvar0 Libraries Staging Website
 T Libraries Staging Website
 U http://new-test.libraries.claremont.edu
 DJ new-test.libraries.claremont.edu
 HJ test.libraries.claremont.edu
 
+dbvar0 Blais
 T Blais
 U http://blais.claremont.edu
 D blais.claremont.edu
@@ -2389,6 +2760,7 @@ D blais.claremont.edu
 ## Libraries' gateway site
 ## Gateway to colleges-only data and services HJed by the Libraries
 ## entered 2007-08-15 by jotto
+dbvar0 Libraries' gateway site
 T Libraries' gateway site
 U http://gateway.libraries.claremont.edu/
 DJ gateway.libraries.claremont.edu
@@ -2399,6 +2771,7 @@ DJ gateway.libraries.claremont.edu
 ## Libraries' site for proxy-only access
 ## Gateway to data and services all users must go through proxy to use
 ## entered 2007-08-27 by jotto
+dbvar0 proxyonly
 T proxyonly
 U http://proxyonly.libraries.claremont.edu/
 DJ proxyonly.libraries.claremont.edu
@@ -2407,6 +2780,7 @@ DJ proxyonly.libraries.claremont.edu
 
 
 # Pomona College's image database
+dbvar0 Luna (Pomona College)
 T Luna (Pomona College)
 U http://luna.pomona.edu/
 DJ luna.pomona.edu
@@ -2423,15 +2797,18 @@ DJ 134.173.71.62
 DJ 134.173.71.63
 
 # Article recommender, shows up on the SerSol article linker page
+dbvar0 Recommender (Ex Libris)
 T Recommender (Ex Libris)
 U http://recommender.service.exlibrisgroup.com/service/
 DJ recommender.service.exlibrisgroup.com
 
+dbvar0 Serial Solutions Portal Page
 T Serial Solutions Portal Page
 U http://ry6af4uu9w.search.serialssolutions.com
 DJ ry6af4uu9w.search.serialssolutions.com
 HJ ry6af4uu9w.search.serialssolutions.com
 
+dbvar0 24/7
 T 24/7
 # U http://ref3.247ref.org/wcscgi/CDM.exe?SS_COMMAND=CUST_SUP&Category=claremont
 U http://claremont.247ref.org/wcscgi/CDM.exe?SS_COMMAND=CUST_SUP&Category=CLAREMONT
@@ -2446,10 +2823,12 @@ HJ 216.133.245.29
 # DJ 216.133.245.15
 # DJ 216.133.245.29
 
+dbvar0 netLibrary
 T netLibrary
 U http://www.netlibrary.com
 HJ www.netLibrary.com
 
+dbvar0 Oxford Scholarship Online
 T Oxford Scholarship Online
 U http://www.oxfordscholarship.com
 HJ www.oxfordscholarship.com
@@ -2461,52 +2840,63 @@ DJ oxfordscholarship.com
 #####################
 
 #proxied SerSol to use BX off campus with proxy reload of resolver window
+dbvar0 Serials Solutions A-Z list and Resolver windows
 T Serials Solutions A-Z list and Resolver windows
 U http://ry6af4uu9w.scholar.serialssolutions.com/
 H ry6af4uu9w.scholar.serialssolutions.com
 
+dbvar0 AAIDD Online Journals - American Journal on Intellectual and Developmental Disabilities
 T AAIDD Online Journals - American Journal on Intellectual and Developmental Disabilities
 U http://www.aaiddjournals.org/loi/ajmr
 DJ www.aaiddjournals.org
 
 # ACRL  journals
+dbvar0 College and Research Libraries
 T College and Research Libraries
 u http://crl.acrl.org/
 DJ crl.acrl.org
 HJ journals.acrl.org
 DJ acrl.org
 
+dbvar0 College and Research Libraries news
 T College and Research Libraries news
 u http://crln.acrl.org/
 DJ crl.acrl.org
 
+dbvar0 RBM
 T RBM
 u http://rbm.acrl.org/
 DJ rbm.acrl.org
 
+dbvar0 Abstracts in Anthropology
 T Abstracts in Anthropology
 U http://anthropology.metapress.com/
 DJ metapress.com
 HJ www.metapress.com
 HJ alliance1.metapress.com
 
+dbvar0 Acta Scientiarum Mathematicarum
 T Acta Scientiarum Mathematicarum
 U http://acta.fyx.hu/acta/
 DJ acta.fyx.hu
 
+dbvar0 AICPA Journal of Accountancy
 T AICPA Journal of Accountancy
 U http://www.aicpa.org/pubs/jofa/joaiss.htm
 DJ www.aicpa.org
 
+dbvar0 Akademiai Kiado
 T Akademiai Kiado
 U http://www.akkrt.hu
 HJ www.akkrt.hu
 
+dbvar0 ALA TechSource
 T ALA TechSource
 U https://publications.techsource.ala.org/login.pl
 HJ alatechsource.metapress.com
 DJ publications.techsource.ala.org
 
+dbvar0 American Association of Cancer Research
 T American Association of Cancer Research
 U http://cebp.aacrjournals.org/
 DJ cebp.aacrjournals.org
@@ -2524,11 +2914,13 @@ HJ mcr.aacrjournals.org
 # Molecular Cancer Therapeutics, Online ISSN: 1538-8514
 HJ mct.aacrjournals.org
 
+dbvar0 American Association of Physics Teachers
 Title American Association of Physics Teachers
 URL http://www.aapt.org/
 DJ aapt.org
 HJ www.aapt.org
 
+dbvar0 American Association of School Administrators
 T American Association of School Administrators
 HJ resources.aasa.org
 U http://www.aasa.org/publications/
@@ -2537,60 +2929,72 @@ DJ www.aasa.org
 DJ resources.aasa.org
 
 UsageLimit -enforce -interval=5 -expires=15 -transfers=3000 ACS
+dbvar0 Environmental Science & Technology
 Title Environmental Science & Technology
 URL http://pubs.acs.org/journals/esthag
 HJ www.pubs.acs.org
 DJ pubs.acs.org
 UsageLimit -end ACS
 
+dbvar0 American Economic Association
 T American Economic Association
 U http://www.aeaweb.org/
 DJ www.aeaweb.org
 HJ pubs.aeaweb.org
 
+dbvar0 American Geophysical Union
 T American Geophysical Union
 U http://www.agu.org
 HJ www.agu.org
 U http://europa.agu.org
 HJ europa.agu.org
 
+dbvar0 American Journal of Physiology
 T American Journal of Physiology
 U http://ajplegacy.physiology.org/
 DJ ajpcon.physiology.org
 DJ ajplegacy.physiology.org
 
+dbvar0 American Journal of Psychology (AJP)
 T American Journal of Psychology (AJP)
 U http://www.press.uillinois.edu/journals/ajp.html
 HJ www.press.uillinois.edu
 
+dbvar0 American Journal of Public Health
 T American Journal of Public Health
 U http://www.ajph.org/
 DJ www.ajph.org
 
+dbvar0 American Journal of Science
 T American Journal of Science
 U http://www.ajsonline.org/
 DJ www.ajsonline.org
 
+dbvar0 American Journal on Mental Retardation
 T American Journal on Mental Retardation
 U http://aamr.allenpress.com/aamronline/?request=get-archive
 DJ allenpress.com
 HJ aamr.allenpress.com
 HJ www.allenpress.com
 
+dbvar0 American Library Association
 T American Library Association
 V 1030826:91711
 U https://www.techsource.ala.org
 HJ www.techsource.ala.org
 
+dbvar0 American Philological Association (APA Newsletter)
 T American Philological Association (APA Newsletter)
 U http://www.apaclassics.org/Newsletter/newsletter.html
 DJ www.apaclassics.org
 
+dbvar0 American Physiological Society
 T American Physiological Society
 U http://advan.physiology.org/
 D advan.physiology.org
 HJ physiologyonline.physiology.org
 
+dbvar0 American Institute of Physics
 T American Institute of Physics
 U http://link.aip.org/
 U http://ojps.aip.org/
@@ -2611,6 +3015,7 @@ HJ rmp.aps.org
 HJ prola.aps.org
 HJ www.aip.org
 
+dbvar0 American Meteorological Society
 T American Meteorological Society
 U http://ams.allenpress.com/amsonline/?request=get-archive&issn=1520-0477
 HJ ams.allenpress.com 
@@ -2618,29 +3023,35 @@ HJ ams.allenpress.com
 DJ journals.ametsoc.org
 HJ journals.ametsoc.org
 
+dbvar0 American Mathematical Society
 T American Mathematical Society
 U http://www.ams.org/jourhtml/journalsearch.html
 D www.ams.org
 
+dbvar0 The American Prospect
 T The American Prospect
 U http://www.prospect.org/
 DJ www.prospect.org
 HJ prospect.org
 
+dbvar0 American Scientist Online
 T American Scientist Online
 U http://www.americanscientist.org/template/IssueIndex
 DJ www.americanscientist.org
 
+dbvar0 American Society of Civil Engineers
 T American Society of Civil Engineers
 U http://www.pubs.asce.org/
 HJ www.pubs.asce.org
 U http://ascelibrary.org/
 HJ ascelibrary.org
 
+dbvar0 American Society of Plant Biologists
 T American Society of Plant Biologists
 U http://www.aspb.org/publications/
 DJ www.aspb.org
 
+dbvar0 American Statistical Society
 T American Statistical Society
 U http://pubs.amstat.org/
 DJ pubs.amstat.org
@@ -2649,6 +3060,7 @@ DJ pubs.amstat.org
 ##American Statistician
 ##Technometrics
 
+dbvar0 Ammons Scientific, Ltd. (Journals)
 T Ammons Scientific, Ltd. (Journals)
 HJ archive.ammonsscientific.com
 # Psychological Reports (PR)
@@ -2666,43 +3078,52 @@ HJ www.amsciepub.com
 # Ammons passes user to this on the way from ejournals.etc to www.etc
 DJ 16u.org
 
+dbvar0 Annales Academiae Scientiarum Fennicae Mathematica
 T Annales Academiae Scientiarum Fennicae Mathematica
 U http://www.math.helsinki.fi/Annales/Anna.html
 HJ www.acadsci.fi
 HJ www.math.helsinki.fi
 
+dbvar0 Annales de l'institut Fourier
 T Annales de l'institut Fourier
 U http://aif.cedram.org/cgi-bin/browse
 DJ cedram.org
 HJ aif.cedram.org
 HJ www.cedram.org
 
+dbvar0 Annali della Scuola Normale Superiore
 T Annali della Scuola Normale Superiore
 U http://annaliscienze.sns.it/index.php?page=OnlineIndex
 U http://annaliscienze.sns.it/index.php?page=OnlineIndex
 DJ annaliscienze.sns.it
 
+dbvar0 Annals of Mathematics (Princeton)
 T Annals of Mathematics (Princeton)
 U http://annals.princeton.edu/annals/about/cover/cover.html
 DJ annals.princeton.edu
 HJ annals.math.princeton.edu
 
+dbvar0 Antiquity
 T Antiquity
 U http://antiquity.ac.uk/ant/toc.htm
 DJ antiquity.ac.uk
 
+dbvar0 ANZIAM Journal
 T ANZIAM Journal
 U http://www.austms.org.au/Publ/ANZIAM/
 HJ www.austms.org.au
 
+dbvar0 Applied Spectroscopy
 T Applied Spectroscopy
 U http://as.osa.org/browse.cfm
 DJ as.osa.org
 
+dbvar0 APSnews
 T APSnews
 U http://www.aps.org/apsnews/
 HJ www.aps.org
 
+dbvar0 American Physiological Society
 T American Physiological Society
 U http://www.the-aps.org
 HJ ajpcell.physiology.org
@@ -2713,6 +3134,7 @@ HJ ajprenal.physiology.org
 HJ ajpendo.physiology.org
 HJ ajpgi.physiology.org
 
+dbvar0 American Society for Microbiology
 T American Society for Microbiology
 U http://www.asmusa.org/
 DJ www.asmusa.org
@@ -2720,10 +3142,12 @@ DJ aac.asm.org
 HJ ec.asm.org
 HJ cvi.asm.org
 
+dbvar0 American Society of Plant Biologists
 T American Society of Plant Biologists
 U http://www.plantcell.org/
 HJ www.plantcell.org 
 
+dbvar0 Annual Reviews
 T Annual Reviews
 U http://www.AnnualReviews.org/
 DJ www.annualreviews.org
@@ -2735,26 +3159,32 @@ HJ soc.annualreviews.org
 DJ arjournals.annualreviews.org
 HJ arjournals.annualreviews.org
 
+dbvar0 ARCHIV - Archiv fur das Studium der neueren Sprachen und Literaturen
 T ARCHIV - Archiv fur das Studium der neueren Sprachen und Literaturen
 U http://www.archivdigital.info/archiv.html
 DJ www.archivdigital.info
 
+dbvar0 Archival outlook
 T Archival outlook
 u http://www2.archivists.org/
 DJ www2.archivists.org
 
+dbvar0 Arms Control Today
 T Arms Control Today
 U http://www.armscontrol.org/act/archived.asp
 HJ www.armscontrol.org
 
+dbvar0 ArzneimForsch/DrugRes
 T ArzneimForsch/DrugRes
 U http://www.ecv.de/ecv/catalog/af.php
 DJ www.ecv.de
 
+dbvar0 ASLO
 T ASLO
 U http://aslo.org/
 HJ aslo.org
 
+dbvar0 ASME International
 T ASME International
 U http://www.asme.org
 DJ www.asme.org
@@ -2764,6 +3194,7 @@ HJ journaltool.asme.org
 HJ asme2.asmeny.org
 HJ asme.mondosearch.com
 
+dbvar0 ASTM Journals
 T ASTM Journals
 U http://journalsip.astm.org
 # e.g. J of Testing and Evaluation issn 0090-3973
@@ -2771,55 +3202,67 @@ DJ enterprise.astm.org
 DJ journalsip.astm.org
 HJ enterprise.astm.org
 
+dbvar0 Astronomical Society of the Pacific
 T Astronomical Society of the Pacific
 U http://www.astrosociety.org/
 DJ www.astrosociety.org
 
 
+dbvar0 Berkeley Electronic Press Journals
 T Berkeley Electronic Press Journals
 U http://bepress.com
 HJ www.bepress.com
 
+dbvar0 Biochemical Society Transactions
 T Biochemical Society Transactions
 U http://www.biochemsoctrans.org/bst/toc.htm
 DJ www.biochemsoctrans.org
 
+dbvar0 Biological Psychiatry
 T Biological Psychiatry
 U http://www.biologicalpsychiatryjournal.com
 DJ www.biologicalpsychiatryjournal.com
 
+dbvar0 BioOne
 T BioOne
 U http://www.bioone.org/bioone/?request=index-html
 D www.bioone.org
 HJ www.biosurvey.ou.edu
 
+dbvar0 Black Collegian
 T Black Collegian
 U http://www.blackcollegian.com/issues/index.shtml
 HJ www.blackcollegian.com
 
+dbvar0 Blackwell-Synergy
 T Blackwell-Synergy
 U http://www.blackwell-synergy.com/member/institutions/journallist.asp
 D www.blackwell-synergy.com
 
+dbvar0 Brief Communications (The Journal of Neuroscience)
 T Brief Communications (The Journal of Neuroscience)
 U http://web.sfn.org/index.aspx?pagename=JournalOfNeuroscience_briefcommunications
 DJ web.sfn.org
 
 # result of serial-reconciler.pl jkline 2005-11-17
 # issn 0007-1250
+dbvar0 British journal of psychiatry
 T British journal of psychiatry
 U http://bjp.rcpsych.org/contents-by-date.0.shtml
 DJ bjp.rcpsych.org
 HJ bjp.rcpsych.org
 
+dbvar0 Bulletin of Hispanic Studies
 T Bulletin of Hispanic Studies
 U http://liverpool.metapress.com/content/121622/
 HJ liverpool.metapress.com
 
+dbvar0 Bulletins of American Paleontology
 T Bulletins of American Paleontology
 U http://www.museumoftheearth.org/publications/bookstore.php?page=BAP_Online
 HJ www.museumoftheearth.org
 
+dbvar0 Canadian Journal of African Studies
 T Canadian Journal of African Studies
 U http://ejournals.library.ualberta.ca/index.php/cjas-rcea/issue/archive
 DJ ualberta.ca
@@ -2827,11 +3270,13 @@ HJ ejournals.library.ualberta.ca
 HJ www.ualberta.ca
 
 # Canadian Mathematical Society Journals
+dbvar0 Canadian Journal of Mathematics
 T Canadian Journal of Mathematics
 U http://cms.math.ca/
 DJ cms.math.ca
 
 # Mineralogical Association of Canada
+dbvar0 The Canadian Mineralogist
 T The Canadian Mineralogist
 U http://www.canmin.org/
 DJ canmin.org
@@ -2839,10 +3284,12 @@ DJ mineralogicalassociation.ca
 HJ www.canmin.org
 HJ www.mineralogicalassociation.ca
 
+dbvar0 CARL (California Academic Research Libraries) Newsletter
 T CARL (California Academic Research Libraries) Newsletter
 U http://www.carl-acrl.org/Archives/NewsletterArchive/index.html
 DJ www.carl-acrl.org
 
+dbvar0 Center for diffusion of academic mathematical journals (CEDRAM)
 T Center for diffusion of academic mathematical journals (CEDRAM)
 U http://ambp.cedram.org/
 U http://afst.cedram.org/
@@ -2855,18 +3302,22 @@ DJ jtnb.cedram.org
 DJ jedp. cedram.org
 DJ tsg.cedram.org 
 
+dbvar0 Chosun Ilbo Archive
 T Chosun Ilbo Archive
 U http://srchdb1.chosun.com/pdf/i_archive/
 H srchdb1.chosun.com
 
+dbvar0 Clark University (journals)
 T Clark University (journals)
 U http://www.clarku.edu/
 DJ www.clarku.edu
 
+dbvar0 Cold Spring Harbor Symposia on Quantitative Biology
 T Cold Spring Harbor Symposia on Quantitative Biology
 U http://symposium.cshlp.org/
 DJ symposium.cshlp.org
 
+dbvar0 Cold Spring Harbor Protocols
 Title Cold Spring Harbor Protocols
 URL http://cshprotocols.cshlp.org/
 DJ cshlp.org
@@ -2874,6 +3325,7 @@ HJ cshprotocols.cshlp.org
 
 
 # jkline 20060118 testing V. V only works for http basic auth.
+dbvar0 College Art Association
 T College Art Association
 URL -form=post caa http://www.caareviews.org/index.lasso?login=institutional
 FormVariable theUsername=3593
@@ -2883,16 +3335,19 @@ FormVariable submit=submit
 HJ www.caareviews.org
 
 
+dbvar0 Colloquia Germanica
 T Colloquia Germanica
 U http://www.narr.de/periodicals/colloquia_germanica.html
 DJ www.narr.de
 
+dbvar0 CALICO
 T CALICO
 U https://calico.org/
 DJ calico.org
 HJ journals.sfu.ca
 DJ sfu.ca
 
+dbvar0 Cambridge Journals Online
 T Cambridge Journals Online
 U http://www.journals.cup.org/bin/bladerunner?REQUNIQ=999108850&REQSESS=1217658&115020REQEVENT=&REQAUTH=0
 DJ www.journals.cup.org
@@ -2904,28 +3359,34 @@ HJ cup.cam.ac.uk
 HJ journals.cup.cam.ac.uk
 HJ 193.60.94.214
 
+dbvar0 Canadian Journal of Chemistry
 T Canadian Journal of Chemistry
 U http://pubs.nrc-cnrc.gc.ca/rp-ps/journalDetail.jsp?jcode=cjc&lang=eng
 DJ pubs.nrc-cnrc.gc.ca
 DJ rparticle.web-p.cisti.nrc.ca
 
+dbvar0 Canadian Journal of Program Evaluation
 T Canadian Journal of Program Evaluation
 U http://evaluationcanada.ca/site.cgi?s=4&ss=21&_lang=en
 HJ evaluationcanada.ca
 
+dbvar0 Canadian Mathematical Society Journals
 T Canadian Mathematical Society Journals
 U http://journals.cms.math.ca
 HJ journals.cms.math.ca
  
+dbvar0 Catchword
 T Catchword
 U http://www.catchword.com
 DJ catchword.com
 
+dbvar0 Cell Biology International (journal)
 T Cell Biology International (journal)
 U http://www.cellbiolint.org/cbi/toc.htm
 DJ www.cellbiolint.org
 
 # Cell press is a provider of numerous journals. Put them all in this stanza.
+dbvar0 Cell Press
 T Cell Press
 U http://www.cell.com/
 U http://www.cellpress.com/
@@ -2962,71 +3423,86 @@ HJ www.chembiol.org
 HJ cellpress.com
 
 
+dbvar0 CEP Magazine (Chemical Engineering Progress)
 T CEP Magazine (Chemical Engineering Progress)
 U http://www.aiche.org/cep/
 HJ www.aiche.org
 
+dbvar0 The Chemical Educator
 T The Chemical Educator
 U http://chemeducator.org/tocs.htm
 DJ chemeducator.org
 
+dbvar0 Choice Reviews Online
 T Choice Reviews Online
 U http://www.cro2.org/default.aspx?page=currentissues&iid=3243837
 DJ www.cro2.org
 HJ www.cro3.org
 DJ cro3.org
 
+dbvar0 Chronicle of Higher Education, The
 T Chronicle of Higher Education, The
 U http://chronicle.com/
 HJ chronicle.com
 
+dbvar0 Commentationes Mathematicae Universitatis Carolinae
 T Commentationes Mathematicae Universitatis Carolinae
 U http://www.karlin.mff.cuni.cz/cmucemis.php
 DJ www.karlin.mff.cuni.cz
 
 # result of serial-reconciler.pl jkline 2005-12-08
 # issn 0010-4884
+dbvar0 Computing reviews
 T Computing reviews
 U http://www.reviews.com
 DJ www.reviews.com
 HJ www.reviews.com
 
 # NACE International
+dbvar0 Corrosion
 T Corrosion
 U http://corrosion.aip.org/
 DJ corrosion.aip.org
 DJ corrosionjournal.org
 HJ www.nace.org
 
+dbvar0 CORTEX
 T CORTEX
 U http://www.cortex-online.org/
 HJ www.cortex-online.org
 
+dbvar0 Critical Reviews in Biochemistry and Molecular Biology
 T Critical Reviews in Biochemistry and Molecular Biology
 U http://informahealthcare.com/openurl?genre=journal&issn=1040-9238
 DJ informahealthcare.com
 
+dbvar0 CSIRO Publishing Journals
 T CSIRO Publishing Journals
 U http://www.publish.csiro.au/journals/pasa/
 HJ www.publish.csiro.au 
 
+dbvar0 Cultural Survival Quarterly
 T Cultural Survival Quarterly
 U http://209.200.101.189/publications/csq/index.cfm
 HJ 209.200.101.189
 
+dbvar0 Current History
 T Current History
 U http://www.currenthistory.com/
 DJ www.currenthistory.com
 
 # Includes Publicationes Mathematicae Debrecen
+dbvar0 Debreceni Egyetem, Matematikai Intezet
 T Debreceni Egyetem, Matematikai Intezet
 U http://www.math.klte.hu/
 DJ www.math.klte.hu
 
+dbvar0 Dekker Online
 T Dekker Online
 U http://www.dekker.com/servlet/product/productid/ETC
 HJ www.dekker.com 
 
+dbvar0 Directory of Open Access Journals
 T Directory of Open Access Journals
 U http://didaskalia.open.ac.uk 
 HJ didaskalia.open.ac.uk 
@@ -3035,15 +3511,18 @@ HJ 148.215.125.25
 HJ jasss.soc.surrey.ac.uk
 HJ www-jime.open.ac.uk
 
+dbvar0 Discovery Magazine
 T Discovery Magazine
 U http://www.discovermagazine.com
 DJ www.discovermagazine.com
 
+dbvar0 Dow Jones Interactive
 T Dow Jones Interactive
 U http://nrstg1p.djnr.com/cgi-bin/DJInteractive?cgi=WEB_FLAT_PAGE&page=wrapper/index&NRAUTOLOG=01RaHKmp6sm9BZJljF9640HNNrmKJ5mQAA&NRLBRedirect=nrstg1p&entry_point=1
 D nrstgip.djnr.com
 
 
+dbvar0 Duke University Press Journals
 T Duke University Press Journals
 U http://dukejournals.org/
 HJ  als.dukejournals.org
@@ -3103,11 +3582,13 @@ HJ  culturalpolitics.dukejournals.org
 HJ  tikkun.dukejournals.org
 
 
+dbvar0 EastView
 T EastView
 U http://dlib.eastview.com/sources/
 DJ dlib.eastview.com
 HJ online.eastview.com
 
+dbvar0 Ebsco Online
 T Ebsco Online
 U http://ejournals.ebsco.com/disclaimer.asp
 DJ ebsco.com
@@ -3122,19 +3603,23 @@ HJ ebscohost.com
 HJ search.ebscohost.com
 HJ openurl.ebscohost.com
 
+dbvar0 Ecology (Durham)
 T Ecology (Durham)
 U http://www.esajournals.org/esaonline/?request=get-archive&issn=0012-9658
 DJ www.esajournals.org
 
+dbvar0 Economic & Political Weekly (EPW)
 T Economic & Political Weekly (EPW)
 U http://www.epw.in/
 DJ www.epw.in
 
+dbvar0 EcoSal : Escherichia coli and Salmonella : cellular and molecular biology
 T EcoSal : Escherichia coli and Salmonella : cellular and molecular biology
 U http://www.ecosal.org/
 DJ ecosal.org
 HJ ecosal.org
 
+dbvar0 Edinburgh University Press Journals
 T Edinburgh University Press Journals
 U http://www.eupjournals.com/loi/abib
 U http://www.euppublishing.com
@@ -3144,6 +3629,7 @@ HJ www.eupjournals.com
 HJ www.euppublishing.com
 HJ www.eup.ed.ac.uk
 
+dbvar0 EDP Sciences
 T EDP Sciences
 U http://www.edpsciences.org/
 D epljournal.edpsciences.org
@@ -3152,18 +3638,22 @@ D www.ed-phys.fr
 # Astronomy and Astrophysics (Berlin, Germany: Online), issn 1432-0746
 HJ www.aanda.org
 
+dbvar0 The Electrochemical Society
 T The Electrochemical Society
 U http://www.electrochem.org/publications/esl/letters.htm
 HJ www.electrochem.org 
 
+dbvar0 EMBO journal
 T EMBO journal
 U http://embojournal.npgjournals.com/contents-by-date.0.shtml
 DJ embojournal.npgjournals.com
 
+dbvar0 EMBO reports
 T EMBO reports
 U http://emboreports.npgjournals.com/contents-by-date.0.shtml
 DJ emboreports.npgjournals.com
 
+dbvar0 Emerald Full Text
 T Emerald Full Text
 U http://www.emeraldinsight.com
 DJ www.emeraldinsight.com
@@ -3179,39 +3669,47 @@ H ernesto.emeraldinsight.com
 H fidelo.emeraldinsight.com
 H www.emerald-library.com
 
+dbvar0 Encyclopedia Britannica
 Title Encyclopedia Britannica
 URL http://academic.eb.com
 DJ eb.com
 HJ academic.eb.com
 
+dbvar0 Endocrine Society Journals
 T Endocrine Society Journals
 U http://endo.endojournals.org/contents-by-date.0.shtml
 DJ endojournals.org
 HJ endo.endojournals.org
 HJ www.endo-society.org
 
+dbvar0 Endocrine Journal
 Title Endocrine Journal
 URL http://press.endocrine.org/journal/endo
 DJ endocrine.org
 HJ press.endocrine.org
 
 
+dbvar0 L'Enseignement Mathematique
 T L'Enseignement Mathematique
 U http://www.unige.ch/math/EnsMath/EM_en/welcome.html
 DJ www.unige.ch
 
+dbvar0 Ethnology
 T Ethnology
 U http://ethnology.pitt.edu/
 DJ ethnology.pitt.edu
 
+dbvar0 European Comic Art
 T European Comic Art
 U http://eurocomicart.lupjournals.org/
 DJ eurocomicart.lupjournals.org
 
+dbvar0 European Mathematical Society Publishing House
 T European Mathematical Society Publishing House
 U http://www.ems-ph.org/
 DJ www.ems-ph.org
 
+dbvar0 European Physical Society
 T European Physical Society
 # aka Europhysics letters
 # issn 0295-5075
@@ -3220,16 +3718,19 @@ D www.iop.org
 D www.epletters.ch
 H www.epletters.ch
 
+dbvar0 Facult
 Title Faculté de Théologie Protestante de Strasbourg
 URL http://assoc.wanadoo.fr/theologie.prot-strasbg/index.html
 DJ wanadoo.fr
 HJ assoc.wanadoo.fr
 
 
+dbvar0 Far Eastern Economic Review
 T Far Eastern Economic Review
 U http://www.feer.com/
 DJ www.feer.com
 
+dbvar0 Fibonacci quarterly
 T Fibonacci quarterly
 u http://www.fq.math.ca/
 DJ math.ca
@@ -3237,15 +3738,18 @@ DJ dal.ca
 HJ www.fq.math.ca
 HJ www.mathstat.dal.ca
 
+dbvar0 Financial Analysts Journal
 T Financial Analysts Journal
 U http://www.cfapubs.org/loi/faj
 HJ www.cfapubs.org
 
+dbvar0 FLM Publishing Assoc
 Title FLM Publishing Assoc
 URL http://flm.educ.ualberta.ca
 DJ ualberta.ca
 HJ flm.educ.ualberta.ca
 
+dbvar0 For the Learning of Mathematics
 T For the Learning of Mathematics
 U http://flm-journal.org
 HJ www.flm-journal.org
@@ -3254,14 +3758,17 @@ DJ flm-journal.org
 
 
 
+dbvar0 Genes & Development
 T Genes & Development
 U http://genesdev.cshlp.org/
 DJ genesdev.cshlp.org
 
+dbvar0 Genome Research
 T Genome Research
 U http://genome.cshlp.org/
 DJ genome.cshlp.org
 
+dbvar0 Geochemical Journal
 T Geochemical Journal
 U http://www.terrapub.co.jp/journals/GJ/list.html
 DJ terrapub.co.jp
@@ -3271,6 +3778,7 @@ DJ terrapub.co.jp
 # this stanza in alphabetical order by DJ. 
 # Include title and issn as comments if you know them.
 #   2005-11-22 jameso and jkline
+dbvar0 Geoscience World 
 T Geoscience World 
 U http://www.geoscienceworld.org/
 # AAPG Bulletin, issn 0149-1423
@@ -3402,10 +3910,12 @@ HJ www.geosociety.org
 #Journal of Geoscience Education 
 HJ nagt-jge.org
 
+dbvar0 Government Executive.com
 T Government Executive.com
 U http://www.govexec.com/
 DJ www.govexec.com
 
+dbvar0 Handbook of Birds of the World
 T Handbook of Birds of the World
 U http://www.hbw.com/user
 HJ www.hbw.com
@@ -3413,6 +3923,7 @@ HJ hbw.com
 DJ hbw.com
 
 
+dbvar0 Harvard Educational Review
 T Harvard Educational Review
 U http://www.edreview.org/
 DJ hepg.org
@@ -3422,6 +3933,7 @@ HJ her.hepg.org
 HJ www.edreview.org
 HJ gseweb.harvard.edu
 
+dbvar0 Haworth Press Journals
 T Haworth Press Journals
 U http://www.haworthpressinc.com
 HJ www.haworthpressinc.com
@@ -3430,6 +3942,7 @@ HJ haworthpress.com
 DJ www.haworthpress.com
 HJ www.haworthpress.com
 
+dbvar0 HeinOnline
 T HeinOnline
 U http://heinonline.org/HOL/Welcome
 DJ heinonline.org
@@ -3437,10 +3950,12 @@ DJ www.heinonline.org
 HJ www.heinonline.org
 
 # Herpetological Monographs and Herpetologica
+dbvar0 Herpetologists League
 T Herpetologists League
 U http://www.hljournals.org
 DJ www.hljournals.org
 
+dbvar0 Highwire Press
 T Highwire Press
 U http://mcb.asm.org
 HJ olbull.org
@@ -3500,22 +4015,26 @@ HJ highwire.stanford.edu
 HJ www.amjbot.org
 HJ emboj.embopress.org
 
+dbvar0 Archives of General Psychiatry
 T Archives of General Psychiatry
 U http://archpsyc.ama-assn.org
 DJ archpsyc.ama-assn.org
 HJ archpsyc.ama-assn.org
 
+dbvar0 Archives of Internal Medicine
 T Archives of Internal Medicine
 U http://archinte.ama-assn.org
 DJ archinte.ama-assn.org
 HJ archinte.ama-assn.org
 
+dbvar0 Archives of Neurology
 T Archives of Neurology
 U http://archneur.ama-assn.org
 DJ archneur.ama-assn.org
 HJ archneur.ama-assn.org
 
 
+dbvar0 Hindawi Publishing
 T Hindawi Publishing
 U http://aaa.hindawi.com/contents.html
 DJ hindawi.com
@@ -3527,6 +4046,7 @@ HJ jam.hindawi.com
 HJ ade.hindawi.com
 HJ fpta.hindawi.com
 
+dbvar0 History Cooperative
 T History Cooperative
 U http://www.historycooperative.org
 U http://www.historycooperative.com/journals.html
@@ -3534,19 +4054,23 @@ DJ www.historycooperative.org
 DJ www.historycooperative.com
 DJ www.historycoop.org
 
+dbvar0 History of Philosophy Quarterly (HPQ)
 T History of Philosophy Quarterly (HPQ)
 U http://hpq.press.uiuc.edu/
 DJ hpq.press.uiuc.edu
 
+dbvar0 HortScience
 T HortScience
 U http://hortsci.ashspublications.org/
 DJ hortsci.ashspublications.org
 DJ journal.ashspublications.org
 
+dbvar0 Houston Journal of Mathematics
 T Houston Journal of Mathematics
 U http://www.math.uh.edu/~hjm/Electronic-Editions.html
 HJ www.math.uh.edu
 
+dbvar0 Human Kinetics
 T Human Kinetics
 U http://www.humankinetics.com/
 DJ humankinetics.com
@@ -3554,14 +4078,17 @@ DJ hkusa.com
 HJ www.humankinetics.com
 HJ www.hkusa.com
 
+dbvar0 IEEE Explore
 T IEEE Explore
 U http://ieeexplore.ieee.org/Xplore/DynWel.jsp
 DJ ieeexplore.ieee.org
 
+dbvar0 IEEE Proceedings Order Plan (POP)
 T IEEE Proceedings Order Plan (POP)
 U http://www.ieee.org
 HJ www.ieee.org
 
+dbvar0 IGI Full-Text Online Journal Collection
 T IGI Full-Text Online Journal Collection
 U http://fulltext.igi-online.com/
 DJ fulltext.igi-online.com
@@ -3569,6 +4096,7 @@ DJ fulltext.igi-online.com
 HJ services.igi-global.com
 HJ www.igi-global.com
 
+dbvar0 IMF (International Monetary Fund) Survey
 T IMF (International Monetary Fund) Survey
 U http://www.imf.org/external/pubs/ft/survey/surveyx.htm
 DJ imf.org
@@ -3576,29 +4104,35 @@ HJ www.imf.org
 HJ data.imf.org
 
 # IMF Stats
+dbvar0 IMF
 T IMF
 U http://elibrary-data.imf.org/
 DJ imf.org
 HJ elibrary-data.imf.org
 
+dbvar0 Indiana University Mathematics Journal
 T Indiana University Mathematics Journal
 U http://www.iumj.indiana.edu/
 DJ www.iumj.indiana.edu
 
+dbvar0 Indonesia
 T Indonesia
 U http://cip.library.cornell.edu/DPubS?service=UI&version=1.0&verb=Display&handle=seap.indo
 DJ cip.cornell.edu
 DJ cip.library.cornell.edu
 
+dbvar0 Informa Pharmaceutical Science
 T Informa Pharmaceutical Science
 U http://www.informapharmascience.com/
 DJ informapharmascience.com
 HJ www.informapharmascience.com
 
+dbvar0 informaworld
 T informaworld
 U http://www.informaworld.com/
 DJ www.informaworld.com
 
+dbvar0 Informs Journals
 T Informs Journals
 U http://pubsonline.informs.org/library
 U http://mktsci.journal.informs.org/archive/
@@ -3621,11 +4155,13 @@ HJ ite.pubs.informs.org
 HJ transci.journal.informs.org
 HJ www.informs.org
 
+dbvar0 InfoSci-Books
 Title InfoSci-Books
 URL http://infosci-books.com/
 DJ infosci-books.com
 HJ infosci-books.com
 
+dbvar0 Ingenta
 T Ingenta
 U http://www.ingenta.com/
 DJ ingenta.com
@@ -3638,17 +4174,20 @@ HJ claremont.library.ingentaconnect.com
 HJ booksandjournals.brillonline.com
 DJ brillonline.com
 
+dbvar0 ingenta select
 T ingenta select
 U http://www.ingentaselect.com/rpsv/subs/all.htm
 DJ ingentaselect.com
 HJ www.ingentaselect.com
 
+dbvar0 Institute of Mathematics (Polish Academy of Sciences)
 T Institute of Mathematics (Polish Academy of Sciences)
 U http://journals.impan.gov.pl
 DJ impan.gov.pl
 HJ journals.impan.gov.pl
 HJ www.impan.gov.pl
 
+dbvar0 Institute of Physics Archives
 T Institute of Physics Archives
 U http://www.iop.org/EJ/S/1/NCL136000/PCdQ.KmTWk.Fs60ZQoGvyg/search/-opt=searchall
 DJ www.iop.org
@@ -3657,6 +4196,7 @@ HJ scitation.aip.org
 HJ stacks.iop.org
 
 ##These journals use the format 'http://iopscience.iop.org/0953-4075'
+dbvar0 Institute of Physics Journals
 T Institute of Physics Journals
 U http://iopscience.iop.org
 DJ iopscience.iop.org
@@ -3664,50 +4204,61 @@ DJ iop.org
 # EPL (Europhysics Letters), ISSN 1286-4854
 HJ www.epljournal.org
 
+dbvar0 International Journal of the Sociology of Language
 T International Journal of the Sociology of Language
 U http://www.atypon-link.com/WDG/loi/ijsl
 HJ www.atypon-link.com
 
+dbvar0 International Press Journals
 T International Press Journals
 U http://www.intlpress.com/JDG
 DJ intlpress.com
 HJ www.intlpress.com 
 
+dbvar0 JABA (Journal of Applied Behavior Analysis)
 T JABA (Journal of Applied Behavior Analysis)
 U http://seab.envmed.rochester.edu/jaba/toc/jabaTOC.php
 DJ seab.envmed.rochester.edu
 
+dbvar0 Jane's International Defense Review
 T Jane's International Defense Review
 U http://idr.janes.com/
 DJ janes.com
 HJ idr.james.com
 
+dbvar0 Journal of Accountancy
 T Journal of Accountancy
 U http://www.journalofaccountancy.com/
 DJ www.journalofaccountancy.com
 
 # Rockefeller University Press 
+dbvar0 Journal of Cell Biology
 T Journal of Cell Biology
 U http://jcb.rupress.org/
 HJ jcb.rupress.org
 DJ rupress.org
 
+dbvar0 Journal of Chemical Education (JCE Online) Online
 T Journal of Chemical Education (JCE Online) Online
 U http://www.jce.divched.org/
 DJ www.jce.divched.org
 
+dbvar0 Journal of Computational Biology
 T Journal of Computational Biology
 U http://www.liebertonline.com/cmb
 DJ www.liebertonline.com
 
+dbvar0 Journal of Excercise and Sport Psychology
 T Journal of Excercise and Sport Psychology
 U http://journals.humankinetics.com
 DJ journals.humankinetics.com
 
+dbvar0 Journal of General Physiology (JGP)
 T Journal of General Physiology (JGP)
 U http://jgp.rupress.org/
 DJ jgp.rupress.org
 
+dbvar0 Journal of Geoscience Education
 T Journal of Geoscience Education
 U http://nagt.org/
 DJ nagt.org
@@ -3715,6 +4266,7 @@ HJ nagt.org
 
 # result of serial-reconciler.pl jkline 2005-11-17
 # issn 0733-9410
+dbvar0 Journal of geotechnical engineering
 T Journal of geotechnical engineering
 U http://ascelibrary.aip.org/dbt/dbt.jsp?KEY=JGENDZ
 DJ ascelibrary.aip.org
@@ -3722,44 +4274,54 @@ HJ ascelibrary.aip.org
 
 # result of serial-reconciler.pl jkline 2005-11-17
 # issn 0218-2165
+dbvar0 Journal of knot theory and its ramifications
 T Journal of knot theory and its ramifications
 U http://ejournals.wspc.com.sg/journals/jktr/mkt/archive.shtml
 DJ ejournals.wspc.com.sg
 HJ ejournals.wspc.com.sg
 
+dbvar0 Journal of Latino-Latin American studies
 T Journal of Latino-Latin American studies
 U http://jollas.org/loi/llas
 DJ jollas.org
 
+dbvar0 Journal of Music Theory
 T Journal of Music Theory
 U http://jmt.dukejournals.org/
 DJ jmt.dukejournals.org
 
+dbvar0 Journal of Learning Disabilities
 T Journal of Learning Disabilities
 U http://ldx.sagepub.com/
 DJ ldx.sagepub.com/
 
+dbvar0 Journal of Operator Theory
 T Journal of Operator Theory
 U http://www.mathjournals.org/jourcgi/jrnl_toolbar_nav/jot_all
 DJ www.mathjournals.org
 
+dbvar0 Journal of Philosophy Online
 T Journal of Philosophy Online
 U http://www.journalofphilosophy.org/articles/index.htm
 HJ www.journalofphilosophy.org
 
+dbvar0 Journal of the National Cancer Institute
 T Journal of the National Cancer Institute
 U http://jncicancerspectrum.oupjournals.org/jnci
 DJ jncicancerspectrum.oupjournals.org
 
+dbvar0 Journal of the West
 T Journal of the West
 U http://jow.abc-clio.com/
 DJ jow.abc-clio.com
 
+dbvar0 Latino American Experience
 T Latino American Experience
 U http://latinoamerican2.abc-clio.com/
 DJ abc-clio.com
 
 # Miami University 
+dbvar0 Journal on Excellence in College Teaching
 T Journal on Excellence in College Teaching
 U http://ject.lib.muohio.edu 
 DJ muohio.edu 
@@ -3778,11 +4340,13 @@ HJ www.ucm.muohio.edu
 # 
 # new JSTOR stanza, added 2008-10-21:
 Option DJCookieOnly
+dbvar0 JSTOR
 Title JSTOR
 URL http://www.jstor.org/
 DJ jstor.org
 Option Cookie
 
+dbvar0 Karger Online
 T Karger Online
 # issn 0030-2414
 U http://www.karger.ch/journals/ocl/ocl_bk.htm
@@ -3791,10 +4355,12 @@ HJ www.karger.com
 DJ content.karger.com
 HJ content.karger.com
 
+dbvar0 Keesing's World News Archives
 T Keesing's World News Archives
 U http://www.keesings.com/
 DJ www.keesings.com
 
+dbvar0 Kluwer Online Journals
 T Kluwer Online Journals
 U http://www.kluweronline.com
 HJ kap.Iwwonline.com
@@ -3823,45 +4389,54 @@ DJ Iwwonline.com
 DJ wkap.nl
 DJ www.kluweronline.com
 
+dbvar0 Latin American weekly report - Latin American Newsletters
 T Latin American weekly report - Latin American Newsletters
 U http://62.173.71.58/asiaint/ln/lwr/LWR2342.asp
 DJ 62.173.71.58
 HJ www.latinnews.com
 HJ latinnews.com
 
+dbvar0 Lawrence Erlbaum Associates - LEA Online
 T Lawrence Erlbaum Associates - LEA Online
 U http://www.leaonline.com
 HJ www.leaonline.com
 
 # result of serial-reconciler.pl jkline 2005-11-17
 # issn unknown
+dbvar0 LMS journal of computation and mathematics
 T LMS journal of computation and mathematics
 U http://www.lms.ac.uk/jcm/journal.html
 DJ www.lms.ac.uk
 HJ www.lms.ac.uk
 
+dbvar0 MAKE Magazine
 T MAKE Magazine
 U http://makezine.com/magazine/
 DJ makezine.com
 
+dbvar0 Management Science
 T Management Science
 U http://mansci.journal.informs.org/archive/
 DJ mansci.journal.informs.org
 
+dbvar0 Marine Ecology Progress Series
 T Marine Ecology Progress Series
 H www.int-res.com
 U http://www.int-res.com/journals/meps/index.html 
 
+dbvar0 Mary Ann Liebert
 Title Mary Ann Liebert
 URL http://www.liebertpub.com/
 DJ liebertpub.com
 HJ online.liebertpub.com
 
+dbvar0 Mathematica Scandinavica
 T Mathematica Scandinavica
 U http://www.mscand.dk/
 HJ www.mscand.dk
 
 
+dbvar0 Mathematical Sciences Publishers
 T Mathematical Sciences Publishers
 U http://www.camcos.org/
 U http://www.jomms.org/
@@ -3879,32 +4454,38 @@ HJ www.mathscipub.org
 # Geometry & Topology
 # Journal of Mechanics of Materials and Structures
 
+dbvar0 Mathematics of Operations Research
 T Mathematics of Operations Research
 U http://mor.journal.informs.org/
 DJ mor.journal.informs.org
 
+dbvar0 M.E. Sharpe Journals
 T M.E. Sharpe Journals
 U http://mesharpe.metapress.com 
 HJ mesharpe.metapress.com 
 
 # result of serial-reconciler.pl jkline 2005-12-08
 # issn 1512-0015
+dbvar0 Memoirs on differential equations and mathematical physics
 T Memoirs on differential equations and mathematical physics
 U http://217.147.228.131/memoirs/
 DJ 217.147.228.131
 HJ 217.147.228.131
 
 
+dbvar0 Micropaleontology Press
 T Micropaleontology Press
 U http://www.micropress.org/micropen2/index.php?journal=S&action=browse
 HJ www.micropress.org
 
+dbvar0 Mineralogical Society of America
 T Mineralogical Society of America
 U http://gmr.minsocam.org/
 HJ gmr.minsocam.org 
 HJ www.minsocam.org 
 HJ www.elementsmagazine.org
 
+dbvar0 MIT Press Journals
 T MIT Press Journals
 U http://mitpress.mit.edu 
 U http://www.mitpressjournals.org/
@@ -3913,6 +4494,7 @@ HJ mitpress2.mit.edu
 HJ lea.mit.edu  
 HJ www.mitpressjournals.org
 
+dbvar0 MLA Journals: PMLA
 T MLA Journals: PMLA
 U http://www.mlajournals.org/loi/pmla
 DJ mlajournals.org
@@ -3922,6 +4504,7 @@ HJ www.mla.org
 
 # Modern Language Association Journals see MLA Journals
 
+dbvar0 Molecular Endocrinology
 T Molecular Endocrinology
 U http://mend.endojournals.org/
 DJ mend.endojournals.org
@@ -3929,10 +4512,12 @@ DJ mend.endojournals.org
 # Monatshefte
 # see University of Wisconsin Press Journals Division
 
+dbvar0 Monthly Review
 T Monthly Review
 U http://www.monthlyreview.org/
 DJ www.monthlyreview.org
 
+dbvar0 National Academy of Sciences (U.S.)
 T National Academy of Sciences (U.S.)
 U http://www.pnas.org
 DJ pnas.org
@@ -3940,41 +4525,49 @@ DJ nasonline.org
 HJ www.pnas.org
 HJ www.nasonline.org
 
+dbvar0 National Academies Press
 Title National Academies Press
 URL http://www.nap.edu/
 DJ nap.edu
 HJ www.nap.edu
 
+dbvar0 National Association of Elementary School Principals (NAESP)
 T National Association of Elementary School Principals (NAESP)
 U http://web.naesp.org/inst/instlogin.php
 DJ web.naesp.org
 HJ www.naesp.org
 
+dbvar0 National Council of Teachers of English Journals
 T National Council of Teachers of English Journals
 U http://www.ncte.org
 HJ www.ncte.org
 
+dbvar0 National Journal Online
 T National Journal Online
 U http://www.nationaljournal.com/njonline/
 DJ nationaljournal.com
 DJ techdailydose.nationaljournal.com
 HJ nationaljournal.com
 
+dbvar0 National Science Teachers Assocation
 T National Science Teachers Assocation
 U http://science.nsta.org
 HJ science.nsta.org
 
+dbvar0 National Tax Journal
 T National Tax Journal
 U http://ntj.tax.org/
 DJ ntj.tax.org
 
 # result of serial-reconciler.pl jkline 2005-11-17
 # issn 0255-3813
+dbvar0 NATO review
 T NATO review
 U http://www.nato.int/docu/review.htm
 DJ www.nato.int
 HJ www.nato.int
 
+dbvar0 Nature Journals Online
 T Nature Journals Online
 U http://www.nature.com/nature/
 D www.nature.com
@@ -3983,6 +4576,7 @@ D content.naturesj.com
 D www.brjpharmacol.org
 HJ search.nature.com
 
+dbvar0 Naxos Video Library
 Title Naxos Video Library
 URL http://CUC.NaxosVideoLibrary.com
 DJ NaxosVideoLibrary.com
@@ -3990,21 +4584,25 @@ HJ CUC.NaxosVideoLibrary.com
 # trial 10/30/2014
 
 
+dbvar0 Neuroendocrinology Letters
 T Neuroendocrinology Letters
 U http://www.nel.edu/home.htm
 HJ www.nel.edu
 
+dbvar0 Neurology
 T Neurology
 U http://www.neurology.org/
 DJ www.neurology.org
 # Neurology Clinical practice
 HJ cp.neurology.org
 
+dbvar0 Neuropsychoanalysis
 T Neuropsychoanalysis
 U http://karnacbooks.metapress.com/
 DJ karnacbooks.metapress.com
 
 # Massachusetts Medical Society 
+dbvar0 New England Journal of Medicine
 T New England Journal of Medicine
 U http://www.nejm.org/
 DJ nejm.org
@@ -4012,12 +4610,14 @@ DJ massmed.org
 HJ www.nejm.org
 HJ www.massmed.org
 
+dbvar0 New Day Digital
 Title New Day Digital
 URL http://www.newdaydigital.com
 DJ newdaydigital.com
 HJ www.newdaydigital.com
 
 
+dbvar0 New Left Review
 T New Left Review
 U http://newleftreview.org/
 HJ www.newleftreview.net
@@ -4025,59 +4625,71 @@ HJ newleftreview.org
 DJ newleftreview.net
 DJ newleftreview.org
 
+dbvar0 New Scientist
 T New Scientist
 U http://www.newscientist.com
 HJ newscientist.com
 DJ newscientist.com
 
+dbvar0 New Statesman
 T New Statesman
 U http://www.newstatesman.com
 D www.newstatesman.com
 
+dbvar0 Nikkei Telecom
 Title Nikkei Telecom
 URL http://t21.nikkei.co.jp
 HJ t21.nikkei.co.jp
 DJ nikkei.co.jp
 
 
+dbvar0 Nineteenth-Century Art Worldwide
 T Nineteenth-Century Art Worldwide
 U http://19thc-artworldwide.org 
 DJ 19thc-artworldwide.org 
 
+dbvar0 Nordic Sounds
 T Nordic Sounds
 U http://www.nordicsounds.org/
 DJ www.nordicsounds.org
 
+dbvar0 NUMDAM (Num
 Title NUMDAM (Numérisation de Documents Anciens Mathématiques) 
 URL http://www.numdam.org/
 DJ numdam.org
 HJ www.numdam.org
 
+dbvar0 Nuovo cimento della Societa italiana di fisica
 T Nuovo cimento della Societa italiana di fisica
 U http://paperseek.sif.it/
 DJ sif.it
 HJ prometeo.sif.it:8080
 HJ www.sif.it
 
+dbvar0 Online archive of California 
 Title Online archive of California 
 URL http://www.oac.cdlib.org
 DJ cdlib.org
 HJ www.oac.cdlib.org
 
 
+dbvar0 OPAC Newsbank
 T OPAC Newsbank
 U http://opac.newsbank.com
 DJ opac.newsbank.com
 
+dbvar0 Open Access
 T Open Access
 U http://www.oapen.org/search?identifier=470831
 DJ oapen.org
 HJ www.oapen.org
 
+dbvar0 Operators and matrices
 T Operators and matrices
 U http://oam.ele-math.com/
 DJ oam.ele-math.com
 
+dbvar0 Optical Society of America
 T Optical Society of America
 U https://www.osapublishing.org
 DJ opticsinfobase.org
@@ -4092,6 +4704,7 @@ HJ www.osapublishing.org
 
 
 
+dbvar0 Optics Infobase
 T Optics Infobase
 U http://josaa.osa.org 
 HJ josaa.osa.org 
@@ -4104,15 +4717,18 @@ HJ jdt.osa.org
 HJ jot.osa.org
 HJ jlt.osa.org
 
+dbvar0 Optics Letters
 T Optics Letters
 U http://ol.osa.org/browse.cfm
 DJ ol.osa.org
 
+dbvar0 Pacific Journal of Mathematics
 T Pacific Journal of Mathematics
 U http://pjm.math.berkeley.edu/about/journal/archive.html
 HJ pjm.math.berkeley.edu
 HJ msp.berkeley.edu
 
+dbvar0 Palgrave Macmillan
 T Palgrave Macmillan
 U http://www.palgrave-journals.com
 DJ www.palgrave-journals.com
@@ -4120,19 +4736,23 @@ HJ palgrave-journals.com
 # International Abstracts in Operations Research (IAOR), EISSN: 1476-9352
 HJ www.iaor-palgrave.com
 
+dbvar0 Palgrave Connect
 Title Palgrave Connect
 URL http://www.palgraveconnect.com
 DJ palgraveconnect.com
 
+dbvar0 Peeters Online Bibliographies
 T Peeters Online Bibliographies
 # includes International philosophical bibliography
 U http://pob.peeters-leuven.be/
 HJ pob.peeters-leuven.be
 
+dbvar0 Peeters Online Journals
 T Peeters Online Journals
 U http://poj.peeters-leuven.be
 HJ poj.peeters-leuven.be
 
+dbvar0 Philosophy Documentation Center
 T Philosophy Documentation Center
 U http://www.pdcnet.org/collection/link/ipq
 DJ pdcnet.org
@@ -4140,10 +4760,12 @@ HJ www.pdcnet.org
 HJ www.secure.pdcnet.org
 HJ cas.pdcnet.org
 
+dbvar0 Phycologia - Journal of the International Phycological Society
 T Phycologia - Journal of the International Phycological Society
 U http://www.phycologia.org/perlserv/?request=get-archive&issn=0031-8884
 DJ www.phycologia.org
 
+dbvar0 Phytopathology
 T Phytopathology
 U http://apsjournals.apsnet.org/loi/phyto
 HJ apsjournals.apsnet.org
@@ -4152,6 +4774,7 @@ HJ www.aspnet.org
 
 # result of serial-reconciler.pl jkline 2005-12-08
 # issn 1435-8603
+dbvar0 Plant biology (Stuttgart, Germany)
 T Plant biology (Stuttgart, Germany)
 U https://www.thieme-connect.com/ejournals/toc/plantbiology
 DJ thieme-connect.com
@@ -4159,17 +4782,20 @@ HJ www.thieme-connect.de
 
 # result of serial-reconciler.pl jkline 2005-12-08
 # issn 0032-0919
+dbvar0 Plant science bulletin
 T Plant science bulletin
 U http://www.botany.org/bsa/psb/
 DJ www.botany.org
 HJ www.botany.org
 
+dbvar0 Plunkett Research Online 
 T Plunkett Research Online 
 # trial 3-15-2016=4-10-2016
 U http://www.plunkettresearchonline.com 
 DJ plunkettresearchonline.com 
 HJ www.plunkettresearchonline.com 
 
+dbvar0 Portland Press Electronic Journals
 T Portland Press Electronic Journals
 U http://bst.portlandpress.com/bst/toc.htm
 DJ www.portlandpress.com
@@ -4177,18 +4803,22 @@ DJ www.ncbi.nlm.nih.gov
 HJ bst.portlandpress.com 
 HJ www.biochemj.org 
 
+dbvar0 Proceedings of the Yorkshire Geological Society
 T Proceedings of the Yorkshire Geological Society
 U http://pygs.lyellcollection.org
 DJ pygs.lyellcollection.org
 
+dbvar0 Project Euclid Journals
 T Project Euclid Journals
 U http://projecteuclid.org/
 DJ projecteuclid.org
 
+dbvar0 Project Muse
 T Project Muse
 U http://muse.jhu.edu/search/search.pl
 D muse.jhu.edu
 
+dbvar0 PROLA - Physical Review Online Archive
 T PROLA - Physical Review Online Archive
 U http://publish.aps.org/annualindex/
 DJ ojps.aip.org
@@ -4201,10 +4831,12 @@ HJ prola.aps.org
 DJ prst-per.aps.org
 HJ prst-per.aps.org
 
+dbvar0 Psychosomatic Medicine
 T Psychosomatic Medicine
 U http://www.psychosomaticmedicine.org/
 DJ www.psychosomaticmedicine.org
 
+dbvar0 Psychonomic Society
 T Psychonomic Society
 U http://www.psychonomic.org
 HJ brm.psychonomic-journals.org
@@ -4216,17 +4848,21 @@ HJ app.psychonomic-journals.org
 HJ *.psychonomic-journals.org
 
 # American Journal of Psychiatry
+dbvar0 PsychiatryOnline
 Title PsychiatryOnline
+dbvar0 Journals of American Psychiatric Publishing
 Title Journals of American Psychiatric Publishing
 URL http://www.psychiatryonline.org/
 DJ psychiatryonline.org
 
+dbvar0 Publications of Department of Mathematics, Kobe University
 Title Publications of Department of Mathematics, Kobe University
 URL http://www.math.kobe-u.ac.jp/index-e.html
 DJ kobe-u.ac.jp
 HJ www.math.kobe-u.ac.jp
 
 
+dbvar0 PubMed Central
 T PubMed Central
 U http://www.pubmedcentral.gov/
 DJ www.pubmedcentral.gov
@@ -4234,48 +4870,58 @@ DJ www.pubmedcentral.gov
 DJ www.pubmedcentral.nih.gov
 HJ www.pubmedcentral.nih.gov
 
+dbvar0 INFORMS PubOnLine
 T INFORMS PubOnLine
 U http://pubsonline.informs.org
 DJ pubsonline.informs.org
 DJ www.extenza-eps.com
 HJ www.extenza-eps.com
 
+dbvar0 Renaissance Quarterly Online (Renaissance Society of America)
 T Renaissance Quarterly Online (Renaissance Society of America)
 U http://www.rsa.org/members/RQ/index.php
 DJ www.rsa.org
 
+dbvar0 ResearchNow
 T ResearchNow
 U http://researchnow.bepress.com/
 HJ researchnow.bepress.com
 
+dbvar0 Revista Iberoamericana
 T Revista Iberoamericana
 U http://revista-iberoamericana.pitt.edu/
 DJ revista-iberoamericana.pitt.edu
 
+dbvar0 Rivista degli studi orientali
 T Rivista degli studi orientali
 U http://www.libraweb.net/
 HJ www.libraweb.net
 
+dbvar0 Revue d'Histoire et de Philosophie Religieuses
 T Revue d'Histoire et de Philosophie Religieuses
 U http://www.rhpr.net/en/rhprtoc.html
 DJ iis4.domicile.fr
 DJ www.rhpr.net
 
+dbvar0 Rivista del Nuovo Cimento
 T Rivista del Nuovo Cimento
 U http://www.sif.it/SIF/it/portal/riviste/ncr/econtents
 HJ en.sif.it
 DJ sif.it
 
+dbvar0 Rocky Mountain Journal of Mathematics
 T Rocky Mountain Journal of Mathematics
 U http://rmmc.eas.asu.edu/rmj/rmjVOLS/rmjVOLS.html
 DJ rmmc.eas.asu.edu
 
+dbvar0 The Royal College of Psychiatrists
 Title The Royal College of Psychiatrists
 URL http://www.rcpsych.ac.uk
 DJ rcpsych.ac.uk 
 HJ www.rcpsych.ac.uk
 
 
+dbvar0 Royal Society of Chemistry
 T Royal Society of Chemistry
 U http://pubs.rsc.org/
 URL https://www.rsc.org
@@ -4284,12 +4930,14 @@ H www.rsc.org
 H xlink.rsc.org
 DJ rsc.org
 
+dbvar0 Royal Society of New Zealand
 Title Royal Society of New Zealand
 URL http://www.rsnz.org
 DJ rsnz.org
 HJ www.rsnz.org
 
 
+dbvar0 Royal Society Publishing
 T Royal Society Publishing
 U http://royalsocietypublishing.org/
 DJ royalsocietypublishing.org
@@ -4301,18 +4949,22 @@ HJ rsta.royalsocietypublishing.org
 HJ rspa.royalsocietypublishing.org
 HJ rspb.royalsocietypublishing.org
 
+dbvar0 The Royal Society
 Title The Royal Society
 URL http://publishing.royalsociety.org/
 DJ royalsociety.org
 HJ publishing.royalsociety.org
 
+dbvar0 Sage Business Researcher
 Title Sage Business Researcher
 URL http://businessresearcher.sagepub.com/
 DJ sagepub.com
 HJ businessresearcher.sagepub.com
 
 
+dbvar0 SAGE Publications
 T SAGE Publications
+dbvar0 Sage Publications
 Title Sage Publications
 URL http://online.sagepub.com
 DJ sagepub.com
@@ -4895,12 +5547,14 @@ HJ yjj.sagepub.com
 HJ yvj.sagepub.com
 HJ knowledge.sagepub.com
 
+dbvar0 SIAM Journals Online
 T SIAM Journals Online
 U http://epubs.siam.org/
 D epubs.siam.org
 D www.siam.org
 H www.siam.org
 
+dbvar0 Single Journals
 T Single Journals
 U http://www.evolutionary-ecology.com
 DJ www.evolutionary-ecology.com
@@ -4949,24 +5603,29 @@ HJ celt.muohio.edu
 H spr.dustbooks.com
 H www.tcj.com
 
+dbvar0 Sixteenth Century Journal
 Title Sixteenth Century Journal
 URL http://www.escj.org/escj-volume
 D escj.org
 H escj.org
 
+dbvar0 Societe Mathematique de France
 Title Societe Mathematique de France
 URL http://smf.emath.fr
 DJ emath.fr
 
+dbvar0 Society for American Music (SAM) Bulletin
 T Society for American Music (SAM) Bulletin
 U http://american-music.org/publications/bulletn/BulletinTablesOfContent.php
 DJ american-music.org
 
+dbvar0 Society for General Microbiology
 T Society for General Microbiology
 U http://vir.sgmjournals.org
 D vir.sgmjournals.org
 D mic.sgmjournals.org
 
+dbvar0 SpringerLink
 Title SpringerLink
 URL http://link.springer.com
 HJ www.link.springer.com
@@ -4978,10 +5637,12 @@ DJ springerlink.com
 DJ springer.com
 DJ sprn.gr 
 
+dbvar0 Synergy
 T Synergy
 U http://www.blackwell-synergy.com/Journals/issuelist.asp?journal=aag
 D www.blackwell-synergy.com
 
+dbvar0 TAIR Arabidopsis Information Resource
 Title TAIR Arabidopsis Information Resource
 U https://www.arabidopsis.org/servlets/Search?type=general&action=new_search
 U https://arabidopsis.org
@@ -4997,21 +5658,25 @@ HJ seqviewer.arabidopsis.org
 HJ gbrowse.arabidopsis.org
 
 
+dbvar0 Taylor and Francis Online
 T Taylor and Francis Online
 U http://www.tandfonline.com
 HJ www.tandfonline.com
 DJ tandfonline.com
 
+dbvar0 tce (The Chemical Engineer) magazine archive
 T tce (The Chemical Engineer) magazine archive
 U http://www.tcetoday.com/tce/temp/Archive.asp#mags
 DJ www.tcetoday.com
 
+dbvar0 Teacher Reference Center
 Title Teacher Reference Center
 URL http://www.TeacherReference.com/
 DJ TeacherReference.com
 HJ www.TeacherReference.com
 
 
+dbvar0 Teachers College Record
 T Teachers College Record
 DJ www.tcrecord.org
 # DJs for embedded Flash:
@@ -5019,16 +5684,19 @@ DJ c.brightcove.com
 DJ services.brightcove.com
 U http://www.tcrecord.org/
 
+dbvar0 TELOS
 T TELOS
 U http://journal.telospress.com/
 DJ telospress.com
 HJ journal.telospress.com
 HJ www.telospress.com
 
+dbvar0 Topology Proceedings
 T Topology Proceedings
 U http://at.yorku.ca
 HJ at.yorku.ca
 
+dbvar0 The Company of Biologists
 T The Company of Biologists
 U http://dev.biologists.org
 DJ dev.biologists.org
@@ -5043,10 +5711,12 @@ HJ www.biologists.com
 HJ www.biologists.org
 HJ dmm.biologists.org
 
+dbvar0 The Geological Society
 T The Geological Society
 U http://www.gsajournals.org/gsaonline/?request=get-current-toc&issn=0016-7606
 D www.gsajournals.org
 
+dbvar0 The Royal Society Publications
 T The Royal Society Publications
 U http://www.pubs.royalsoc.ac.uk
 DJ www.pubs.royalsoc.ac.uk
@@ -5054,19 +5724,23 @@ HJ www.journals.royalsoc.ac.uk
 
 # result of serial-reconciler.pl jkline 2005-11-17
 # issn
+dbvar0 Times Educational Supplement ePaper
 T Times Educational Supplement ePaper
 U http://www.tes.co.uk/epaper/
 DJ www.tes.co.uk
 HJ www.tes.co.uk
 
+dbvar0 Times Higher Education Supplement
 T Times Higher Education Supplement
 U http://www.thes.co.uk/
 HJ www.thes.co.uk
 
+dbvar0 Turpion Journals
 T Turpion Journals
 U http://www.turpion.org
 D www.turpion.org
 
+dbvar0 Ulrichsweb.com (Ulrich's Periodical Directory)
 T Ulrichsweb.com (Ulrich's Periodical Directory)
 U http://ulrichsweb.serialssolutions.com
 DJ ulrichsweb.com
@@ -5074,21 +5748,25 @@ DJ serialsolutions.com
 HJ ulrichsweb.serialssolutions.com
 HJ www.ulrichsweb.com
 
+dbvar0 UptoDate
 Title UptoDate
 URL http://www.uptodate.com/online
 DJ uptodate.com
 HJ www.uptodate.com
 
+dbvar0 Universidad Autonoma del Estado de Mexico
 Title Universidad Autonoma del Estado de Mexico
 URL http://www.redalyc.org/revista.oa?id=600
 DJ redalyc.org
 HJ www.redalyc.org
 
 
+dbvar0 University of Arizona Digital Commons
 T University of Arizona Digital Commons
 U http://digitalcommons.library.arizona.edu/
 HJ www.digitalcommons.library.arizona.edu
 
+dbvar0 University of California Press
 T University of California Press
 U http://caliber.ucpress.net
 DJ ucpress.edu
@@ -5096,22 +5774,26 @@ HJ caliber.ucpress.net
 HJ www.ucpress.edu
 HJ boom.ucpress.edu
 
+dbvar0 American Indian Culture and Research Journal
 Title American Indian Culture and Research Journal
 URL http://uclajournals.org/loi/aicr
 DJ uclajournals.org/
 HJ uclajournals.org/
 
 
+dbvar0 University of Chicago Press
 T University of Chicago Press
 U http://www.journals.uchicago.edu/ApJ/issues.html
 DJ www.journals.uchicago.edu
 
+dbvar0 University of Illinois at Urbana-Champaign
 Title University of Illinois at Urbana-Champaign
 url http://www.illinois.edu
 DJ illinois.edu
 HJ www.illinois.edu
 
 
+dbvar0 University of Illinois Press (*.press.illinois.edu)
 T University of Illinois Press (*.press.illinois.edu)
 U http://press.illinois.edu/
 DJ press.illinois.edu
@@ -5133,12 +5815,14 @@ HJ ft.press.uiuc.edu
 HJ jegp.press.illinois.edu
 HJ jegp.press.uiuc.edu
 
+dbvar0 University of Pittsburgh Press
 Title University of Pittsburgh Press
 URL http://www.library.pitt.edu/dscribe/
 DJ pitt.edu
 HJ www.library.pitt.edu
 
 
+dbvar0 University of Virginia Press (Rotunda)
 T University of Virginia Press (Rotunda)
 # includes:
 # Dolley Madison Digital Edition
@@ -5154,6 +5838,7 @@ HJ www.upress.virginia.edu
 # All new subDJs of uwpress.org should be added to this stanza.
 # Include issn if you know it.
 # stanza created by jotto 2008-7-18
+dbvar0 University of Wisconsin Press Journals Division (*.uwpress.org)
 T University of Wisconsin Press Journals Division (*.uwpress.org)
 U http://uwpress.org/
 DJ uwpress.org
@@ -5162,22 +5847,26 @@ DJ le.uwpress.org
 # Monatshefte, Online ISSN: 1934-2810
 DJ mon.uwpress.org
 
+dbvar0 University of Szeged, Hungary
 Title University of Szeged, Hungary
 URL http://www.u-szeged.hu/
 HJ u-szeged.hu
 DJ www.u-szeged.hu
 
+dbvar0 University Press Scholarship Online Philosophy
 Title University Press Scholarship Online Philosophy
 URL http://www.universitypressscholarship.com/
 DJ universitypressscholarship.com
 HJ www.universitypressscholarship.com
 
+dbvar0 usp-nf
 Title usp-nf
 URL http://www.uspnf.com
 DJ uspnf.com
 HJ www.uspnf.com
 
 
+dbvar0 Walter de Gruyter Journals
 T Walter de Gruyter Journals
 # also used by Neitche-Stuien journal issn 03420-1422
 # also used by Kant-Studien
@@ -5187,6 +5876,7 @@ HJ www.degruyter.de
 HJ www.degruyter.com
 DJ degruyter.com
 
+dbvar0 Wiley Interscience Journals
 T Wiley Interscience Journals
 U http://www3.interscience.wiley.com/journalfinder.html
 DJ www3.interscience.wiley.com
@@ -5199,15 +5889,18 @@ HJ sciserver.lanl.gov
 
 
 HTTPHeader X-Requested-With
+dbvar0 Wiley Online
 T Wiley Online
 U http://onlinelibrary.wiley.com
 D wiley.com
 
 
+dbvar0 Wisconsin Magazine of History (Wisconsin Historical Society)
 T Wisconsin Magazine of History (Wisconsin Historical Society)
 U http://www.wisconsinhistory.org/
 DJ www.wisconsinhistory.org
 
+dbvar0 Women in The National Archives
 Title Women in The National Archives
 U www.archivesdirect.amdigital.co.uk 
 HJ secure.amdigital.co.uk
@@ -5220,6 +5913,7 @@ HJ www.americanwest.amdigital.co.uk
 
 # result of serial-reconciler.pl jkline 2005-11-17
 # issn 0196-3570
+dbvar0 World literature today
 T World literature today
 U http://www.ou.edu/worldlit/
 DJ www.ou.edu
@@ -5228,27 +5922,32 @@ HJ www.ou.edu
 # URL is for Journal of Knot Theory and Its Ramifications (JKTR)
 # issn 0218-2165
 # jotto 2008-03-11
+dbvar0 WorldSciNet (World Scientific Publishing)
 T WorldSciNet (World Scientific Publishing)
 U http://www.worldscinet.com/cgi-bin/details.cgi?id=jsname:jktr&type=all
 D db.worldscinet.com
 DJ www.worldscinet.com
 
+dbvar0 WorldsciNetArchives
 T WorldsciNetArchives
 U http://www.worldscinetarchives.com/
 DJ www.worldscinetarchives.com
 
 # result of serial-reconciler.pl jkline 2005-12-08
 # issn 0232-2064
+dbvar0 Zeitschrift f
 T Zeitschrift fülysis und ihre Anwendungen
 U http://www.emis.de/journals/ZAA/
 DJ www.emis.de
 HJ www.emis.de
 
+dbvar0 Zeitschrift fur Antikes Christentum
 T Zeitschrift fur Antikes Christentum
 U http://dx.doi.org/10.1515/zach
 DJ dx.doi.org
 DJ www.reference-global.com
 
+dbvar0 Zeitschrift fur deutsche Philologie
 T Zeitschrift fur deutsche Philologie
 U http://www.zfdphdigital.de/homepage.html
 DJ www.ZfdPhdigital.de
@@ -5258,6 +5957,7 @@ HJ ZfdPhdigital.de
 
 # result of serial-reconciler.pl jkline 2005-12-08
 # issn 0044-4103
+dbvar0 Zentralblatt f
 T Zentralblatt füaktik der Mathematik
 U http://www.emis.ams.org/journals/ZDM/zdmcont.html
 DJ www.emis.ams.org
@@ -5272,6 +5972,7 @@ HJ www.emis.ams.org
 
 # works - jkline 20060124
 # V[erify] is positional and must appear before U[rl]
+dbvar0 Chronicle of Higher Education, The
 T Chronicle of Higher Education, The
 V 22053256:1chery56
 U http://chronicle.com/
@@ -5279,6 +5980,7 @@ U http://chronicle.com/
 #H www.chronicle.com
 
 # works - jkline 20060120
+dbvar0 Discover Magazine
 T Discover Magazine
 URL -form=post discover http://www.discover.com/login-page/
 FormVariable login=libs@libraries.claremont.edu
@@ -5286,6 +5988,7 @@ FormVariable password=Claremont
 # no D is necessary because once logged in we don't need to proxy this site.
 
 # This doesn't work, goes into infinites reload loop - jkline 2006-120
+dbvar0 Financial Analysts Journal
 T Financial Analysts Journal
 URL -form=post financial-analysts-journal http://www.aimrpubs.org/servlet/LoginHash
 FormVariable id=1005949
@@ -5294,11 +5997,13 @@ FormVariable errTemplate=login.html
 FormVariable badLoginURL=http://www.aimrpubs.org/shared/login_retry.html
 
 # works - jkline 20060124
+dbvar0 science Books and Films
 T science Books and Films
 V 0013543:91711
 U http://www.sbfonline.com/subscriber/11.htm
 D sbfonline.com
 
+dbvar0 Studia Scientiarum Mathematicarum Hungarica 
 T Studia Scientiarum Mathematicarum Hungarica 
 #	Username   honnold2004
 #	Password   sgmudd
@@ -5315,21 +6020,25 @@ D akademiai.com/
 
 
 
+dbvar0 Acta Astronomica
 Title Acta Astronomica
 URL http://acta.astrouw.edu.pl/
 DJ astrouw.edu.pl
 
+dbvar0 Choice Reviews
 T Choice Reviews
 URL http://www.cro2.org
 DJ cro2.org
 HJ www.cro2.org
 
+dbvar0 CQ Researcher
 Title CQ Researcher
 URL http://library.cqpress.com/cqresearcher/
 DJ library.cqpress.com
 
 DJ cqpress.com 
 
+dbvar0 Nature Publishing Group
 T Nature Publishing Group
 U http://www.nature.com/
 H www.naturesj.com
@@ -5341,19 +6050,23 @@ D nature.com
 D naturesj.com
 D npgjournals.com
 
+dbvar0 Digital Collections at The Center for Research Libraries
 Title Digital Collections at The Center for Research Libraries
 URL http://contentdm.crl.edu/
 DJ crl.edu
 
+dbvar0 Topology Proceedings
 Title Topology Proceedings
 URL http://topology.auburn.edu/tp/reprints/
 DJ auburn.edu
 
+dbvar0 Mathematical Sciences Publishers
 Title Mathematical Sciences Publishers
 URL http://mathscipub.org
 DJ msp.org
 HJ msp.org
 
+dbvar0 ABC-CLIO Databases and Ebooks
 T ABC-CLIO Databases and Ebooks
 U http://databases.abc-clio.com
 HJ databases.abc-clio.com
@@ -5361,28 +6074,34 @@ DJ abc-clio.com
 DJ greenwood.com
 HJ africanamerican2.abc-clio.com
 
+dbvar0 Computing Reviews
 Title Computing Reviews
 URL http://www.computingreviews.com
 DJ computingreviews.com
 
+dbvar0 Earth Interactions
 Title Earth Interactions
 URL http://earthinteractions.org/
 DJ earthinteractions.org
 
+dbvar0 APA PsycNET
 Title APA PsycNET
 URL http://psycnet.apa.org
 DJ apa.org
 
+dbvar0 LLMC Digital
 Title LLMC Digital
 URL http://www.llmcdigital.org
 DJ llmcdigital.org
 HJ www.llmc.com
 HJ www.llmcdigital.org
 
+dbvar0 Duncker & Humblot journals
 Title Duncker & Humblot journals
 URL http://ejournals.duncker-humblot.de/loi/sint
 DJ duncker-humblot.de
 
+dbvar0 Past Masters
 T Past Masters
 U http://library.nlx.com/
 DJ nlx.com
@@ -5390,6 +6109,7 @@ HJ library.nlx.com
 HJ crkn.nlx.com
 HJ pm.nlx.com
 
+dbvar0 Oxford University Press
 Title Oxford University Press
 URL http://www.oxfordbibliographiesonline.com
 DJ oxfordbibliographies.com
@@ -5400,86 +6120,106 @@ DJ oxfordbibliographiesonline.com
 HJ oxfordbibliographiesonline.com
 
 
+dbvar0 The Eisenhower Papers
 Title The Eisenhower Papers
 URL http://eisenhower.press.jhu.edu
 DJ press.jhu.edu
 HJ press.jhu.edu
 
+dbvar0 DUXIU
 Title DUXIU
 URL http://www.duxiu.com
 DJ duxiu.com
 
+dbvar0 WRDS
 T WRDS
 U http://wrds-web.wharton.upenn.edu/wrds/connect/daypass.cfm?ticket=
 DJ wharton.upenn.edu
 
+dbvar0 Nikkei American Telecom 21
 Title Nikkei American Telecom 21
 URL https://www.nikkeiamerica.com/telecom21/ip.aspx
 DJ nikkeiamerica.com
 HJ http://www.nikkeiamerica.com
 
+dbvar0 Encyclopedia of Mathematics and Society
 T Encyclopedia of Mathematics and Society
 U http://science.salempress.com/doi/book/10.3331/Math?windowSize=20&currentPage=1
 DJ salempress.com
 
+dbvar0 Statistical Datasets 
 Title Statistical Datasets 
 URL http://si.conquestsystems.com/
 DJ conquestsystems.com
 
+dbvar0 International Journal of Number Theory
 Title International Journal of Number Theory
 URL http://www.worldscientific.com/loi/ijnt
 DJ worldscientific.com
 
+dbvar0 Paley iCollection
 T Paley iCollection
 U https://www.paleyicollection.org
 DJ paleyicollection.org
 HJ http://www.paleyicollection.org
 
+dbvar0 Aestimatio
 Title Aestimatio
 URL http://www.ircps.org/aestimatio
 DJ ircps.org
 
+dbvar0 Bibliography of English Women Writers
 Title Bibliography of English Women Writers
 URL http://cf.itergateway.org/beww/
 DJ itergateway.org
 
+dbvar0 Testing Amigos
 T Testing Amigos
 U http://amigos.classical.com
 DJ amigos.classical.com
 HJ amigos.classical.com
 
+dbvar0 Travel Writing, Spectacle and World History
 Title Travel Writing, Spectacle and World History
 URL http://www.travelwriting.amdigital.co.uk
 DJ amdigital.co.uk
 
+dbvar0 Literary Manuscripts Berg
 Title Literary Manuscripts Berg
 URL http://www.literarymanuscriptsberg.amdigital.co.uk
 
+dbvar0 Routledge Performance Archive
 Title Routledge Performance Archive
 URL http://www.routledgeperformancearchive.com/
 DJ routledgeperformancearchive.com
 
+dbvar0 World of Learning
 Title World of Learning
 URL http://www.worldoflearning.com
 DJ worldoflearning.com
 
+dbvar0 Journal of the Electrochemical Society 
 T Journal of the Electrochemical Society 
 U http://jes.ecsdl.org
 DJ ecsdl.org
 
+dbvar0 Hadyn
 Title Hadyn
 URL http://www.rit.edu/affiliate/haydn/
 DJ rit.edu
 
+dbvar0 BMC BIOLOGY
 T BMC BIOLOGY
 U http://www.biomedcentral.com/bmcbiol/archive
 DJ biomedcentral.com
 
+dbvar0 Journal of Biology
 T Journal of Biology
 U http://jbiol.com/
 HJ www.jbiol.com
 DJ jbiol.com
 
+dbvar0 Get It Now
 T Get It Now
 URL http://www.copyright.com
 HJ https://getitnow.copyright.com
@@ -5487,35 +6227,42 @@ HJ https://www.copyright.com
 HJ getitnow.copyright.com
 DJ copyright.com
 
+dbvar0 Forum Italicum
 T Forum Italicum
 U http://ojs.cc.stonybrook.edu/index.php/FI/issue/archive
 HJ ojs.cc.stonybrook.edu
 DJ stonybrook.edu
 
+dbvar0 Historia Mexicana
 T Historia Mexicana
 U http://biblioteca.colmex.mx/revistas/index.php?option=com_content&view=article&id=35&Itemid=81
 D colmex.mx
 
+dbvar0 Revue des Etudes Latines
 T Revue des Etudes Latines
 U http://www.societedesetudeslatines.com/
 D societedesetudeslatines.com
 
+dbvar0        Illinois Journal of Mathematics
 Title        Illinois Journal of Mathematics
 URL http://www.math.uiuc.edu/~hildebr/ijmwww/electronic.html
 DJ uiuc.edu
 HJ www.math.uiuc.edu
 
+dbvar0 Natural Standard
 Title Natural Standard
 URL https://naturalmedicines.therapeuticresearch.com/
 DJ therapeuticresearch.com
 DJ naturalmedicines.com
 HJ naturalmedicines.therapeuticresearch.com
 
+dbvar0 Physiological Society
 Title Physiological Society
 URL http://jp.physoc.org/
 DJ physoc.org
 
 ProxyHJnameEdit www.thomsonhc.com$ www-thomsonhc-com Option DJCookieOnly
+dbvar0 -hide Micromedex URL http://www.micromedexsolutions.com/
 Title -hide Micromedex URL http://www.micromedexsolutions.com/
 DJ thomsonhc.com
 DJ micromedex.com
@@ -5526,40 +6273,48 @@ HJ www.thomsonhc.com
 HJ uspdi.micromedex.com
 Option Cookie
 
+dbvar0 Medicines Complete
 T Medicines Complete
 U https://www.medicinescomplete.com/mc/index.htm
 HJ https://www.medicinescomplete.com/
 HJ www.medicinescomplete.com
 DJ medicinescomplete.com
 
+dbvar0 TRACFed
 T TRACFed
 U http://tracfed.syr.edu/
 DJ syr.edu
 
+dbvar0 EMBO Reports
 T EMBO Reports
 U http://embor.embopress.org/
 HJ embor.embopress.org
 DJ embopress.org
 
+dbvar0 JoVE Science Education
 T JoVE Science Education
 URL http://www.jove.com/science-education-database?utm_source=homepage
 DJ jove.com
 
+dbvar0 World News Connection
 T World News Connection
 U http://wnc.eastview.com
 HJ wnc.eastview.com
 DJ eastview.com
 
+dbvar0 Pharmacy Library
 T Pharmacy Library
 U http://www.pharmacylibrary.com/
 HJ www.pharmacylibrary.com
 DJ pharmacylibrary.com
 
+dbvar0 Met Opera On Demand
 Title Met Opera On Demand
 URL http://metopera.org/season/on-demand/
 DJ metopera.org
 HJ metopera.org
 
+dbvar0 LWW Health Library
 Title LWW Health Library
 URL http://lwwhealthlibrary.com/Content/Collection/TableOfContents.aspx?rid=10508
 HJ lwwhealthlibrary.com
@@ -5567,10 +6322,12 @@ HJ www.lwwhealthlibrary.com
 HJ pharmacy.lwwhealthlibrary.com 
 DJ lwwhealthlibrary.com
 
+dbvar0 British History Online
 Title British History Online
 URL http://www.british-history.ac.uk/browse.aspx
 DJ british-history.ac.uk
 
+dbvar0 ReadCube
 T ReadCube
 U http://www.readcube.com/
 HJ www.readcube.com
@@ -5580,6 +6337,7 @@ IncludeFile databases/oxfordjournals.txt
 IncludeFile databases/mhmedical.txt
 
 I 0.0.0.0-255.255.255.255
+dbvar0 Testing Naxos
 T Testing Naxos
 U http://www.naxosmusiclibrary.com
 DJ www.naxosmusiclibrary.com
@@ -5590,22 +6348,26 @@ ExcludeIP 134.173.244.0-134.173.255.255
 IncludeIP 134.173.128.145
 IncludeIP 134.173.128.36
 
+dbvar0 Maney Online
 T Maney Online
 U http://www.maneyonline.com/loi/exm
 HJ www.maneyonline.com
 DJ maneyonline.com
 
+dbvar0 LWW Health Library
 T LWW Health Library
 U http://www.lwwhealthlibrary.com/
 H www.lwwhealthlibary.com
 H lwwhealthlibrary.com
 D lwwhealthlibrary.com
 
+dbvar0 Data Banks International
 T Data Banks International
 U http://www.databanksinternational.com/Claremont/
 HJ databanksinternational.com
 DJ databanksinternational.com
 
+dbvar0 Gale Trials
 Title Gale Trials
 URL http://www.galetrials.com/default.aspx?TrialID=75749;ContactID=95976
 DJ galetrials.com
@@ -5613,91 +6375,109 @@ HJ www.galetrials.com
 
 IncludeFile databases/alexanderstreet.txt
 
+dbvar0 Alexander Street Press (CCL)
 T Alexander Street Press (CCL)
 URL http://search.alexanderstreet.com/clmu
 
+dbvar0 Policy Map Trial
 Title Policy Map Trial
 URL http://claremont.policymap.com
 DJ policymap.com
 HJ claremont.policymap.com
 
+dbvar0 Armed Conflict Database
 Title Armed Conflict Database
 URL http://acd.iiss.org/
 DJ iiss.org
 HJ acd.iiss.org
 
 #John Benjamins
+dbvar0 Spanish in context
 T Spanish in context
 U http://www.benjamins.com/cgi-bin/t_seriesview.cgi?series=SiC
 DJ benjamins.com
 HJ www.benjamins.nl
 
+dbvar0 Studies in language
 T Studies in language
 U http://www.jbe-platform.com/content/journals/15699978
 DJ jbe-platform.com
 
+dbvar0 English Historical Documents
 Title English Historical Documents
 URL http://www.englishhistoricaldocuments.com
 DJ englishhistoricaldocuments.com
 HJ www.englishhistoricaldocuments.com
 
+dbvar0 IMF eLibrary
 Title IMF eLibrary
 URL http://elibrary-data.imf.org/
 DJ imf.org
 HJ elibrary-data.imf.org
 HJ www.elibrary.imf.org
 
+dbvar0 Sage Local Stats
 Title Sage Local Stats
 URL http://data.sagepub.com/sagestats/
 DJ sagepub.com
 HJ data.sagepub.com
 
+dbvar0 eDuke Books
 Title eDuke Books
 URL http://read.dukeupress.edu/titles
 DJ dukeupress.edu
 HJ read.dukeupress.edu
 
+dbvar0 Profiles of California 
 Title Profiles of California 
 URL http://gold.greyhouse.com/page/freeonline_california 
 DJ greyhouse.com
 HJ gold.greyhouse.com
 
+dbvar0 ALA Techsource
 Title ALA Techsource
 URL http://www.alatechsource.org/subscribe
 HJ www.alatechsource.org
 DJ alatechsource.org
 
+dbvar0 Black Short Fiction and Folkore
 Title Black Short Fiction and Folkore
 U http://lit.alexanderstreet.com/blfi
 HJ blfi.alexanderstreet.com
 HJ lit.alexanderstreet.com
 DJ alexanderstreet.com
 
+dbvar0 Blake
 Title Blake
 URL http://blake.lib.rochester.edu/blakeojs/index.php/blake
 HJ blake.lib.rochester.edu
 DJ rochester.edu
 
+dbvar0 Burlington Magazine
 Title Burlington Magazine
 URL http://www.burlington.org.uk/magazine/back-issues
 HJ www.burlington.org.uk
 DJ burlington.org
 
+dbvar0 Proceedings of the Yorkshire Geological Society
 Title Proceedings of the Yorkshire Geological Society
 URL http://pygs.geoscienceworld.org/archive/
 HJ pygs.geoscienceworld.org
 DJ geoscienceworld.org
 
+dbvar0 N+1 Journal
 Title N+1 Journal
 URL https://nplusonemag.com/
 HJ https://nplusonemag.com
 DJ nplusonemag.com
 
+dbvar0 IMF eLibrary 
 Title IMF eLibrary 
 URL http://www.elibrary.imf.org/
 DJ imf.org
 HJ www.elibrary.imf.org
 
+dbvar0 Brill Encyclopedia of Islam
 Title Brill Encyclopedia of Islam
 URL http://referenceworks.brillonline.com/browse/encyclopaedia-of-islam-3
 DJ brillonline.com
@@ -5705,49 +6485,58 @@ HJ referenceworks.brillonline.com
 # trial for Yearbook of International Organizations Online 1/11/2016
 HJ ybio.brillonline.com
 
+dbvar0 CQ Electronic Library through Sage Knowledge
 Title CQ Electronic Library through Sage Knowledge
 URL http://knowledge.sagepub.com/browse?pageSize=20&sortorder=TITLE&availability=full
 DJ sagepub.com
 HJ knowledge.sagepub.com
 
+dbvar0 Eastview World News Connection
 Title Eastview World News Connection
 URL http://wnc.eastview.com/
 DJ eastview.com
 HJ wnc.eastview.com
 
+dbvar0 Rheinisches Museum fu?r Philologie
 Title Rheinisches Museum fu?r Philologie
 U http://www.sauerlaender-verlag.com/index.php?id=39
 HJ www.sauerlaender-verlag.com
 DJ sauerlaender-verlag.com
 
+dbvar0 Revue d
 Title Revue d’histoire des Sciences
 URL http://www.armand-colin.com/revue/14/1/revue-d-histoire-des-sciences.php
 HJ www.armand-colin.com
 DJ armand-colin.com
 
+dbvar0 Drug Facts and Comparisons
 Title Drug Facts and Comparisons
 URL http://online.factsandcomparisons.com
 HJ online.factsandcomparisons.com
 HJ www.factsandcomparisons.com
 DJ factsandcomparisons.com
 
+dbvar0 Lexicomp 
 Title Lexicomp 
 URL http://online.lexi.com
 HJ online.lexi.com
 HJ www.lexi.com
 DJ lexi.com
 
+dbvar0 Asia Pacific Consensus Forecasts
 Title Asia Pacific Consensus Forecasts
 URL http://www.consensuseconomics.com/download/Asia_Pacific_Economic_Forecasts.htm
 DJ consensuseconomics.com
 HJ www.consensuseconomics.com
 
+dbvar0 Synthesis Journal
 Title Synthesis Journal
 URL https://www.thieme-connect.de/products/ejournals/journal/10.1055/s-00000084
 HJ https://www.thieme-connect.de
 HJ www.thieme-connect.de
 DJ thieme-connect.de
 
+dbvar0 Kanopy Videostreaming 
 T Kanopy Videostreaming 
 U http://claremont.kanopystreaming.com 
 D kanopystreaming.com 
@@ -5756,6 +6545,7 @@ HJ kanopystreaming.com
 HJ .kanopystreaming.com 
 HJ http://claremont.kanopystreaming.com
 
+dbvar0 ACLS Humanities E-Book 
 Title ACLS Humanities E-Book 
 URL http://www.humanitiesebook.org/ 
 HJ www.humanitiesebook.org
@@ -5770,43 +6560,51 @@ HJ www.hti.umich.edu
 HJ quod.lib.umich.edu 
 HJ www.historyebooks.org
 
+dbvar0 PhilPapers
 Title PhilPapers
 URL http://philpapers.org/browse/all
 HJ philpapers.org
 DJ philpapers.org
 
+dbvar0 Earth
 Title Earth
 URL http://www.agiweb.org/store/library/
 HJ www.agiweb.org
 DJ agiweb.org
 
+dbvar0 SCOAP3
 Title SCOAP3
 URL http://scoap3.org/scoap3journals
 HJ scoap3.org
 HJ www.scoap3.org
 DJ scoap3.org
 
+dbvar0 Taylor and Francis e-books
 Title Taylor and Francis e-books
 URL http://www.tandfebooks.com/action/showBook?doi=10.4324/9781315882284
 HJ tandfebooks.com
 DJ www.tandfebooks.com
 
+dbvar0 OLMS Online
 Title OLMS Online
 URL http://www.olmsonline.de/index.php?id=11&L=1
 DJ olmsonline.de
 HJ www.olmsonline.de
 
+dbvar0 -hide Translated Texts for Historians
 Title -hide Translated Texts for Historians
 URL http://www.liverpooluniversitypress.co.uk/
 DJ liverpooluniversitypress.co.uk
 HJ www.liverpooluniversitypress.co.uk
 
+dbvar0 Translated Texts for Historians
 Title Translated Texts for Historians
 URL http://liverpool.metapress.com/content/l34137
 DJ metapress.com 
 HJ liverpool.metapress.com
 HJ www.metapress.com
 
+dbvar0 -hide Metropolitan Opera on Demand
 Title -hide Metropolitan Opera on Demand
 URL http://metopera.org/ondemand/index.aspx 
 NeverProxy http://link.metoperafamily.org:90 
@@ -5814,17 +6612,20 @@ HJ www.metopera.org
 HJ metopera.org 
 DJ metopera.org
 
+dbvar0 Met Opera on Demand: Student Access 
 Title Met Opera on Demand: Student Access 
 URL http://metoperafamily.org/ondemand/index.aspx
 DJ metoperafamily.org
 HJ metoperafamily.org
 
+dbvar0 Medici.tv
 Title Medici.tv
 URL http://www.medici.tv
 HJ www.medici.tv
 HJ medici.tv
 DJ medici.tv
 
+dbvar0 Digital Loeb Classical Library
 Title Digital Loeb Classical Library
 URL http://www.loebclassics.com
 HJ www.loebclassics.com
