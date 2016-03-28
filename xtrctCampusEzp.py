@@ -5,7 +5,7 @@ doc="""
 %prog [file] [output] [report] 
 file is the name of the ezproxy report we want to process. 
 Outputfile should include path, will be created if not existing and clobbered if existing
-Report is the EZProxy _report file
+Report is the {campus} EZProxy _report file
 
 """
 if __name__ == '__main__':

@@ -7,6 +7,7 @@ doc="""
 %prog [logfile] [output] 
 logfile is the name of the ezproxy log file we want to process. 
 outputfile should include path, will be created if not existing and clobbered if existing
+Resulting file will contain URLs parsed into fields
 """
 YUCK = ["css","dll","f4v","gif","ico","jpg","jpeg","js","json","png","swf","ttf","woff"]
 count = 0
@@ -22,10 +23,9 @@ if __name__ == '__main__':
 	with open(InFileName,'r') as ezpKGI:
 		print "Retrieving log data..."
 		lines = [l.strip('\n') for l in ezpKGI.readlines()]
-		for line in lines:
-			count +=1
-			if count%100 == 0:
-				printStatus(count, len(lines))
+		for i, line in enumerate(lines):
+			if i%100 == 0:
+				printStatus(i, len(lines))
 			#get the session ID
 			try:
 				foo = re.search(" - ([^ ]+) ", line)

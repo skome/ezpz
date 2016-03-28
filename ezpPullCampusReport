@@ -1,0 +1,3 @@
+#!/bin/sh
+# Arguments: report filename, campus report filename to create, campus
+head -n $(grep -n Login\ summary $1 |cut -d: -f1) $1 |grep $3 > $2

@@ -17,11 +17,11 @@ if __name__ == '__main__':
 	ezpwriter = csv.writer(ResFile, delimiter=',')
 	with open(InFileName,'r') as ezp:
 		uid = {} # unique user id dictionary: key is uid, value is campus
-		errors = defaultdict(int)
+		errors = defaultdict(int) # holds values that cause parsing errors as keys and count of them as value
 		for line in ezp:
 			idatsrc = line[41:70].split('@') # parse out the user id from the log line
 			try: 
-				uid[idatsrc[0].strip()] = idatsrc[1].split('.')[0].strip()# note though that the uid prefix may not be unique
+				uid[idatsrc[0].strip()] = idatsrc[1].split('.')[0].strip()# note though that the uid prefix may not be unique across campuses
 			except IndexError:
 				errors[idatsrc[0]]+=1
 				#uid = idatsrc[0]
