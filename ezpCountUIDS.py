@@ -32,4 +32,4 @@ if __name__ == '__main__':
 		for k,v in cfreq.iteritems(): 
 			print '{0:15}{1:6d}'.format(k,v)
 		for k,v in errors.iteritems():
-			print 'Error Value {} occurred {} times'.format(k,v)
+			print 'Error Value: "{}" occurred {} times'.format(k.strip(),v)
