@@ -13,6 +13,8 @@ import ConfigParser
 import base64
 import uuid
 from hashlib import sha256
+from time import strptime
+
 doc=""" 
 %prog [file] [output] 
 file is the name of the ezproxy report we want to process. 
