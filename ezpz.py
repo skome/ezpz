@@ -51,18 +51,17 @@ def getCampus(loginCred):
 		campus = 'ERROR'
 	return campus
 
-def getDateList(dateBlob):
-	#from a string with year-month-day return a list with [year,month,day]
-	return dateBlob.strip().split('-')
-
-def getTimeList(timeBlob):
-	#from a string with hour:minute:second return a list with [hour, minute, second]
-	return timeBlob.strip().split(':')
-	
 def getGeographyList(geogBlob):
 	#from a string with countryabbrev;countryName;state;city return a list with [countryabbrev,countryName,state,city]
 	return geogBlob.strip().split(';')
-	
+
+def getdate24Time(dateString):
+	try:
+		datelisted = strptime(dateString.strip('"'),"%m/%d/%Y %I:%M %p")
+	except ValueError:
+		datelisted = []
+	return datelisted
+
 config = ConfigParser.RawConfigParser()
 config.read('ezpz.cfg')
 UNAMESALT = config.get('Auth', 'salt')
@@ -75,10 +74,8 @@ if __name__ == '__main__':
 			#parse out the individual output values (including campus), encrypt the user id, write output
 			#Login Date; Login Time; Logout Date; Logout Time; Username;EZproxy Session;IP address;Geography
 			#column widths: [0:11],[11:20],[20:31],[31:40],[40:71],[71:86], [86:103], [103:]
-			loginDateList = getDateList(line[0:11])
-			loginTimeList = getTimeList(line[11:20])
-			logoutDateList = getDateList(line[20:31])
-			logoutTimeList = getTimeList(line[31:40])			
+			loginDateTime = getdate24Time(line[0:20])
+			logoutDateTime = getdate24Time(line[20:40])
 			uid = getUserID(line[40:71])
 			campus = getCampus(line[40:71])
 			session = line[71:86].strip()
