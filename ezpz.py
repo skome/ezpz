@@ -59,9 +59,9 @@ def getGeographyList(geogBlob):
 
 def getdate24Time(dateString):
 	try:
-		datelisted = strptime(dateString.strip('"'),"%m/%d/%Y %I:%M %p")
+		datelisted = strptime(dateString,"%Y-%m-%d %H:%M:%S")
 	except ValueError:
-		datelisted = []
+		datelisted = [0,0,0,0,0,0,0,0,0]
 	return datelisted
 
 config = ConfigParser.RawConfigParser()
@@ -76,14 +76,17 @@ if __name__ == '__main__':
 			#parse out the individual output values (including campus), encrypt the user id, write output
 			#Login Date; Login Time; Logout Date; Logout Time; Username;EZproxy Session;IP address;Geography
 			#column widths: [0:11],[11:20],[20:31],[31:40],[40:71],[71:86], [86:103], [103:]
-			loginDateTime = getdate24Time(line[0:20])
-			logoutDateTime = getdate24Time(line[20:40])
+			loginDateTime = getdate24Time(line[0:19])
+			#logoutDateTime = getdate24Time(line[20:40])
 			uid = getUserID(line[40:71])
 			campus = getCampus(line[40:71])
 			session = line[71:86].strip()
 			ip = line[86:103].strip()
 			geography = line[103:].strip()
-			print line[40:71], campus, uid, session
+			newLine = [uid, session, campus]
+			for item in loginDateTime:
+				newLine.append(str(item))
+			print>>ezpOutFile, ",".join(newLine)
 
 			
 		
