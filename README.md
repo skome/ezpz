@@ -22,3 +22,25 @@ Summary of Analysis:
 Combine the monthly reports and the daily log files into a set of monthly reports about users, resources, campuses, and time.  
 To do this create monthly logs from the daily logs(1), join them to the monthly report via the session id(2,3). 
 In that process create a campus id, add a user status (student, faculty, etc), and anonymize userids.  Then generate reports.
+
+Processing Steps:
+1. Append the daily log files into a monthly file
+	a. ls ezp*.log > 201601.lst
+	b. cat $(cat 201601.lst) > 201601.log
+	c. Delete the daily files
+2. Cut the top of the report file into a new file(s)
+	a. All campuses: head -n $(grep -n Login\ summary ccl201511_report.log |cut -d: -f1) ccl201511_report.log
+	b. Optional: Only CGU (for example): head -n $(grep -n Login\ summary ccl201512_report.log |cut -d: -f1) ccl201512_report.log |grep cgu > ezp201512CGU.txt  
+		i. NEW: use bash script ezpPullCampusReport [monthly report] [campus report] [campus]
+			1) e.g.  ~/ezpPullCampusReport ccl201602_report.log ccl201602_report_PIT.log pit
+			2) ...will read ccl201602_report.log, create ccl201602_report_PIT.log
+	c. ezpCountUIDS.py will count in the report the unique user ids per campus.
+3. (optional) Create a campus log file with xtrctCampusezp.py using the above campus report and the full log file, e.g.  ~/ezpz/xtrctCampusEzp.py 201604.log ezp201604KGI.log ccl201604_report_KGI.log
+	a. e.g. this will extract a campus's log lines into a new file like ezp201601KGI.log
+	b. Todo: 
+		i. generalize xtrctKGIezp.py to work for any campus, any month
+		ii. Speed improvements needed!
+4. Extract URLs from the new file and split them into component parts for analysis
+	a. Use findezpURLS.py
+	b. e.g. findezpURLS logfile output
+
