@@ -43,6 +43,7 @@ In that process create a campus id, add a user status (student, faculty, etc), a
   1. Generalize xtrctKGIezp.py to work for any campus, any month
   2. Speed improvements needed!
   3. Are session ids unique per month, year, forever?
+
 4. Extract URLs from the new file and split them into component parts for analysis: `findezpURLS logfile output`
 
 
