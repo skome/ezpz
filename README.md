@@ -10,6 +10,7 @@ Process EZProxy Report files:
 * Extract Date and time into fields
 * Extract session id
 * Store as csv
+
 Process EZProxy log files:
 * Extract session id
 * Extract URLs
