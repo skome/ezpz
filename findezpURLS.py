@@ -7,25 +7,25 @@ doc="""
 %prog [logfile] [output] 
 logfile is the name of the ezproxy log file we want to process. 
 outputfile should include path, will be created if not existing and clobbered if existing
-Resulting file will contain URLs parsed into fields
 """
 YUCK = ["css","dll","f4v","gif","ico","jpg","jpeg","js","json","png","swf","ttf","woff"]
 count = 0
 def printStatus(curr, total):
-	sys.stdout.write('Processing line {} / {}\r'.format(curr,total))
-	sys.stdout.flush()
+	if curr%100 == 0:
+		sys.stdout.write('Processing line {} / {}\r'.format(curr,total))
+		sys.stdout.flush()
 	
 if __name__ == '__main__':
 	InFileName = sys.argv[1] #main log file
 	OutFileName = sys.argv[2] #new logfile to write
-	kgiResFile = open(OutFileName,'w')
-	ezpwriter = csv.writer(kgiResFile, delimiter='|')
-	with open(InFileName,'r') as ezpKGI:
+	ResFile = open(OutFileName,'w')
+	ezpwriter = csv.writer(ResFile, delimiter='|')
+	with open(InFileName,'r') as ezp:
 		print "Retrieving log data..."
-		lines = [l.strip('\n') for l in ezpKGI.readlines()]
-		for i, line in enumerate(lines):
-			if i%100 == 0:
-				printStatus(i, len(lines))
+		lines = [l.strip('\n') for l in ezp.readlines()]
+		for line in lines:
+			count +=1
+			printStatus(count, len(lines))
 			#get the session ID
 			try:
 				foo = re.search(" - ([^ ]+) ", line)
