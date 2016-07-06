@@ -8,6 +8,12 @@ Outputfile should include path, will be created if not existing and clobbered if
 Report is the {campus} EZProxy _report file
 
 """
+count = 0
+def printStatus(curr):
+	if curr%1000 == 0:
+		sys.stdout.write('Processing line {} / low millions\r'.format(curr))
+		sys.stdout.flush()
+		
 if __name__ == '__main__':
 	ezpInFileName = sys.argv[1] #main log file
 	ezpOutFileName = sys.argv[2] #new campus logfile
@@ -16,9 +22,13 @@ if __name__ == '__main__':
 		sessions = []
 		for line in ezpCampusSessf.readlines():                                                                                                                
 			sessions.append(line[71:86])
-		for line in ezpInFile.readlines():
-			for session in sessions:                                                                                                                            
+		print "Writing "+ezpOutFileName
+		for count, line in enumerate(ezpInFile):
+			count +=1
+			printStatus(count)                                                                                                                            			
+			for session in sessions:
 				if session in line:
-					print line
+					#print line
 					ezpOutFile.writelines(line)
 					break
+	print("Completed.")
