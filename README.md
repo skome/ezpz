@@ -35,13 +35,18 @@ In that process create a campus id, add a user status (student, faculty, etc), a
   OR: use bash script `ezpPullCampusReport [monthly report] [campus report] [campus]`
   * e.g.  `~/ezpPullCampusReport ccl201602_report.log ccl201602_report_PIT.log pit`
   * ...will read ccl201602_report.log, create ccl201602_report_PIT.log
+  * ezpCountUIDS.py will count in the report the unique user ids per campus.
 
-c. ezpCountUIDS.py will count in the report the unique user ids per campus.
+3. To create a campus log file use xtrctCampusezp.py with the above campus report and the monthly log file, e.g.  `~/ezpz/xtrctCampusEzp.py 201604.log ezp201604KGI.log ccl201604_report_KGI.log` ...will extract a campus's log lines into a new file like ezp201601KGI.log  
 
-3. (optional) Create a campus log file with xtrctCampusezp.py using the above campus report and the full log file, e.g.  `~/ezpz/xtrctCampusEzp.py 201604.log ezp201604KGI.log ccl201604_report_KGI.log` ...will extract a campus's log lines into a new file like ezp201601KGI.log
 ####Todo: 
   1. Generalize xtrctKGIezp.py to work for any campus, any month
   2. Speed improvements needed!
+  3. Are session ids unique per month, year, forever?
 4. Extract URLs from the new file and split them into component parts for analysis: `findezpURLS logfile output`
 
 
+####Todo, ctd:
+1. Web UI
+2. Port bash functions into python script(s)
+3. Combine scripts into one application
