@@ -29,19 +29,19 @@ In that process create a campus id, add a user status (student, faculty, etc), a
   2. `cat $(cat 201601.lst) > 201601.log`
   3. Delete the daily files
 2. Cut the top of the report file into a new file(s)
-  1.All campuses: `head -n $(grep -n Login\ summary ccl201511_report.log |cut -d: -f1) ccl201511_report.log`
-  2.Optional: Only CGU (for example): `head -n $(grep -n Login\ summary ccl201512_report.log |cut -d: -f1) ccl201512_report.log |grep cgu > ezp201512CGU.txt`
+  1. All campuses: `head -n $(grep -n Login\ summary ccl201511_report.log |cut -d: -f1) ccl201511_report.log`
+  2. Optional: Only CGU (for example): `head -n $(grep -n Login\ summary ccl201512_report.log |cut -d: -f1) ccl201512_report.log |grep cgu > ezp201512CGU.txt`
 
   OR: use bash script `ezpPullCampusReport [monthly report] [campus report] [campus]`
-			* e.g.  ~/ezpPullCampusReport ccl201602_report.log ccl201602_report_PIT.log pit
-			* ...will read ccl201602_report.log, create ccl201602_report_PIT.log
-	c. ezpCountUIDS.py will count in the report the unique user ids per campus.
-3. (optional) Create a campus log file with xtrctCampusezp.py using the above campus report and the full log file, e.g.  ~/ezpz/xtrctCampusEzp.py 201604.log ezp201604KGI.log ccl201604_report_KGI.log
-	a. e.g. this will extract a campus's log lines into a new file like ezp201601KGI.log
-	b. Todo: 
-		i. generalize xtrctKGIezp.py to work for any campus, any month
-		ii. Speed improvements needed!
-4. Extract URLs from the new file and split them into component parts for analysis
-	a. Use findezpURLS.py
-	b. e.g. findezpURLS logfile output
+  * e.g.  `~/ezpPullCampusReport ccl201602_report.log ccl201602_report_PIT.log pit`
+  * ...will read ccl201602_report.log, create ccl201602_report_PIT.log
+
+c. ezpCountUIDS.py will count in the report the unique user ids per campus.
+
+3. (optional) Create a campus log file with xtrctCampusezp.py using the above campus report and the full log file, e.g.  `~/ezpz/xtrctCampusEzp.py 201604.log ezp201604KGI.log ccl201604_report_KGI.log` ...will extract a campus's log lines into a new file like ezp201601KGI.log
+####Todo: 
+  1. Generalize xtrctKGIezp.py to work for any campus, any month
+  2. Speed improvements needed!
+4. Extract URLs from the new file and split them into component parts for analysis: `findezpURLS logfile output`
+
 
