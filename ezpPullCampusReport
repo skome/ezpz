@@ -1,3 +1,10 @@
-#!/bin/sh
-# Arguments: report filename, campus report filename to create, campus
-head -n $(grep -n Login\ summary $1 |cut -d: -f1) $1 |grep $3 > $2
+#!/bin/bash
+declare -a campuses=("cgu" "cmc" "hmc" "kecksci" "kgi" "pit" "pom" "scr")
+mmYYYY=$(date +%Y%m)
+fullfile=$1
+filename="${fullfile%.*}"
+for campus in ${campuses[*]}
+    do
+        campusfile=$filename"_"$campus".rpt"
+        head -n $(grep -n Login\ summary $1 |cut -d: -f1) $fullfile |grep $campus > $campusfile
+    done
