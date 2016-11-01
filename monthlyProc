@@ -1,0 +1,14 @@
+#!/bin/bash
+logfile=$1
+rptfile=$2
+filename="${logfile%.*}"
+rptfilename="${rptfile%.*}"
+declare -a campuses=("cgu" "cmc" "hmc" "kecksci" "kgi" "pit" "pom" "scr")
+for campus in ${campuses[*]}
+    do
+        campusfile=$rptfilename"_"$campus".rpt"
+        head -n $(grep -n Login\ summary $rptfile |cut -d: -f1) $rptfile |grep $campus > $campusfile
+    done
+ls ezp*.log > ezp.lst
+cat $(cat ezp.lst) > $filename.log
+python ./xtrctCampusEzp.py $filename.log

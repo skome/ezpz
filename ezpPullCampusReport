@@ -1,6 +1,5 @@
 #!/bin/bash
 declare -a campuses=("cgu" "cmc" "hmc" "kecksci" "kgi" "pit" "pom" "scr")
-mmYYYY=$(date +%Y%m)
 fullfile=$1
 filename="${fullfile%.*}"
 for campus in ${campuses[*]}
